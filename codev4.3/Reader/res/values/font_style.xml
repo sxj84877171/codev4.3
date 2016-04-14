@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="small">
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="common">
+		<item name="android:textSize">19sp</item>
+	</style>
+	<style name="big">
+		<item name="android:textSize">22sp</item>
+	</style>
+	<style name="bigger">
+		<item name="android:textSize">25sp</item>
+	</style>
+	<style name="biggest">
+		<item name="android:textSize">31sp</item>
+	</style>
+	
+	<style name="b_small">
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="b_common">
+		<item name="android:textSize">19sp</item>
+	</style>
+	<style name="b_big">
+		<item name="android:textSize">22sp</item>
+	</style>
+	<style name="b_bigger">
+		<item name="android:textSize">25sp</item>
+
+	</style>
+	<style name="b_biggest">
+		<item name="android:textSize">31sp</item>
+	</style>
+
+
+	<style name="normal">
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+
+	<style name="normal.black">
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+	<style name="normal.white">
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+
+	<style name="bold.black">
+		<item name="android:textColor">@color/black</item>
+	</style>
+	<style name="bold.white">
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="normal.black.small" parent="small">
+
+	</style>
+	<style name="normal.black.common" parent="common">
+	<item name="android:textColor">@color/black</item>
+
+	</style>
+	<style name="normal.black.big" parent="big">
+
+	</style>
+
+	<style name="normal.black.bigger" parent="bigger">
+
+	</style>
+	<style name="normal.black.biggest" parent="biggest">
+
+	</style>
+
+	<style name="bold.black.small" parent="b_small">
+
+	</style>
+	<style name="bold.black.common" parent="b_common">
+<item name="android:textColor">@color/black</item>
+	</style>
+	<style name="bold.black.big" parent="b_big">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="bold.black.bigger" parent="b_bigger">
+		
+	</style>
+	<style name="bold.black.biggest" parent="b_biggest">
+
+	</style>
+
+
+	<style name="bold.white.small" parent="b_small">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="bold.white.common" parent="b_common">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="bold.white.big" parent="b_big">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="bold.white.bigger" parent="b_bigger">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="bold.white.biggest" parent="b_biggest">
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+
+	<style name="normal.white.small" parent="small">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="normal.white.common" parent="common">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="normal.white.big" parent="big">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="normal.white.bigger" parent="bigger">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="normal.white.biggest" parent="biggest">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	
+</resources>

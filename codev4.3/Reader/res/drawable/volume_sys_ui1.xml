@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:maxLevel="0" android:drawable="@drawable/volume_sys_0_ui1" />
+    <item android:maxLevel="33" android:drawable="@drawable/volume_sys_1_ui1" />
+    <item android:maxLevel="66" android:drawable="@drawable/volume_sys_2_ui1" />
+    <item android:maxLevel="100" android:drawable="@drawable/volume_sys_3_ui1" />
+</level-list>
+

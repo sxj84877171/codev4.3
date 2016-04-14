@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/mainblock"
+		>
+
+       <com.pvi.ap.reader.activity.NetSetView android:id="@+id/netset" 
+         android:layout_width="fill_parent" android:nextFocusDown="@+id/ok"
+         android:layout_height="wrap_content">
+       </com.pvi.ap.reader.activity.NetSetView>
+
+			  <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/ok"
+				android:nextFocusUp="@+id/netset"
+				android:layout_marginRight="20dp"
+				style="@style/button_ui1"
+				android:layout_alignParentBottom="true"
+				android:layout_toLeftOf="@+id/cancel"
+				android:focusable="true"
+			  android:text="设  置" android:layout_marginBottom="360dp"/>
+			  
+			  <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/cancel"
+				android:nextFocusUp="@+id/netset"
+				android:focusable="true"
+				style="@style/button_ui1"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				
+			  android:text="返  回" android:layout_marginRight="40dp" android:layout_marginBottom="360dp"/>
+			  
+
+
+</RelativeLayout>
+
+

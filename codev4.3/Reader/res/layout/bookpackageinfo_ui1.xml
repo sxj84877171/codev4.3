@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white" android:id="@+id/mainblock">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:layout_marginBottom="15dp" android:layout_height="wrap_content"
+		android:background="@drawable/tab_bgimg_4_ui1"
+		>
+		<TextView style="@style/nav_textview" android:text="@string/editorRecommended"
+			android:id="@+id/catalogBtn01" android:nextFocusRight="@+id/catalogBtn02"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/categoryPart"
+			android:id="@+id/catalogBtn02" android:nextFocusRight="@+id/catalogBtn03"
+			android:nextFocusLeft="@+id/catalogBtn01"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/hotRanking"
+			android:id="@+id/catalogBtn03" android:nextFocusLeft="@+id/catalogBtn02"
+			android:nextFocusRight="@+id/catalogBtn04"></TextView>
+		<TextView android:text="@string/famousWork" android:id="@+id/catalogBtn04"
+		 android:nextFocusLeft="@+id/catalogBtn03"
+			android:nextFocusRight="@+id/catalogBtn05" style="@style/nav_textview"></TextView>
+		<TextView android:text="@string/highQualityPart"
+			android:id="@+id/catalogBtn05" android:nextFocusLeft="@+id/catalogBtn04"
+			android:nextFocusRight="@+id/catalogBtn06" style="@style/nav_textview"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn06"
+			android:nextFocusLeft="@+id/catalogBtn05" android:nextFocusDown="@+id/moreBtn"
+			android:text="包月书包"></TextView>
+	</LinearLayout><ImageView android:id="@+id/image" android:layout_below="@+id/LinearLayout01" android:src="@drawable/style2_default_bookpackage" android:layout_width="90dp" android:layout_height="120dp" android:layout_marginTop="4dp" android:layout_marginLeft="38dp"/>
+
+	
+
+	<RelativeLayout android:layout_height="wrap_content" android:layout_below="@+id/LinearLayout01" android:id="@+id/RelativeLayout01" android:layout_toRightOf="@+id/image" android:layout_marginLeft="30dp" android:layout_width="match_parent" android:layout_marginRight="30dp"><TextView android:id="@+id/title" android:layout_height="wrap_content" android:textAppearance="@style/bold.black.big" android:text="三元包月专区" android:layout_width="wrap_content" android:minWidth="150dp" android:layout_centerInParent="true"/></RelativeLayout><TextView android:id="@+id/details" android:layout_height="100px"
+		android:textAppearance="@style/normal.black.big" android:maxLines="4"
+		android:text="简介 5 元一本， 给什么来什说什么来说大家说好不好呢简介 5 元一本， 给什么来什么说什么来说大家说好不好呢"
+		android:layout_toRightOf="@+id/image" android:layout_marginTop="10dp" android:layout_width="410px" android:layout_marginLeft="30dp" android:layout_below="@+id/RelativeLayout01"/>
+
+	<Button android:id="@+id/subscribe" android:layout_height="wrap_content"
+		style="@style/button" android:layout_width="wrap_content" android:layout_alignParentRight="true"
+		android:focusable="true" android:nextFocusDown="@+id/more" android:text="我要订购" android:layout_marginRight="30dp" android:layout_below="@+id/image" android:layout_marginTop="10dp"/>
+
+	<TextView android:layout_height="wrap_content" android:text="本专区包含的书籍"
+		android:id="@+id/details1" android:layout_width="wrap_content"
+		android:minWidth="200dp" android:layout_marginLeft="30dp" android:layout_below="@+id/image" android:layout_marginTop="70dp" android:textAppearance="@style/bold.black.big"/><LinearLayout android:gravity="center_vertical"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginLeft="145dp"
+			android:focusable="true"
+			android:layout_alignParentRight="true"
+			android:id="@+id/more" android:nextFocusDown="@+id/primaryBtn01" android:layout_marginRight="20dp" android:layout_below="@+id/image" android:layout_marginTop="80dp">
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/icon_total_book_count"
+				android:layout_marginTop="1px" android:background="@drawable/booksummarymore"
+				android:duplicateParentState="true"></ImageView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_marginLeft="3px" android:id="@+id/more_recent_read_record"
+				android:text="更多" android:layout_marginTop="1dp" android:layout_width="wrap_content" android:textAppearance="@style/normal.black.common" android:minWidth="40dp"></TextView>
+
+		</LinearLayout>
+	
+	<ImageView android:id="@+id/View01" android:layout_below="@+id/more" android:layout_width="fill_parent"
+		android:layout_marginTop="5dp" android:layout_alignWithParentIfMissing="true" android:layout_marginRight="20dp" android:layout_marginLeft="20dp" android:background="@drawable/statusbar_bottom_ui1" android:layout_height="wrap_content"></ImageView>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_below="@+id/View01" android:layout_marginRight="20dp" android:id="@+id/primaryBtn01"
+		android:clickable="true" android:focusable="true"
+		android:nextFocusDown="@+id/primaryBtn02" android:nextFocusUp="@+id/more" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp">
+		<ImageView style="@style/border_img_list_76x58" android:id="@+id/image01" android:src="@drawable/default_bookcover_6080"/>
+		<TextView android:id="@+id/bookname01" android:layout_width="300px"
+			android:textAppearance="@style/normal.black.big" android:gravity="left|center"
+			android:layout_toRightOf="@+id/image01" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dp" />
+		<TextView android:id="@+id/author01" android:layout_height="83px"
+			android:layout_alignParentRight="true" android:layout_width="150dp" android:singleLine="true" android:gravity="right|center" android:textAppearance="@style/normal.black.common" android:paddingRight="10dp"/>
+		<Button android:layout_width="fill_parent"
+			android:nextFocusDown="@+id/primaryBtn02" android:nextFocusUp="@+id/subscribe"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/image01" android:layout_marginLeft="10dp"
+			android:id="@+id/imageUnderline" android:duplicateParentState="true" android:background="@drawable/listbackground_ui1" android:layout_height="3dp"/>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/primaryBtn02"
+		android:layout_width="fill_parent" android:layout_marginRight="20dp" android:layout_below="@+id/primaryBtn01" android:clickable="true"
+		android:focusable="true" android:nextFocusDown="@+id/primaryBtn03" android:nextFocusUp="@+id/primaryBtn01" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginTop="3dp">
+		<ImageView style="@style/border_img_list_76x58" android:id="@+id/image02" android:src="@drawable/default_bookcover_6080"/>
+		<TextView android:id="@+id/bookname02" android:layout_width="300px"
+			android:textAppearance="@style/normal.black.big" android:gravity="left|center"
+			android:layout_toRightOf="@+id/image02" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dp" />
+		<TextView android:id="@+id/author02" android:layout_height="83px"
+			android:layout_alignParentRight="true" android:layout_width="150dp" android:singleLine="true" android:gravity="right|center" android:textAppearance="@style/normal.black.common" android:paddingRight="10dp"/>
+		<Button android:id="@+id/imageUnderLine02"
+	android:layout_width="fill_parent" android:nextFocusDown="@+id/primaryBtn03"
+	android:nextFocusUp="@+id/primaryBtn01" android:layout_alignParentBottom="true" android:layout_toRightOf="@+id/image02"
+	android:layout_marginLeft="10dp" android:duplicateParentState="true" android:background="@drawable/listbackground_ui1" android:layout_height="3dp"/>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/primaryBtn03"
+		android:layout_width="fill_parent" android:layout_below="@+id/primaryBtn02"
+		android:layout_marginRight="20dp"
+		android:clickable="true"
+		android:focusable="true" android:nextFocusUp="@+id/primaryBtn02" android:nextFocusDown="@+id/primaryBtn04" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginTop="3dp">
+		<ImageView style="@style/border_img_list_76x58" android:id="@+id/image03" android:src="@drawable/default_bookcover_6080"/>
+		<TextView android:id="@+id/bookname03" android:layout_width="300px"
+			android:textAppearance="@style/normal.black.big" android:gravity="left|center"
+			android:layout_toRightOf="@+id/image03" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dp" />
+		<TextView android:id="@+id/author03" android:layout_height="83px"
+			android:layout_alignParentRight="true" android:layout_width="150dp" android:singleLine="true" android:gravity="right|center" android:textAppearance="@style/normal.black.common" android:paddingRight="10dp"/>
+		<Button android:id="@+id/imageUnderLine03"
+			android:layout_width="fill_parent" android:nextFocusDown="@+id/primaryBtn04"
+			android:nextFocusUp="@+id/primaryBtn02" android:layout_alignParentBottom="true" android:layout_toRightOf="@+id/image03"
+			android:layout_marginLeft="10dp" android:duplicateParentState="true" android:background="@drawable/listbackground_ui1" android:layout_height="3dp"/>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/primaryBtn04"
+		android:layout_width="fill_parent" android:layout_below="@+id/primaryBtn03"
+		android:layout_marginRight="20dp"
+		android:clickable="true"
+		android:focusable="true" android:nextFocusDown="@+id/primaryBtn05" android:nextFocusUp="@+id/primaryBtn03" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginTop="3dp">
+		<ImageView style="@style/border_img_list_76x58" android:id="@+id/image04" android:src="@drawable/default_bookcover_6080"/>
+		<TextView android:id="@+id/bookname04" android:layout_width="300px"
+			android:textAppearance="@style/normal.black.big" android:gravity="left|center"
+			android:layout_toRightOf="@+id/image04" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dp" />
+		<TextView android:id="@+id/author04" android:layout_height="83px"
+			android:layout_alignParentRight="true" android:layout_width="150dp" android:singleLine="true" android:gravity="right|center" android:textAppearance="@style/normal.black.common" android:paddingRight="10dp"/>
+		<Button android:id="@+id/imageUnderLine04"
+			android:layout_width="fill_parent" android:nextFocusDown="@+id/primaryBtn05"
+			android:nextFocusUp="@+id/primaryBtn03" android:layout_alignParentBottom="true" android:layout_toRightOf="@+id/image04"
+			android:layout_marginLeft="10dp" android:duplicateParentState="true" android:background="@drawable/listbackground_ui1" android:layout_height="3dp"/>
+	</RelativeLayout>
+	
+	
+	<RelativeLayout android:id="@+id/RelativeLayout08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_alignParentBottom="true" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp">
+		<EditText android:id="@+id/searchInput" android:layout_marginLeft="20dp" style="@style/search_edittext_ui1"></EditText>
+		<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Serach" android:id="@+id/searchButton" android:layout_alignParentRight="true" style="@style/search_button_ui1"></Button>
+	</RelativeLayout>
+
+
+</RelativeLayout>
+
+

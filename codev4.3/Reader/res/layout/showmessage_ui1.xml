@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/bg_popwin_ui1"
+	android:layout_width="450dp" android:layout_gravity="center"
+	android:padding="0dip" android:layout_height="wrap_content"
+	android:minHeight="400dp">
+
+	<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+		android:id="@+id/TextView02" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textAppearance="@style/bold.black.big"
+		android:layout_gravity="center_horizontal" android:textColor="@color/black"
+		android:layout_marginTop="10dp" android:text="查看消息 " />
+
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_marginLeft="50dp" android:layout_marginTop="30dp">
+		<TextView android:id="@+id/fromuserName"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:lines="1" android:textAppearance="@style/normal.black.small"
+			android:maxWidth="200dp" android:text="XXXX " android:minWidth="80dp" />
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="： "
+			android:textAppearance="@style/normal.black.small"></TextView>
+		<TextView android:id="@+id/time" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:text="2010-12-24 16:44" android:lines="1" android:minWidth="100dp"
+			android:textAppearance="@style/normal.black.small"></TextView>
+	</LinearLayout>
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="title" android:id="@+id/title"
+		android:lines="1" android:layout_marginLeft="60dp" android:minWidth="200dp"
+		android:maxWidth="300dp" android:layout_marginTop="10dp"
+		android:textAppearance="@style/normal.black.common" />
+
+	<TextView android:text="Loading..." android:scrollbars="vertical"
+		android:layout_width="360dp" android:layout_gravity="center_horizontal"
+		android:layout_marginLeft="30dp" android:layout_marginRight="30dp"
+		android:minWidth="360dp" android:layout_weight="1" android:id="@+id/messageContent"
+		android:layout_height="wrap_content" android:minHeight="100dp"
+		android:layout_marginTop="10dp" android:textAppearance="@style/normal.black.bigger" />
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_marginBottom="20dp">
+		<RelativeLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_marginTop="20dp">
+			<Button android:id="@+id/b_goto" android:text="进入书籍摘要页"
+				android:singleLine="true" android:layout_alignParentLeft="true" android:layout_marginLeft="50dp"
+				android:layout_gravity="center_horizontal" style="@style/button" />
+			<Button android:id="@+id/b_return" android:text="返 回 " android:layout_marginRight="50dp"
+				android:layout_alignParentRight="true" android:singleLine="true"
+				android:layout_gravity="center_horizontal" style="@style/button"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainblock" android:layout_weight="1"
+	android:background="@color/white" android:orientation="vertical">
+	<TextView android:id="@+id/showagreement_context"
+		android:textColor="@color/black" android:textSize="15px"
+		android:editable="false" android:paddingLeft="20px"
+		android:paddingRight="20px" android:paddingTop="20px"
+		android:layout_margin="6px" android:layout_width="590px"
+		android:layout_height="650px" android:focusable="true" />
+</LinearLayout>

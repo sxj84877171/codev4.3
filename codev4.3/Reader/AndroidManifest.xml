@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.pvi.ap.reader" android:sharedUserId="com.pvi.ap.reader"
+	android:versionCode="1">
+	<application android:name="com.pvi.ap.reader.activity.GlobalVar"
+		android:theme="@style/mytheme" android:icon="@drawable/icon"
+		android:label="@string/app_name">
+
+		<activity android:label="@string/app_name" android:name=".activity.MainpageActivity"
+			android:launchMode="singleTask" android:clearTaskOnLaunch="true"
+			android:screenOrientation="unspecified" android:stateNotNeeded="true"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.HOME" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MainpageInsideActivity"
+			android:screenOrientation="sensor" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MainpageInsideActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.reading" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.reading" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.reginfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.reginfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.bookinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.bookinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.optloginfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.optloginfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.userinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.userinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.notesinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.notesinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.commentsinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.commentsinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.favorites" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.favorites" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.apinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.apinfo" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.hintinto" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.hintinto" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.bookmark" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.bookmark" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.subscribe" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.subscribe" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.monthlypayment" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.monthlypayment" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.pvi.LocalBook" />
+			</intent-filter>
+			<intent-filter>
+				<data android:mimeType="vnd.android.cursor.item/vnd.pvi.LocalBook" />
+			</intent-filter>
+		</activity>
+
+		<!--
+			<activity android:name=".activity.BackgroundMusicActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name"> <intent-filter> <action
+			android:name="com.pvi.ap.reader.activity.BackgroundMusicActivity" />
+			<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> </activity> <activity
+			android:name=".activity.AssociatedBookListActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name"> <intent-filter> <action
+			android:name="com.pvi.ap.reader.activity.AssociatedBookListActivity"
+			/> <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> </activity>
+		-->
+		<activity android:name=".activity.MyTicketInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyTicketInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyFriendListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyFriendListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessStoreActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessStoreActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessTabActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessTabActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessRankActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessRankActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyMusicActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyMusicActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyImageActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyImageActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<!--
+			<activity android:name=".activity.BookCoverActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name"> <intent-filter> <action
+			android:name="com.pvi.ap.reader.activity.BookCoverActivity" />
+			<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> </activity>
+		-->
+
+		<activity android:name=".activity.MebPicActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MebPicActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.LocalBookListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.LocalBookListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.LocalBookActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.LocalBookActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ReadingOnlineActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ReadingOnlineActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.BookSummaryActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.BookSummaryActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ModifyUserInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ModifyUserInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyBookMarkActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyBookMarkActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyBookshelfActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyBookshelfActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyDocumentActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyDocumentActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyDownloadsActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyDownloadsActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyFavoriteActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyFavoriteActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyMonthlyPaymentActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyMonthlyPaymentActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MySubscribesActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MySubscribesActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.PDFReadActivity" android:launchMode="singleTask"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.PDFReadActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.RecentBookActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RecentBookActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SubscribeProcess"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SubscribeProcess" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.UserInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.UserInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.FascicleListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.FascicleListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessStoreActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessStoreActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.BookPackageInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.BookPackageInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WriterActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WriterActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.UserCenterActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.UserCenterActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ExpenseProActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ExpenseProActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.TicketListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.TicketListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.PresentListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.PresentListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.UnsubscribeActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.UnsubscribeActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SerialSubscribeActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SerialSubscribeActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.InfoContentActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.InfoContentActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyAnnotationActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyAnnotationActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MyNoteActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MyNoteActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ShowNoteTextActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowNoteTextActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessStoreWelcomeActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessStoreWelcomeActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.BookCatalogActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.BookCatalogActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.MebViewFileActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MebViewFileActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.TxtReaderActivity"
+			android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.TxtReaderActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessStoreActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessStoreActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WirelessStoreMainpageActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WirelessStoreMainpageActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ResCenterActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ResCenterActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.CommentsListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.CommentsListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ShowCommentActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowCommentActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.MessageCenterActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.MessageCenterActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ShowMessageActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowMessageActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ShowWriterDetailActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowWriterDetailActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ListFileActivity"
+			android:screenOrientation="portrait" android:label="@string/swich_code">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ListFileActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.RankingActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RankingActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SystemConfigActivity"
+			android:screenOrientation="landscape" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SystemConfigActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WelcomeSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WelcomeSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.NetSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.NetSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.RefreshSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RefreshSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.RotatingActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RotatingActivity"
+					android:screenOrientation="portrait" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.LanguageSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.LanguageSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SoundSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SoundSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SkinSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SkinSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.TimeSetActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.TimeSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.StartUpActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.StartUpActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.StandbyActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.StandbyActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.RecoveryFactoryActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RecoveryFactoryActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ShowAgreementActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowAgreementActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.StorageStatActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.StorageStatActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ConfigHandsetInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ConfigHandsetInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SubscribeRemindActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.SubscribeRemindActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.NotifyStyleActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.NotifyStyleActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ShowInfoActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowInfoActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ShowPicActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.ShowPicActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.BookSearchActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.BookSearchActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.BookListActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.BookListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.CatalogHomepageActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.CatalogHomepageActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.RecommendToFriend"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.RecommendToFriend" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.PresentToFriend"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.PresentToFriend" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.WelcomeSetActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.pvi.ap.reader.activity.WelcomeSetActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ScreenSaveActivity"
+			android:screenOrientation="portrait" android:label="@string/app_name">
+		</activity>
+
+	</application>
+	<supports-screens android:smallScreens="false"
+		android:normalScreens="false" android:largeScreens="true"
+		android:anyDensity="false" />
+	<uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.DELETE_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.FACTORY_TEST"></uses-permission>
+	<uses-permission android:name="android.permission.REBOOT"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.SET_TIME_ZONE"></uses-permission>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+	<uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

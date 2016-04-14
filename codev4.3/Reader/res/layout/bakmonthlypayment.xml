@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/white" android:layout_x="0px"
+	android:layout_y="0px" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_x="10px" android:layout_y="10px" 
+		android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginRight="10px" android:layout_marginTop="5px"
+			android:layout_height="160px" android:orientation="horizontal">
+			<ImageView android:layout_width="160px" android:layout_height="fill_parent" android:id="@+id/image"></ImageView>
+			<LinearLayout android:orientation="vertical"
+				android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+				<LinearLayout android:orientation="horizontal"
+					android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40px">
+					<TextView android:layout_width="400px"
+						android:gravity="left" android:textColor="@color/black"
+						android:layout_height="fill_parent" android:text="书包名称" android:id="@+id/title"></TextView>
+					
+				</LinearLayout>
+
+				<LinearLayout android:orientation="horizontal"
+					android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="80px">
+					<TextView android:gravity="left"
+						android:textColor="@color/black" android:layout_height="fill_parent" android:text="简介：正在获取..." android:layout_width="fill_parent" android:id="@+id/details"></TextView>
+			
+				</LinearLayout>
+
+			</LinearLayout>
+		</LinearLayout>
+
+		
+
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center_horizontal" android:layout_width="fill_parent"
+			android:layout_height="40px">
+			
+			<Button android:layout_width="90px"
+				android:layout_marginLeft="15px" android:gravity="center"
+				android:layout_height="fill_parent" android:text="我要订购" android:id="@+id/subscribe" android:background="@drawable/tab_indicator"></Button>
+			
+			
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_marginTop="10px" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<TextView android:layout_height="25px"
+				android:textColor="@color/black" android:textSize="20px" android:layout_width="fill_parent" android:text="【本专区包含的书籍】"></TextView>
+			
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_marginTop="10px" android:layout_width="fill_parent" android:layout_height="200px">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="300px" android:layout_height="fill_parent">
+				<TextView android:layout_width="fill_parent"
+					android:text="书名一" android:layout_height="30px" android:textColor="@color/black" android:id="@+id/bookname01"></TextView>
+				<TextView android:layout_width="fill_parent"
+					android:text="书名二" android:layout_height="30px" android:textColor="@color/black" android:id="@+id/bookname02"></TextView>
+				<TextView android:layout_width="fill_parent"
+					android:text="书名三" android:layout_height="30px" android:textColor="@color/black" android:id="@+id/bookname03"></TextView>
+				<TextView android:layout_width="fill_parent"
+					android:text="书名四" android:layout_height="30px" android:textColor="@color/black" android:id="@+id/bookname04"></TextView>
+				<TextView android:layout_width="fill_parent"
+					android:text="书名五" android:layout_height="30px" android:textColor="@color/black" android:id="@+id/bookname05"></TextView>
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="300px" android:layout_height="fill_parent">
+				<TextView android:id="@+id/author01" android:layout_width="fill_parent"
+					android:text="作者" android:layout_height="30px" android:textColor="@color/black" android:textSize="12px"></TextView>
+				<TextView android:id="@+id/author02" android:layout_width="fill_parent"
+					android:text="作者" android:layout_height="30px" android:textColor="@color/black" android:textSize="12px"></TextView>
+				<TextView android:id="@+id/author03" android:layout_width="fill_parent"
+					android:text="作者" android:layout_height="30px" android:textColor="@color/black" android:textSize="12px"></TextView>
+				<TextView android:id="@+id/author04" android:layout_width="fill_parent"
+					android:text="作者" android:layout_height="30px" android:textColor="@color/black" android:textSize="12px"></TextView>
+				<TextView android:id="@+id/author05" android:layout_width="fill_parent"
+					android:text="作者" android:layout_height="30px" android:textColor="@color/black" android:textSize="12px"></TextView>
+			</LinearLayout>
+
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_marginLeft="5px"
+			android:layout_marginTop="10px" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			
+			<TextView android:layout_width="fill_parent"
+				android:textColor="@color/black" android:layout_height="wrap_content" android:textSize="20px"
+				android:gravity="center" android:text="更多&gt;&gt;" android:id="@+id/more"></TextView>
+		</LinearLayout>
+		
+	</LinearLayout>
+
+<AbsoluteLayout
+	android:id="@+id/mp_menu" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="465px"
+	android:background="@color/white"
+	android:visibility="invisible"
+	android:layout_y="547px">
+
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/mp_menu_textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="我的订购"
+			android:textSize="10pt"
+			android:textColor="@color/black"
+			android:nextFocusLeft="@+id/mp_menu_textview6"
+			android:nextFocusUp="@+id/mp_menu_textview6"
+			android:nextFocusRight="@+id/fp_menu_textview2"
+			android:nextFocusDown="@+id/fp_menu_textview2"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/mp_menu_line1"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			android:visibility="invisible">
+			</ImageView>
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/mp_menu_textview2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="我的书架"
+			android:textSize="10pt"
+			android:textColor="@color/black"
+			android:nextFocusLeft="@+id/mp_menu_textview1"
+			android:nextFocusUp="@+id/mp_menu_textview1"
+			android:nextFocusRight="@+id/mp_menu_textview3"
+			android:nextFocusDown="@+id/mp_menu_textview3" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/mp_menu_line2"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			android:visibility="invisible">
+			</ImageView>
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/mp_menu_textview3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="个人空间"
+			android:textSize="10pt"
+			android:textColor="@color/black"
+			android:nextFocusLeft="@+id/mp_menu_textview2"
+			android:nextFocusUp="@+id/mp_menu_textview2"
+			android:nextFocusRight="@+id/mp_menu_textview4"
+			android:nextFocusDown="@+id/mp_menu_textview4" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/mp_menu_line3"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			android:visibility="invisible">
+			</ImageView>
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/mp_menu_textview4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="打开背景音乐"
+			android:textSize="10pt"
+			android:textColor="@color/black"
+			android:nextFocusLeft="@+id/mp_menu_textview3"
+			android:nextFocusUp="@+id/mp_menu_textview3"
+			android:nextFocusRight="@+id/mp_menu_textview5"
+			android:nextFocusDown="@+id/mp_menu_textview5" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/mp_menu_line4"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			android:visibility="invisible">
+			</ImageView>
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/mp_menu_textview5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="搜索"
+			android:textSize="10pt"
+			android:textColor="@color/black"
+			android:nextFocusLeft="@+id/mp_menu_textview4"
+			android:nextFocusUp="@+id/mp_menu_textview4"
+			android:nextFocusRight="@+id/mp_menu_textview6"
+			android:nextFocusDown="@+id/mp_menu_textview6" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/mp_menu_line5"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			android:visibility="invisible">
+			</ImageView>
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView android:id="@+id/mp_menu_textview6"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="返回上一级" android:textSize="10pt"
+				android:textColor="@color/black" android:nextFocusLeft="@+id/mp_menu_textview5"
+				android:nextFocusUp="@+id/mp_menu_textview5" android:nextFocusRight="@+id/mp_menu_textview1"
+				android:nextFocusDown="@+id/mp_menu_textview1" android:clickable="true"
+				android:focusable="true" android:gravity="center_horizontal">
+			</TextView>
+			<ImageView android:id="@+id/mp_menu_line6"
+				android:layout_height="2px" android:layout_width="fill_parent"
+				android:src="@drawable/line6002" android:scaleType="fitXY"
+				android:visibility="invisible">
+			</ImageView>
+			<ImageView android:layout_height="2px"
+				android:layout_width="fill_parent" android:src="@drawable/line6002"
+				android:scaleType="fitXY">
+			</ImageView>	
+		</LinearLayout>
+			
+		<ImageView 
+		android:layout_height="203px" 
+		android:layout_width="2px" 
+		android:src="@drawable/line2800"
+		android:scaleType="fitXY"
+		android:layout_x="0px"
+		android:layout_y="2px">
+		</ImageView>
+		<ImageView 
+		android:layout_height="203px" 
+		android:layout_width="2px" 
+		android:src="@drawable/line2800"
+		android:scaleType="fitXY"
+		android:layout_x="132px"
+		android:layout_y="2px">
+		</ImageView>
+		
+		
+	</AbsoluteLayout>
+
+ 	<AbsoluteLayout android:layout_width="fill_parent"
+		android:layout_height="1dp" android:layout_y="750dp">
+	<ImageView 
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6004n"
+			android:scaleType="fitXY">
+	</ImageView>
+	</AbsoluteLayout>
+	
+	<AbsoluteLayout android:layout_width="fill_parent"
+		android:layout_height="68dp" android:layout_x="490dp" android:layout_y="755dp">
+
+
+			<TextView android:textColor="@color/black" android:text="菜 单"
+			android:layout_width="110dp" android:id="@+id/menubtn"
+			 android:layout_height="40dp" 
+			 android:layout_gravity="right" 
+			 android:textSize="18dp" android:background="@drawable/button_bg" 
+			 android:gravity="center"/>
+
+	</AbsoluteLayout>
+
+</AbsoluteLayout>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	 android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/white"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName1" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment1" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName2" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment2" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName3" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment3" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName4" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment4" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName5" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment5" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName6" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment6" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName7" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment7" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName8" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment8" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName9" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment9" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<ImageView 
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	<TextView 
+	        android:id="@+id/mycomment_bookName10" 
+	        android:textSize="12pt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			>
+	</TextView>
+	<TextView 
+	         android:id="@+id/mycomment_comment10" 
+		    android:layout_width="fill_parent"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content"
+			>
+			
+	</TextView>
+						
+	<ImageView 
+			android:layout_marginBottom="0px"
+			android:layout_gravity="center"
+			android:layout_height="1px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/linen"
+			android:scaleType="fitXY"
+			android:visibility="visible"
+			>
+	</ImageView>
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	>
+	<Button android:id="@+id/firstpage" 
+			android:text="首页"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" >
+	</Button>
+	<Button android:id="@+id/nextpage" 
+			android:text="下一页"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" >
+	</Button>
+	<Button android:id="@+id/prepage" 
+			android:text="上一页"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" >
+	</Button>
+	<Button android:id="@+id/lastpage" 
+			android:text="尾页"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" >
+	</Button>
+
+	<TextView 
+			android:id="@+id/totalpage" 
+		    android:layout_width="wrap_content"
+			android:textColor="@color/black"
+			android:text="5" 
+			android:layout_height="wrap_content"
+			>
+	</TextView>
+
+	<TextView 
+		    android:layout_width="wrap_content"
+			android:textColor="@color/black"
+			android:text="跳转到第" 
+			android:layout_height="wrap_content"
+			>
+	</TextView>
+	<EditText android:longClickable="false" android:id="@+id/gotopage" 
+			  android:layout_width="60px"
+			  android:layout_height="wrap_content"
+	>
+	</EditText>
+	<TextView 
+		    android:layout_width="wrap_content"
+			android:textColor="@color/black"
+			android:text="页" 
+			android:layout_height="wrap_content"
+			>		
+	</TextView>	
+	<Button android:id="@+id/gotopagemakesure" 
+			android:text="确定"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" >
+	</Button>
+	</LinearLayout>
+						
+</LinearLayout>

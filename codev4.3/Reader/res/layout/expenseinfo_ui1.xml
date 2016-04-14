@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	 android:orientation="vertical" 
+	 android:gravity="center_horizontal"
+	android:id="@+id/mainblock"
+	 android:background="@color/white">
+	
+	<RelativeLayout android:layout_width="fill_parent"   
+	android:layout_height="fill_parent">
+	<TextView android:text="消费详情" 
+			  android:id="@+id/s1"
+			  android:gravity="center"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_marginTop="10dp">
+	</TextView>
+	
+	<ImageView 
+		android:layout_width="500dp" 
+		android:layout_centerHorizontal="true"
+		android:id="@+id/s2"
+		android:layout_below="@id/s1"
+		android:layout_height="wrap_content"
+		 android:background="@drawable/line1"
+		  android:layout_marginTop="10dp">
+	</ImageView>
+	
+	
+	<TextView android:text="网游之近战法师" 
+			android:layout_marginTop="10px"
+			 android:id="@+id/description"
+			android:layout_below="@id/s2"
+			  android:layout_gravity="left"
+			  android:layout_marginLeft="150px"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+	</TextView>
+	<LinearLayout android:layout_width="fill_parent" 
+	android:layout_marginTop="10px"
+	android:id="@+id/s3"
+	android:layout_below="@id/description"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" 
+	>
+	 	<TextView android:text="消费类型：" 
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_marginLeft="150px"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="赠送（给13812345678）" 
+			  android:id="@+id/type"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+	 	
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" 
+	android:layout_marginTop="10px"
+	android:layout_height="wrap_content"
+	android:id="@+id/s4"
+	android:layout_below="@id/s3"
+	android:orientation="horizontal" 
+	>
+	 	<TextView android:text="消费时间：" 
+	 	android:layout_marginLeft="150px"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="2009-04-01" 
+		    	android:id="@+id/date"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+	 	
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" 
+	android:layout_marginTop="10px"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" 
+	android:id="@+id/s5"
+	android:layout_below="@id/s4"
+	>
+	 	<TextView android:text="价格：" 
+	 		  android:layout_marginLeft="150px"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+		<TextView android:text="2.40元（书券2.40元）" 
+				android:id="@+id/price"
+			  android:textColor="@color/black"
+			  style="@style/normal.black.big"
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content">
+		</TextView>
+	 	
+	</LinearLayout>
+	
+	
+	<Button android:text="返回" 
+			android:layout_marginTop="10px"
+			  android:id="@+id/returnB"
+			  android:layout_centerHorizontal="true"
+			  android:layout_below="@id/s5"
+			  android:textColor="@color/black"
+			  style="@style/button_ui1">
+	</Button>
+	
+	<LinearLayout android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	>
+		<include layout="@layout/footer"></include>
+	</LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

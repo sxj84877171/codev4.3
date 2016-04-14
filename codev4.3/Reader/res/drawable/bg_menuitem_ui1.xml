@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/bg_menuitem_focus_ui1" />
+    <item android:state_focused="true" android:drawable="@drawable/bg_menuitem_focus_ui1" />
+    <item android:drawable="@drawable/bg_menuitem_normal_ui1" />
+</selector>

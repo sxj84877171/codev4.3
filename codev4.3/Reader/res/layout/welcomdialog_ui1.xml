@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:id="@+id/relativeLayout01"
+	android:paddingBottom="20dp" android:layout_width="402dp"
+	android:paddingLeft="0dp" android:layout_margin="0dp"
+	android:paddingRight="0dp" android:paddingTop="2dp"
+	android:layout_gravity="center">
+	<com.pvi.ap.reader.activity.welcome_view
+		android:layout_gravity="center" android:id="@+id/welcomeview"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+	</com.pvi.ap.reader.activity.welcome_view>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white" android:id="@+id/mainblock">
+	
+	
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:id="@+id/nonote"
+		android:focusable="true" android:visibility="invisible">
+		<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/nonotemessage"
+				android:layout_marginLeft="20px"  android:textAppearance="@style/normal.black.big"
+				android:layout_marginTop="20px"
+				android:text="没有相关便签记录"></TextView>
+		</RelativeLayout>
+		<com.pvi.ap.reader.activity.pviappframe.PviDataList
+				android:focusableInTouchMode="true" android:layout_height="581dp"
+				android:id="@+id/list" android:layout_width="550dp"
+				android:background="#fff" android:focusable="true"
+				android:layout_marginLeft="20dp" pvi:lineHeight="83"></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+
+		
+
+
+<RelativeLayout android:layout_alignParentBottom="true" android:layout_marginBottom ="21px"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:gravity="right"
+		android:layout_width="fill_parent">
+		
+		<TextView android:text="全  选" style="@style/button"
+			android:layout_marginRight="20dp" android:gravity="center" 
+			android:id="@+id/allchooseButton" android:focusable="true" android:nextFocusDown="@+id/viewButton"></TextView>
+		
+		<TextView android:text="查  看" style="@style/button"
+			android:layout_marginRight="20dp" android:gravity="center" android:nextFocusUp="@+id/allchooseButton"
+			android:id="@+id/viewButton" android:focusable="true" android:nextFocusDown="@+id/addButton"></TextView>
+		
+		<TextView android:text="添  加" style="@style/button" android:nextFocusUp="@+id/viewButton"
+			android:layout_marginRight="20dp" android:gravity="center"
+			android:id="@+id/addButton" android:focusable="true" android:nextFocusDown="@+id/deleteButton"></TextView>
+	<TextView android:text="删  除" android:layout_marginRight="21dp"
+		style="@style/button" android:gravity="center" android:id="@+id/deleteButton"
+		android:focusable="true" android:nextFocusUp="@+id/addButton"></TextView>
+	</LinearLayout>
+	</RelativeLayout>
+	
+
+
+</RelativeLayout>
+
+
+

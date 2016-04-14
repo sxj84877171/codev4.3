@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<ImageView android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:id="@+id/imagefriend"/>	
+	<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	
+		<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+			android:text="昵    称"
+			android:layout_height="wrap_content"/>
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+			android:text="年   龄"
+			android:layout_height="wrap_content"/>
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+			android:text="性   别"
+			android:layout_height="wrap_content"/>
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+			android:text="所在地"
+			android:layout_height="wrap_content"/>
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+			android:text="个性签名"
+			android:layout_height="wrap_content"/>
+			<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+	
+	</LinearLayout>
+</LinearLayout>

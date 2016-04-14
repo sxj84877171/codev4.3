@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    <AbsoluteLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	>
+	
+	 <ImageView 
+			android:id="@+id/fp_cover_img"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" 
+			
+			/>
+	 </AbsoluteLayout>
+		 <!-- 页码 -->
+	<!-- 	<AbsoluteLayout
+	android:layout_width="fill_parent"
+	android:layout_height="50px"
+	android:layout_x="0px"
+	android:layout_y="700px"
+	android:background="#000000"
+	>-->
+	
+		
+		<!-- 	
+		<TextView android:id="@+id/text_menuView02"
+		          android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      android:text="菜单"
+			      android:textSize="10pt"
+			      android:textColor="#ffffff"
+			      android:gravity="left"
+			      android:layout_x="550px"
+			      android:layout_y="0px"
+		           />
+		-->
+		
+		<!-- 菜单 -->
+<!--	<AbsoluteLayout
+	android:id="@+id/fp_menu" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="465px"
+	android:layout_y="495px"
+	android:background="#ffffff"
+	android:visibility="invisible"
+	>
+
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+			<ImageView 
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY">
+			</ImageView>
+			<TextView
+			android:id="@+id/fp_menu_text1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu1"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text6"
+			android:nextFocusUp="@+id/fp_menu_text6"
+			android:nextFocusRight="@+id/fp_menu_text2"
+			android:nextFocusDown="@+id/fp_menu_text2"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line1"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			
+			<TextView
+			android:id="@+id/fp_menu_text2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu2"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text1"
+			android:nextFocusUp="@+id/fp_menu_text1"
+			android:nextFocusRight="@+id/fp_menu_text3"
+			android:nextFocusDown="@+id/fp_menu_text3" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line2"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			
+			<TextView
+			android:id="@+id/fp_menu_text3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu3"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text2"
+			android:nextFocusUp="@+id/fp_menu_text2"
+			android:nextFocusRight="@+id/fp_menu_text4"
+			android:nextFocusDown="@+id/fp_menu_text4" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line3"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			
+			<TextView
+			android:id="@+id/fp_menu_text4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu4"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text3"
+			android:nextFocusUp="@+id/fp_menu_text3"
+			android:nextFocusRight="@+id/fp_menu_text5"
+			android:nextFocusDown="@+id/fp_menu_text5" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line4"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			
+			<TextView
+			android:id="@+id/fp_menu_text5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu5"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text4"
+			android:nextFocusUp="@+id/fp_menu_text4"
+			android:nextFocusRight="@+id/fp_menu_text6"
+			android:nextFocusDown="@+id/fp_menu_text6" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line5"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			
+			<TextView
+			android:id="@+id/fp_menu_text6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/menu6"
+			android:textSize="10pt"
+			android:textColor="#000000"
+			android:nextFocusLeft="@+id/fp_menu_text5"
+			android:nextFocusUp="@+id/fp_menu_text5"
+			android:nextFocusRight="@+id/fp_menu_text1"
+			android:nextFocusDown="@+id/fp_menu_text1" 
+			android:clickable="true" 
+			android:focusable="true"
+			android:gravity="center_horizontal">
+			</TextView>
+			<ImageView 
+			android:id="@+id/fp_menu_line6"
+			android:layout_height="2px" 
+			android:layout_width="fill_parent" 
+			android:src="@drawable/line6002"
+			android:scaleType="fitXY"
+			>
+			</ImageView>
+			 
+			
+		</LinearLayout>
+			
+			
+			
+		<ImageView 
+		android:layout_height="202px" 
+		android:layout_width="2px" 
+		android:src="@drawable/line2800"
+		android:scaleType="fitXY"
+		android:layout_x="0px"
+		android:layout_y="2px">
+		</ImageView>
+		<ImageView 
+		android:layout_height="202px" 
+		android:layout_width="2px" 
+		android:src="@drawable/line2800"
+		android:scaleType="fitXY"
+		android:layout_x="132px"
+		android:layout_y="2px">
+		</ImageView>
+
+	</AbsoluteLayout> -->
+	
+	
+</AbsoluteLayout>

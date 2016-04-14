@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_window_focused="false" android:state_focused="false"
+		android:drawable="@drawable/list_unfocus260090_ui1" />
+	<item android:state_window_focused="false" android:state_focused="true"
+		android:drawable="@drawable/list_focus60090_ui1" />
+	<item android:state_pressed="true" android:drawable="@drawable/list_focus60090_ui1" />
+	<item android:state_focused="true" android:drawable="@drawable/list_focus60090_ui1" />
+</selector> 
+
+
+

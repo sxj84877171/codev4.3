@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView android:text="名称:(限30)"
+    		  android:layout_marginLeft="20dip"
+       		  android:layout_marginRight="20dip"
+    		  android:layout_height="wrap_content"
+       		  android:layout_width="fill_parent"
+        />
+    <EditText android:longClickable="false"
+        android:id="@+id/noteName"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:inputType="textMultiLine" android:capitalize="words" android:editable="true" android:maxLength="30" android:singleLine="false" android:layout_width="fill_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:scrollHorizontally="false"/>
+    
+     <TextView android:text="内容:（限200）"
+     		  android:layout_marginLeft="20dip"
+        	  android:layout_marginRight="20dip"
+    		  android:layout_height="wrap_content"
+       		  android:layout_width="fill_parent"
+        />   
+    <EditText android:longClickable="false"
+        android:id="@+id/noteText"
+        android:layout_height="150px"
+        android:layout_width="fill_parent"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:width="100dp" android:maxLength="200" android:capitalize="words" android:editable="true" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:singleLine="false" android:inputType="textMultiLine" android:scrollHorizontally="false" android:lines="15"/>
+      
+</LinearLayout>

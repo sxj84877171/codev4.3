@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:id="@+id/relativeLayout01"
+	android:background="@drawable/bg_popwin_ui1" android:paddingBottom="30dp"
+	android:layout_width="402dp" android:layout_margin="0dp"
+	android:paddingLeft="0dp" android:paddingRight="0dp"
+	android:paddingTop="0dp" android:layout_gravity="center">
+
+	<RelativeLayout android:layout_width="460dp" android:id="@+id/main"
+		android:paddingTop="2dp" android:layout_height="wrap_content">
+		<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+			android:id="@+id/TextView03" android:layout_width="wrap_content"
+			android:layout_height="30dp" android:text="图书评论 "
+			android:textAppearance="@style/bold.black.big" android:paddingTop="2dp"
+			android:layout_centerInParent="true" />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="10dp"
+			android:id="@+id/b_return" android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true" android:background="@drawable/bg_button_close_dialog"></Button>
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/LinearLayout02"
+		android:layout_below="@+id/main" android:layout_height="wrap_content"
+		android:paddingLeft="20px" android:layout_marginTop="30dp"
+		android:paddingRight="20dp" android:layout_width="400dp">
+		<TextView android:text="楼层" android:id="@+id/floor"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="19sp" android:gravity="center" android:lines="1"
+			android:textAppearance="@style/normal.black.common"></TextView>
+		<TextView android:text="fromuser" android:id="@+id/fromuser"
+			android:textSize="19sp" android:layout_toRightOf="@+id/floor"
+			android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:lines="1" android:textAppearance="@style/normal.black.common"></TextView>
+		<TextView android:text="time" android:id="@+id/time"
+			android:textSize="19sp" android:layout_marginLeft="15dp"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/fromuser"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:lines="1" android:textAppearance="@style/normal.black.common"></TextView>
+	</RelativeLayout>
+
+
+	<TextView android:text="Loading..." android:id="@+id/content"
+		android:layout_below="@+id/LinearLayout02" android:layout_marginTop="30dp"
+		android:gravity="top|left" android:layout_height="wrap_content"
+		android:paddingLeft="20dp" android:paddingRight="20dp"
+		android:maxLines="10" android:textAppearance="@style/normal.black.big"
+		android:minLines="4" android:layout_width="400dp" android:visibility="visible"></TextView>
+
+	<RelativeLayout android:id="@+id/LinearLayout03"
+		android:layout_below="@+id/content" android:paddingBottom="20dp"
+		android:gravity="center" android:layout_height="wrap_content"
+		android:layout_marginTop="30dp" android:layout_width="400dp">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:focusable="true" android:clickable="true" android:id="@+id/uplayout"
+			android:layout_height="wrap_content">
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+				android:text="顶" android:id="@+id/upbtn" style="@style/button"
+				android:minWidth="75dp" android:maxWidth="150dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:duplicateParentState="true"
+				android:lines="1" />
+			<!--
+				<ImageView android:layout_below="@+id/upbtn"
+				android:visibility="gone" android:duplicateParentState="true"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bookdescripyion"
+				android:layout_width="65dp"></ImageView>
+			-->
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/uplayout" android:focusable="true"
+			android:clickable="true" android:id="@+id/downlayout"
+			android:layout_marginLeft="40dp" android:layout_height="wrap_content">
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+				android:text="驳" android:id="@+id/downbtn" style="@style/button"
+				android:layout_width="wrap_content" android:minWidth="75dp"
+				android:maxWidth="150dp" android:layout_height="wrap_content"
+				android:duplicateParentState="true" android:gravity="center"
+				android:lines="1" />
+			<!--
+				<ImageView android:layout_below="@+id/downbtn"
+				android:visibility="gone" android:duplicateParentState="true"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bookdescripyion"
+				android:focusable="true" android:clickable="true"
+				android:layout_width="65dp"></ImageView>
+			-->
+		</RelativeLayout>
+
+	</RelativeLayout>
+</RelativeLayout>

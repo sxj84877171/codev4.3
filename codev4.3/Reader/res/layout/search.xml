@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:orientation="vertical" android:layout_height="wrap_content">
+	<AbsoluteLayout android:background="@color/white"
+		android:layout_width="400px" 
+		android:layout_x="100px" android:layout_y="100px" android:orientation="vertical"
+		android:layout_height="200px">
+		<TextView android:text="搜索  " android:layout_width="240px" android:visibility="gone"
+			android:gravity="center" android:id="@+id/rename" android:textColor="@color/black"
+			android:textSize="20px" android:layout_x="50px" android:layout_y="10px"
+			android:layout_marginLeft="30px" android:layout_height="45px"></TextView>
+		<TextView android:layout_width="wrap_content" 
+	                  android:text="输入条件: (限15个字符,不输入条件就搜索全部)"
+				      android:gravity="center" 
+				     
+				      android:layout_height="wrap_content"
+				      android:layout_x="50px" android:layout_y="50px"
+				      android:textAppearance="@style/bold.black.small"
+				      >
+				      </TextView>
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center_vertical" android:layout_x="50px"
+			android:layout_y="75px" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<EditText android:longClickable="false" android:layout_width="220dp"
+			          android:layout_height="wrap_content" 
+				      android:id="@+id/keyword" 
+				      android:textColor="@color/black"
+				      android:background="@drawable/local_search"
+				      android:maxLength="15" android:text=""
+				      android:singleLine="true"
+				      >
+		    </EditText>
+		    <Button android:layout_width="80px" android:layout_height="32dp" style="@style/search_button_ui1"
+				android:layout_marginLeft="15px" android:id="@+id/searchbtn"
+				android:text="搜  索 " android:gravity="center"></Button>
+		   
+		    
+			
+		</LinearLayout>
+		 <TextView android:layout_x="50px" android:layout_y="80px" android:visibility="gone"
+			android:id="@+id/hint" android:textColor="@color/black"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		<!-- 
+		
+		 -->
+		
+	</AbsoluteLayout>
+</LinearLayout>

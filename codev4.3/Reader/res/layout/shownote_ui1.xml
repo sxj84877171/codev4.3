@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@color/white" android:id="@+id/mainblock"
+	android:layout_width="fill_parent">
+
+
+
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:background="@drawable/tab_bgimg_3_ui1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn01" android:nextFocusRight="@+id/catalogBtn02" android:text="@string/mydoc_str"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn02" android:nextFocusRight="@+id/catalogBtn03"
+			android:nextFocusLeft="@+id/catalogBtn01" android:text="@string/mymusic_str"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn03" android:nextFocusLeft="@+id/catalogBtn02"
+			android:nextFocusRight="@+id/catalogBtn04" android:text="@string/mypic_str"></TextView>
+		<TextView style="@style/nav_textview"
+			android:id="@+id/catalogBtn04" android:nextFocusLeft="@+id/catalogBtn03"
+			android:nextFocusRight="@+id/catalogBtn05" android:text="@string/mynote_str"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn05" android:nextFocusLeft="@+id/catalogBtn04"
+			android:nextFocusRight="@+id/catalogBtn06" android:text="@string/localbook_str"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn06" android:nextFocusLeft="@+id/catalogBtn05"
+			android:nextFocusDown="@+id/moreBtn" android:text="我的批注"></TextView>
+
+
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout02"
+		android:layout_below="@+id/LinearLayout01" android:layout_width="fill_parent"
+		android:layout_marginTop="2dp" 
+		android:padding="0dp" android:layout_height="wrap_content">
+		<RelativeLayout android:id="@+id/RelativeLayout03"
+	android:layout_below="@+id/notetext_button1"
+	android:layout_marginRight="5dp" android:layout_marginLeft="10dp"
+	android:padding="10dp" android:layout_alignParentTop="true"
+	android:layout_width="fill_parent" android:layout_marginTop="10dp"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/titleTip" android:textAppearance="@style/normal.black.big"
+		android:layout_width="fill_parent" android:layout_height="30dp"
+		android:gravity="center_horizontal" android:text="标题（小于20个字符）"></TextView>
+	<EditText android:longClickable="false" android:id="@+id/title" android:gravity="center"
+		android:background="@color/white" android:textColor="@color/black"
+		android:textAppearance="@style/normal.black.big" android:maxLines="1"
+		android:layout_width="fill_parent" android:editable="true" android:focusable="true" android:nextFocusUp="@+id/catalogBtn04" 
+		android:enabled="false" android:padding="0dp" android:layout_height="60dp"
+		android:layout_below="@+id/titleTip" android:maxLength="20">
+	</EditText>
+	  <ImageView android:layout_height="wrap_content" android:id="@+id/ImageView01" android:visibility="invisible"
+		android:layout_width="fill_parent" android:background="@drawable/styel2line"
+		android:layout_below="@+id/title" android:layout_marginRight="5dp"></ImageView> 
+	<TextView android:layout_width="fill_parent" android:id="@+id/time"
+		android:gravity="right" android:layout_below="@+id/title"
+		android:layout_height="wrap_content" android:textAppearance="@style/normal.black.big"
+		android:layout_marginTop="5dp" android:layout_marginRight="5dp"
+		android:editable="false">
+	</TextView>
+	<TextView android:layout_height="wrap_content" android:id="@+id/contentTip"
+		android:textAppearance="@style/normal.black.big" android:layout_below="@+id/time"
+		android:layout_centerHorizontal="true" android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:text="内容（小于200个字符）"></TextView>
+	<EditText android:longClickable="false" android:gravity="top" android:layout_width="fill_parent"
+		android:layout_marginRight="5dp" android:id="@+id/content" android:focusable="true" android:nextFocusDown="@+id/confirmButton"
+		android:enabled="false" android:background="@color/white"
+		android:maxLength="200" android:textAppearance="@style/normal.black.big"
+		android:textColor="@color/black" android:layout_below="@+id/contentTip"
+		android:layout_height="400dp">
+	</EditText>
+	</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_alignParentBottom="true" android:layout_marginBottom ="21px"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/LinearLayout02"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="right"
+					android:paddingRight="10dp" >
+				<TextView android:gravity="center" android:id="@+id/deleteButton"
+					android:layout_marginLeft="10dp" android:layout_marginRight="20dp"
+					android:text="删  除" android:clickable="true" android:focusable="true"
+					style="@style/button"></TextView>
+				<TextView android:gravity="center" android:id="@+id/modifyButton"
+					android:layout_marginRight="20dp" android:text="修  改" android:focusable="true"
+					android:clickable="true" style="@style/button"></TextView>
+				<TextView android:gravity="center" android:id="@+id/confirmButton"
+					android:text="确  定" android:clickable="true" android:focusable="true" android:nextFocusUp="@+id/content"
+					style="@style/button" android:layout_marginRight="20dp"></TextView>
+				<TextView android:gravity="center" android:clickable="true"
+					android:focusable="true" style="@style/button" android:id="@+id/cancelButton"
+					android:text="取  消" android:layout_marginRight="11dp"></TextView>
+		</LinearLayout>
+	</RelativeLayout>
+	
+</RelativeLayout>

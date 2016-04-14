@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#ffffff" android:id="@+id/mainblock">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_marginBottom="1dp" android:visibility="invisible">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="cata" android:id="@+id/cata"
+			android:textSize="20dp" android:textColor="@color/white"
+			android:visibility="invisible"></TextView>
+		<TextView android:id="@+id/title" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="100dp"
+			android:text="书城图书检索 "></TextView>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:gravity="center" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<RelativeLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+
+
+			<com.pvi.ap.reader.activity.pviappframe.SelectSpinner
+				pvi:gravity="center" android:id="@+id/mark_sort"
+				android:layout_width="wrap_content" android:layout_height="32dp"
+				pvi:width="120" />
+			<!--	
+			-->
+			<EditText android:longClickable="false" android:id="@+id/Keyword"
+				android:cursorVisible="true" android:layout_toRightOf="@+id/mark_sort"
+				android:background="@drawable/style2_bg_textview"
+				android:singleLine="true" android:paddingLeft="5dp" android:paddingRight="30dp"
+				android:layout_height="wrap_content" android:layout_width="297dp" android:maxLength="30"
+				android:layout_marginLeft="15dp" android:textAppearance="@style/normal.black.common"></EditText>
+			<Button android:id="@+id/Submit" style="@style/search_button_ui1"
+				android:gravity="center" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/Keyword" android:layout_marginLeft="15dp"
+				android:layout_width="wrap_content" android:text="搜 索 "></Button>
+		</RelativeLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+			android:layout_height="40dp" android:gravity="center_vertical">
+			<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center_vertical"
+				android:text="共搜到 " android:textAppearance="@style/normal.black"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="0" android:id="@+id/ResultCount"
+				android:textAppearance="@style/normal.black"></TextView>
+			<TextView android:id="@+id/TextView04" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text=" 本符合条件的图书 "
+				android:textAppearance="@style/normal.black"></TextView>
+		</LinearLayout>
+
+		<!--
+			<ListView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/BookList"
+			android:minHeight="600dp" android:background="#fff"
+			android:cacheColorHint="#fff" android:divider="@null"
+			android:dividerHeight="0dp" android:fadingEdge="none"
+			android:fadingEdgeLength="0dp" android:listSelector="#fff"
+			android:layout_marginRight="20dp" android:layout_marginLeft="20dp"
+			android:layout_marginTop="10dp"> </ListView>
+		-->
+		<RelativeLayout android:id="@+id/searchlayout01"
+			android:nextFocusLeft="@+id/searchlayout01" android:nextFocusRight="@+id/searchlayout01"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order01" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order01"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname01"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author01"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout02"
+			android:nextFocusLeft="@+id/searchlayout02" android:nextFocusRight="@+id/searchlayout02"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order02" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order02"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname02"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author02"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout03"
+			android:nextFocusLeft="@+id/searchlayout03" android:nextFocusRight="@+id/searchlayout03"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order03" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order03"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname03"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author03"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout04"
+			android:nextFocusLeft="@+id/searchlayout04" android:nextFocusRight="@+id/searchlayout04"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order04" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order04"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname04"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author04"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout05"
+			android:nextFocusLeft="@+id/searchlayout05" android:nextFocusRight="@+id/searchlayout05"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order05" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order05"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname05"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author05"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout06"
+			android:nextFocusLeft="@+id/searchlayout06" android:nextFocusRight="@+id/searchlayout06"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order06" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order06"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname06"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author06"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout07"
+			android:nextFocusLeft="@+id/searchlayout07" android:nextFocusRight="@+id/searchlayout07"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order07" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order07"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname07"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author07"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout08"
+			android:nextFocusLeft="@+id/searchlayout08" android:nextFocusRight="@+id/searchlayout08"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order08" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order08"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname08"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author08"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout09"
+			android:nextFocusLeft="@+id/searchlayout09" android:nextFocusRight="@+id/searchlayout09"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order09" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order09"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname09"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author09"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/searchlayout10"
+			android:nextFocusLeft="@+id/searchlayout10" android:nextFocusRight="@+id/searchlayout10"
+			android:visibility="invisible" android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp" android:clickable="true"
+			android:focusable="true" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/bg_datalist_1">
+
+			<TextView android:textAppearance="@style/normal.black.big"
+				android:id="@+id/tv_order10" android:gravity="center"
+				android:layout_width="30dp" android:layout_marginRight="15dp"
+				android:lines="1" android:layout_height="53dp" android:text="no."
+				android:singleLine="true"></TextView>
+			<TextView android:layout_toRightOf="@+id/tv_order10"
+				android:textAppearance="@style/normal.black.big"
+				android:layout_height="53dp" android:id="@+id/tv_contentname10"
+				android:gravity="center_vertical|left" android:layout_width="375dp"
+				android:layout_marginRight="15dp" android:singleLine="true"
+				android:text="booktitle"></TextView>
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:gravity="center_vertical" android:layout_alignParentRight="true"
+				android:layout_height="53dp" android:id="@+id/tv_author10"
+				android:maxWidth="120dp" android:paddingRight="10dp"
+				android:layout_width="wrap_content" android:text="author"
+				android:singleLine="true"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>  

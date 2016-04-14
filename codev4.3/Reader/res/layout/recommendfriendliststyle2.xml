@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+		>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	android:id="@+id/mainblock"
+>
+
+	<TextView 
+				android:layout_marginTop="18px"
+				android:layout_marginLeft="20px"
+				android:layout_gravity="left"
+				android:textSize="20px"
+				android:textColor="@color/black" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="好友手机号(* 如需输入多名好友用；隔开)" />
+	<EditText android:longClickable="false"	android:id="@+id/friendinput"
+			android:layout_gravity="left"
+			android:layout_marginLeft="20px"
+			android:layout_width="560px"
+			android:layout_height="70px"
+			android:background="@drawable/friendmessage"
+			android:paddingBottom="0px" 
+			android:paddingLeft="5px" 
+			android:focusable="true"
+			android:nextFocusRight="@+id/friendinput"
+			android:gravity="top">
+			<requestFocus/>
+	</EditText>
+		
+	<TextView 
+				android:layout_marginLeft="20px"
+				android:layout_gravity="left"
+				android:textSize="20px"
+				android:textColor="@color/black" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="留言" />
+	<EditText android:longClickable="false"
+			android:id="@+id/friendmessage"
+			android:layout_gravity="left"
+			android:layout_marginLeft="20px"
+			android:layout_width="560px"
+			android:layout_height="97px" 
+			android:paddingLeft="5px" 
+			android:gravity="top"
+			android:background="@drawable/friendmessage"
+			android:paddingBottom="0px" 
+			android:focusable="true" android:maxLength="255"
+			android:nextFocusUp="@+id/friendinput"
+			android:nextFocusRight="@+id/friendmessage"
+			android:nextFocusDown="@+id/send"
+		/>
+			   
+			   
+
+	
+	<Button
+				android:id="@+id/send"
+				android:text="推荐"
+				style="@style/button_ui1"
+				android:layout_gravity="right"
+				android:layout_marginTop="18px"
+				android:layout_marginRight="20px"
+				android:focusable="true"
+				android:nextFocusUp="@+id/friendmessage"
+				android:nextFocusDown="@+id/r1"
+				android:nextFocusRight="@+id/send"
+			  />
+			
+		
+
+
+		<!--item1-->
+		<RelativeLayout  android:layout_marginTop="18px"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView android:layout_marginLeft="20px"
+				android:layout_alignParentLeft="true"
+				android:layout_height="wrap_content" android:text="手机号码" android:layout_width="wrap_content"
+				android:textStyle="bold" android:textSize="8pt" android:textColor="@color/black"/>
+			<TextView android:layout_marginRight="20px"
+				android:layout_alignParentRight="true"
+				android:layout_height="wrap_content"
+				android:textSize="8pt"
+				android:text="状态" 
+			    android:layout_width="wrap_content"  android:textColor="@color/black"/>
+		    <ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:src="@drawable/timeset_split"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<com.pvi.ap.reader.activity.pviappframe.PviDataList
+				android:focusableInTouchMode="true" android:layout_height="350dp"
+				android:id="@+id/list" android:layout_width="560dp"
+				android:background="#fff" android:focusable="true"
+				pvi:lineHeight="50"
+				pvi:lineBgLeft="0"
+				pvi:lineBgNormal="@drawable/friendlist"
+				pvi:lineBgHighlight="@drawable/lines"
+				></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+</LinearLayout>
+
+</AbsoluteLayout>

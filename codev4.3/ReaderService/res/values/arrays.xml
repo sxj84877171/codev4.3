@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="searchtypes">
+		<item>书名</item>
+		<item>作者</item>
+		<item>关键字</item>
+	</string-array>
+	<string-array name="status_bar_icon_order">
+		<item>battery</item>
+		<item>data_connection</item>
+		<item>phone_signal</item>
+		<item>wifi</item>
+		<item>volume</item>
+		<item>usb_con</item>
+	</string-array>
+</resources>

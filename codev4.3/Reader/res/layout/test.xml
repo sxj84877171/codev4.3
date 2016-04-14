@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content" android:paddingTop="5dp"
+	android:layout_height="wrap_content" android:id="@+id/mainblock" >
+	<com.pvi.ap.reader.activity.DefView
+		android:id="@+id/myview" android:layout_width="wrap_content"
+		android:layout_height="200dp">
+	</com.pvi.ap.reader.activity.DefView>
+	<com.pvi.ap.reader.activity.recommend_main
+		android:layout_below="@+id/myview" android:id="@+id/recommendview"
+		android:layout_width="320dp" android:layout_height="500dp">
+	</com.pvi.ap.reader.activity.recommend_main>
+
+	<ImageView android:id="@+id/ImageView02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/style2_line_verticle"
+		android:layout_marginTop="235dp" android:layout_marginLeft="339dp"></ImageView>
+	<com.pvi.ap.reader.activity.recent_main
+		android:layout_toRightOf="@+id/recommendview"
+		android:layout_marginLeft="43dp" android:id="@+id/recentview"
+		android:layout_alignTop="@+id/recommendview" android:layout_width="217dp"
+		android:layout_height="500dp">
+	</com.pvi.ap.reader.activity.recent_main>
+</RelativeLayout>

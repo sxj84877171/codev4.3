@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/NewsRowLinearlayout"
+  android:orientation="vertical">
+<TextView 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:textColor="@drawable/black"
+  android:text="2010-10-10" android:gravity="right" android:id="@+id/date" android:background="#00000000" android:textSize="14dp"/>
+<TextView 
+  android:text="@+id/TextView"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:textColor="@drawable/black"
+  android:singleLine="true" android:id="@+id/subject" android:background="#00000000" android:textSize="16dp"/>
+<TextView 
+  android:text="@+id/TextView"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:lines="2" android:id="@+id/message" android:background="#00000000" android:padding="5dp" android:textSize="14dp"/>
+</LinearLayout>

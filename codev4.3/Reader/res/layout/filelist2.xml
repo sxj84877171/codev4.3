@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:id="@+id/mainblock">
+
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+		android:focusableInTouchMode="true" android:layout_height="700dp"
+		android:id="@+id/list" android:layout_width="550dp"
+		android:background="#fff" android:focusable="true"
+		android:layout_marginLeft="20dp" pvi:lineHeight="83"
+		pvi:lineBgLeft="1">
+	</com.pvi.ap.reader.activity.pviappframe.PviDataList>
+	
+</RelativeLayout>
+
+

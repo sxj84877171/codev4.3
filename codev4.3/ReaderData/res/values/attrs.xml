@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>  
+    <declare-styleable name="AppinfoList">
+    	<attr name="xmlFile" format="reference"  />
+        <attr name="rows" format="integer"  />
+        <attr name="cellWidth" format="integer"  />
+        <attr name="cellHeight" format="integer"  />
+    </declare-styleable>
+    <declare-styleable name="Appinfo">
+    	<attr name="activity" format="string"  />
+        <attr name="packageInfo" format="string"  />
+        <attr name="icon" format="reference"  />
+        <attr name="uri" format="string"  />
+        <attr name="groupid" format="integer"  />
+    </declare-styleable>
+	<declare-styleable name="PviMenu">
+        <attr name="act" format="string"  />
+        <attr name="op" format="string"  />>
+    </declare-styleable> 
+    
+    <declare-styleable name="Theme.Pvi" parent="@android:style/Theme"> 
+       <!-- The most prominent text color.  --> 
+        <attr name="textColorPrimary" format="reference|color" />
+        <attr name="textColorHint" format="reference|color" />
+        
+        <attr name="alertDialogStyle" format="reference" />
+     </declare-styleable> 
+     
+         <!-- The set of attributes that describe a AlertDialog's theme. -->
+    <declare-styleable name="AlertDialog">
+        <attr name="fullDark" format="reference|color" />
+        <attr name="topDark" format="reference|color" />
+        <attr name="centerDark" format="reference|color" />
+        <attr name="bottomDark" format="reference|color" />
+        <attr name="fullBright" format="reference|color" />
+        <attr name="topBright" format="reference|color" />
+        <attr name="centerBright" format="reference|color" />
+        <attr name="bottomBright" format="reference|color" />
+        <attr name="bottomMedium" format="reference|color" />
+        <attr name="centerMedium" format="reference|color" />
+    </declare-styleable>
+     
+     
+</resources>

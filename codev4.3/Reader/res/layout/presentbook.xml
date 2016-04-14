@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width = "fill_parent"
+android:layout_height = "fill_parent"
+>
+	<TextView
+			android:id = "@+id/fee"
+		   android:layout_height = "wrap_content"
+		   android:gravity ="top"
+		   android:text = ""
+		   android:textColor="@color/black"
+		   android:textSize = "8pt" android:layout_marginLeft="50px" android:layout_width="300px"/> 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width = "fill_parent"
+	android:layout_height = "wrap_content"
+	>
+		<TextView
+		android:textColor="@color/black"
+		   android:layout_width = "50px"
+		   android:layout_height = "wrap_content"
+		   android:gravity ="top"
+		   android:text = " 电话: "
+		   android:textSize = "8pt"
+		   />
+		<EditText android:longClickable="false"
+		   android:id = "@+id/phonenumber"
+		   android:layout_width = "300px"
+		   android:layout_height = "40px"
+		   android:gravity = "top"
+		   />
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width = "fill_parent"
+	android:layout_height = "fill_parent"
+	>
+		<TextView
+		android:textColor="@color/black"
+		   android:layout_width = "50px"
+		   android:layout_height = "wrap_content"
+		   android:gravity ="top"
+		   android:text = " 留言: "
+		   android:textSize = "8pt"
+		   />
+		<EditText android:longClickable="false"
+		   android:id = "@+id/message"
+		   android:layout_width = "300px"
+		   android:layout_height = "200px"
+		   android:gravity = "top"
+		   />
+	</LinearLayout>
+</LinearLayout>

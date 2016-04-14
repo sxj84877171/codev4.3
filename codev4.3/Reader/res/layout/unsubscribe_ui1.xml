@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:gravity="center_horizontal" android:orientation="vertical"
+	android:background="@color/white" android:layout_height="fill_parent"
+	android:layout_weight="1.0" android:id="@+id/mainblock">
+	<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+		android:id="@+id/productname" android:focusable="false"
+		android:nextFocusUp="@+id/productname07" android:nextFocusDown="@+id/productname01"
+		android:layout_marginTop="20dp" android:layout_height="39px"
+		android:text="包月专区                 订购时间            包月费用            退订"
+		android:textColor="@color/black" android:textSize="21sp"
+		android:layout_marginLeft="21dp" android:layout_width="560px" />
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="560px" android:src="@drawable/timeset_split" />
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+		android:focusableInTouchMode="true" android:layout_height="wrap_content"
+		android:id="@+id/catasubsList" android:layout_width="560px"
+		android:background="@color/white" android:focusable="true"
+		android:divider="@null" pvi:lineHeight="52" pvi:lineBgLeft="20"
+		pvi:lineBgNormal="@drawable/bg_datalist_normal" pvi:lineBgHighlight="@drawable/bg_datalist_press" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="20dp" android:layout_height="wrap_content"
+		android:textColor="@color/black" android:id="@+id/total" android:text="共0条"
+		android:textAppearance="@style/normal.black.small" android:gravity="left"></TextView>
+</LinearLayout>

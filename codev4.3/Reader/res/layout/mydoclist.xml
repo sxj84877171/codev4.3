@@ -1,0 +1,39 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white" android:id="@+id/mainblock">
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="658dp">
+		<TextView android:id="@+id/tishi" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textAppearance="@style/normal.black.big"
+			android:layout_marginTop="20dp" android:layout_marginLeft="20dp"
+			android:visibility="gone" android:text="没有相关文件记录 " />
+		<LinearLayout android:layout_width="564dp"
+			android:background="@drawable/top_bg" android:visibility="gone"
+			android:orientation="horizontal" android:layout_height="30dp">
+			<TextView android:id="@+id/mydocdir" android:gravity="center"
+				android:text="" android:layout_width="564dp" android:textAppearance="@style/normal.black.common"
+				android:layout_height="fill_parent" android:visibility="gone"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<LinearLayout android:orientation="vertical" android:id="@+id/alertpage"
+				android:background="@color/white" android:gravity="center"
+				android:visibility="gone" android:layout_width="564dp"
+				android:layout_height="600dp">
+				<include layout="@layout/nosdcard"></include>
+			</LinearLayout>
+			<com.pvi.ap.reader.activity.pviappframe.PviDataList
+				android:focusableInTouchMode="true" android:layout_height="630dp"
+				android:id="@+id/list" android:layout_width="550dp"
+				android:background="#fff" android:focusable="true"
+				android:layout_marginLeft="20dp" pvi:lineHeight="90"></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</AbsoluteLayout>
+
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/mainblock" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+    android:gravity="top">
+
+    <!-- main view   --> 
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@color/white" android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:id="@+id/pdfview11" android:longClickable="true">
+		<ImageView 
+	        android:id="@+id/pdfimage"
+	    	android:layout_margin="0px"
+	        android:layout_width="600px" 
+	    	android:layout_height="676px" 
+	    	android:layout_alignParentTop="true"
+	    	android:focusableInTouchMode="true"
+	    	android:focusable="true">
+	    	<!-- android:background="#ff0000"-->
+		</ImageView>
+		<!-- RelativeLayout android:id="@+id/bottombar" android:visibility="visible"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" 
+			android:layout_alignParentBottom="true">
+			<include layout="@layout/footer_page_ui1"
+				android:layout_alignParentBottom="true">
+			</include>
+		</RelativeLayout-->		
+	</RelativeLayout>
+	
+
+	<!-- bookmark -->
+	<ImageView 
+		android:layout_width="32px" 
+		android:layout_height="32px" 
+		android:id="@+id/BookmarkImageView"
+		android:visibility="invisible"
+		android:layout_x="32dip" 
+		android:layout_y="0dip" >
+	</ImageView>
+	
+	<!-- note input text -->
+	<EditText android:longClickable="false" 
+		android:id="@+id/NoteInputEditText"
+		android:text="Add note here" 
+		android:layout_height="100dip" 
+		android:layout_width="600dip" 
+		android:layout_x="0dip" 
+		android:layout_y="300dip">
+	</EditText>
+	<Button 
+		android:text="@string/str_pdf_ok" 
+		android:id="@+id/NoteOk" 
+		android:layout_width="75dip" 
+		android:layout_height="40dip" 		
+		android:layout_x="40dip" 
+		android:layout_y="400dip">
+	</Button>
+	<Button 
+		android:text="@string/str_pdf_delete" 
+		android:id="@+id/NoteDelete" 
+		android:layout_width="75dip" 
+		android:layout_height="40dip" 		
+		android:layout_x="120dip" 
+		android:layout_y="400dip">
+	</Button>
+	<Button 
+		android:text="@string/str_pdf_cancel" 
+		android:id="@+id/NoteCancel" 
+		android:layout_width="75dip" 
+		android:layout_height="40dip" 		
+		android:layout_x="200dip" 
+		android:layout_y="400dip">
+	</Button>
+  
+
+    <!-- pageadjust menu items -->
+    <AbsoluteLayout android:id="@+id/pageadjustmenu"
+        android:layout_width="wrap_content" android:layout_height="135dp"
+        android:layout_x="175dp" android:layout_y="250dp"  android:background="@color/white"
+        android:visibility="invisible">
+
+        <LinearLayout android:layout_width="132dp" android:gravity="bottom"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/pageadjustview0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="适应页" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/pageadjustview1" android:nextFocusUp="@+id/pageadjustview1" 
+                android:nextFocusRight="@+id/pageadjustview1" android:nextFocusDown="@+id/pageadjustview1"
+                android:clickable="true" android:focusable="true" android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/pageadjustline0" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/pageadjustview1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="适应宽" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/pageadjustview4" android:nextFocusUp="@+id/pageadjustview4" 
+                android:nextFocusRight="@+id/pageadjustview2" android:nextFocusDown="@+id/pageadjustview2"
+                android:clickable="true" android:focusable="true" android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/pageadjustline1" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+                                    
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/pageadjustview2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="适应高" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/pageadjustview1" android:nextFocusUp="@+id/pageadjustview1" 
+                android:nextFocusRight="@+id/pageadjustview3" android:nextFocusDown="@+id/pageadjustview3"
+                android:clickable="true" android:focusable="true" android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/pageadjustline2" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+                                    
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/pageadjustview3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="@string/str_pdf_cancel" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/pageadjustview2" android:nextFocusUp="@+id/pageadjustview2" 
+                android:nextFocusRight="@+id/pageadjustview4" android:nextFocusDown="@+id/pageadjustview4"
+                android:clickable="true" android:focusable="true" android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/pageadjustline3" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+                                    
+            <ImageView android:layout_height="2px"
+                android:layout_width="fill_parent" android:src="@drawable/line6002"
+                android:scaleType="fitXY">
+            </ImageView>                        
+        </LinearLayout>
+
+        <ImageView android:layout_height="fill_parent"
+            android:layout_width="2px" android:src="@drawable/line2800"
+            android:scaleType="fitXY" android:layout_x="0px" android:layout_y="2px">
+        </ImageView>
+        <ImageView android:layout_height="fill_parent"
+            android:layout_width="2px" android:src="@drawable/line2800"
+            android:scaleType="fitXY" android:layout_x="132px" android:layout_y="2px">
+        </ImageView>
+
+    </AbsoluteLayout>   
+            	   
+    <!-- touchfunc menu items -->
+    <AbsoluteLayout android:id="@+id/touchfuncmenu"
+        android:layout_width="wrap_content" android:layout_height="107dp"
+        android:layout_x="175dp" android:layout_y="250dp"  android:background="@color/white"
+        android:visibility="invisible">
+
+        <LinearLayout android:layout_width="150dp" android:gravity="bottom"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="35dp"
+                  android:id="@+id/touchfuncitem0" android:orientation="vertical"
+                android:clickable="true" android:focusable="true" >
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/touchfuncview0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="@string/str_pdf_touch_paging" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/touchfuncview1" android:nextFocusUp="@+id/touchfuncview1" 
+                android:nextFocusRight="@+id/touchfuncview1" android:nextFocusDown="@+id/touchfuncview1"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/touchfuncline0" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="35dp"
+                  android:id="@+id/touchfuncitem1" android:orientation="vertical"
+                android:clickable="true" android:focusable="true" >
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/touchfuncview1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="@string/str_pdf_touch_moving" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/touchfuncview4" android:nextFocusUp="@+id/touchfuncview4" 
+                android:nextFocusRight="@+id/touchfuncview2" android:nextFocusDown="@+id/touchfuncview2"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/touchfuncline1" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="35dp"
+                  android:id="@+id/touchfuncitem2" android:orientation="vertical"
+                android:clickable="true" android:focusable="true" >
+            <ImageView android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/touchfuncview2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="@string/str_pdf_cancel" android:textSize="10pt" android:textColor="@color/black" 
+                android:nextFocusLeft="@+id/touchfuncview1" android:nextFocusUp="@+id/touchfuncview1" 
+                android:nextFocusRight="@+id/touchfuncview3" android:nextFocusDown="@+id/touchfuncview3"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView android:id="@+id/touchfuncline2" android:layout_height="2px" android:layout_width="fill_parent" android:src="@drawable/line6002" android:scaleType="fitXY" android:visibility="invisible"/>
+            </LinearLayout>
+
+            <ImageView android:layout_height="2px"
+                android:layout_width="fill_parent" android:src="@drawable/line6002"
+                android:scaleType="fitXY">
+            </ImageView>                        
+        </LinearLayout>
+
+        <ImageView android:layout_height="fill_parent"
+            android:layout_width="2px" android:src="@drawable/line2800"
+            android:scaleType="fitXY" android:layout_x="0px" android:layout_y="2px">
+        </ImageView>
+        <ImageView android:layout_height="fill_parent"
+            android:layout_width="2px" android:src="@drawable/line2800"
+            android:scaleType="fitXY" android:layout_x="150px" android:layout_y="2px">
+        </ImageView>
+
+    </AbsoluteLayout>   
+   
+    <!-- toc -->
+    <RelativeLayout android:id="@+id/toclist"
+        android:layout_width="fill_parent" android:layout_height="670px" 
+        android:orientation="vertical" android:visibility="invisible"
+        android:focusable="true">
+        
+		<com.pvi.ap.reader.activity.pviappframe.PviDataList
+			android:focusableInTouchMode="true" android:layout_height="700dp"
+			android:id="@+id/list" android:layout_width="696dp"
+			android:background="#fff" android:focusable="true"
+			pvi:lineHeight="83">
+		</com.pvi.ap.reader.activity.pviappframe.PviDataList>
+        
+    </RelativeLayout>
+</RelativeLayout>

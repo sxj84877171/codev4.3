@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:id="@+id/mainblock">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="20dp" android:paddingRight="20dp"
+		android:layout_height="700dp" android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/recentblock" android:orientation="vertical"
+			android:visibility="gone" android:gravity="center_vertical"
+			android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical" android:id="@+id/lastedlayout"
+				android:clickable="true" android:focusable="true"
+				android:focusableInTouchMode="true" android:layout_width="fill_parent"
+				android:layout_height="85dp">
+				<LinearLayout android:layout_width="fill_parent"
+					android:orientation="horizontal" android:layout_height="82dp">
+					<TextView android:id="@+id/lastedreadchapter"
+						android:duplicateParentState="true" android:layout_width="450dp"
+						android:layout_height="fill_parent" android:text="  "
+						android:textAppearance="@style/normal.black.big" android:gravity="center_vertical"
+						android:singleLine="true" android:layout_marginLeft="10dp">
+					</TextView>
+					<TextView android:id="@+id/lastedreadfee"
+						android:duplicateParentState="true" android:layout_width="70dp"
+						android:layout_height="fill_parent" android:text=""
+						android:gravity="center_vertical" android:textAppearance="@style/normal.black.common">
+					</TextView>
+				</LinearLayout>
+				<ImageView android:duplicateParentState="true"
+					android:layout_width="fill_parent" android:layout_height="3dp"
+					android:scaleType="center" android:background="@drawable/listbackground_ui1"></ImageView>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:clickable="true" android:focusable="true" android:id="@+id/updatelayout"
+				android:focusableInTouchMode="true" android:layout_width="fill_parent"
+				android:layout_height="85dp">
+				<LinearLayout android:layout_width="fill_parent"
+					android:orientation="horizontal" android:layout_height="82dp">
+					<TextView android:id="@+id/updatechapter"
+						android:duplicateParentState="true" android:layout_width="450dp"
+						android:layout_height="fill_parent" android:gravity="center_vertical"
+						android:textAppearance="@style/normal.black.big"
+						android:singleLine="true" android:layout_marginLeft="10dp">
+					</TextView>
+					<TextView android:id="@+id/updatefee"
+						android:duplicateParentState="true" android:layout_width="70dp"
+						android:layout_height="fill_parent" android:gravity="center_vertical"
+						android:textAppearance="@style/normal.black.common">
+					</TextView>
+				</LinearLayout>
+				<ImageView android:background="@drawable/listbackground_ui1"
+					android:scaleType="center" android:duplicateParentState="true"
+					android:layout_width="fill_parent" android:layout_height="3dp"></ImageView>
+			</LinearLayout>
+		</LinearLayout>
+		<!--item1-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:clickable="true" android:id="@+id/chapter01layout"
+			android:focusableInTouchMode="true" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter01" android:layout_width="450dp"
+				android:layout_height="82dp" android:gravity="center_vertical"
+				android:layout_y="0dp" android:duplicateParentState="true"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee01" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+		<!--item2-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:clickable="true" android:id="@+id/chapter02layout"
+			android:focusableInTouchMode="true" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter02" android:layout_width="450dp"
+				android:layout_height="82dp" android:text="" android:gravity="center_vertical"
+				android:duplicateParentState="true" android:layout_y="0dp"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee02" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+
+		<!--item3-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:id="@+id/chapter03layout" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter03" android:layout_width="450dp"
+				android:layout_height="82dp" android:text=""
+				android:duplicateParentState="true" android:gravity="center_vertical"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.big"
+				android:singleLine="true" android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee03" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+
+		<!--item4-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:clickable="true" android:id="@+id/chapter04layout"
+			android:focusableInTouchMode="true" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter04" android:layout_width="450dp"
+				android:layout_height="82dp" android:text="" android:gravity="center_vertical"
+				android:duplicateParentState="true" android:layout_y="0dp"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee04" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:gravity="center_vertical" android:text="" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+
+		<!--item5-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:clickable="true" android:id="@+id/chapter05layout"
+			android:focusableInTouchMode="true" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter05" android:layout_width="450dp"
+				android:layout_height="82dp" android:text="" android:gravity="center_vertical"
+				android:duplicateParentState="true" android:layout_y="0dp"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee05" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+		<!--item6-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:id="@+id/chapter06layout" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter06" android:layout_width="450dp"
+				android:layout_height="82dp" android:text=""
+				android:duplicateParentState="true" android:gravity="center_vertical"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.big"
+				android:singleLine="true" android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee06" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+
+		<!--item7-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:id="@+id/chapter07layout" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter07" android:layout_width="450dp"
+				android:layout_height="82dp" android:text="" android:gravity="center_vertical"
+				android:duplicateParentState="true" android:layout_y="0dp"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee07" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+
+		<!--item8-->
+		<AbsoluteLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:id="@+id/chapter08layout" android:focusable="true" android:layout_height="83dp">
+			<TextView android:id="@+id/chapter08" android:layout_width="450dp"
+				android:layout_height="82dp" android:text="" android:gravity="center_vertical"
+				android:duplicateParentState="true" android:layout_y="0dp"
+				android:singleLine="true" android:textAppearance="@style/normal.black.big"
+				android:layout_x="10dp">
+			</TextView>
+			<TextView android:id="@+id/fee08" android:layout_width="70dp"
+				android:duplicateParentState="true" android:layout_height="82dp"
+				android:text="" android:gravity="center_vertical" android:layout_x="500dp"
+				android:layout_y="0dp" android:textAppearance="@style/normal.black.common">
+			</TextView>
+			<ImageView android:background="@drawable/listbackground_ui1"
+				android:layout_x="0dp" android:duplicateParentState="true"
+				android:layout_width="fill_parent" android:scaleType="center" android:layout_height="3dp" android:layout_y="80dp"></ImageView>
+		</AbsoluteLayout>
+	</LinearLayout>
+
+</RelativeLayout>
+
+

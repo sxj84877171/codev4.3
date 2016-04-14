@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:id="@+id/myannotation"
+	android:background="@color/white">
+		<RelativeLayout android:id="@+id/view_sv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="20px">
+		
+		<com.pvi.ap.reader.activity.PageTextView
+			android:layout_width="770px" android:id="@+id/view_contents"
+			android:textColor="@color/black" android:focusableInTouchMode="true"
+			android:background="@color/white" android:focusable="true"
+			android:textSize="16sp" android:gravity="top" android:cursorVisible="false"
+			android:editable="false" android:selectable="true" android:layout_height="430px">
+		</com.pvi.ap.reader.activity.PageTextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent" android:visibility="invisible" android:paddingBottom="11dp" 
+				android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/buttonLay" android:layout_above="@+id/mainblock">
+				<EditText android:longClickable="false" android:id="@+id/serach" android:background="@drawable/pviapreaderserch"
+					android:layout_width="fill_parent" android:layout_marginLeft="25dp"
+					android:maxLength="30" android:gravity="top" android:layout_marginRight="20dp"
+					android:layout_toLeftOf="@+id/find" android:layout_height="28dp" android:singleLine="true"
+					android:layout_alignTop="@+id/find" />
+				<Button android:id="@+id/find" android:text="@string/Serach"
+					android:layout_marginRight="20dp" android:layout_height="wrap_content"
+					style="@style/button"
+					android:layout_toLeftOf="@+id/close"></Button>
+				<Button android:id="@+id/close" android:text="@string/standby_auto_close"
+					android:layout_marginRight="25dp"
+					android:layout_height="wrap_content" android:layout_alignParentRight="true"
+					style="@style/button"></Button>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/mainblock" android:visibility="visible"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			android:layout_alignParentBottom="true">
+			<include layout="@layout/footer_page_ui1"
+				android:layout_alignParentBottom="true">
+			</include>
+		</RelativeLayout>
+</RelativeLayout>
+
+
+

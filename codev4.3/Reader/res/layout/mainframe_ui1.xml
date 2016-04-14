@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/MainFrame">
+
+	<com.pvi.ap.reader.activity.pviappframe.PviStatusBar
+		android:id="@+id/StatusBar" android:layout_width="fill_parent"
+		android:background="@color/white" android:layout_height="36dp" />
+
+
+	<LinearLayout android:layout_weight="1"
+		android:layout_height="0dp" android:orientation="vertical"
+		android:layout_width="fill_parent" android:id="@+id/MainBlock">
+
+		<com.pvi.ap.reader.activity.pviappframe.PviTitleBar
+			android:id="@+id/PviTitleBar" android:layout_width="fill_parent"
+			android:layout_height="36dp" android:background="@drawable/titlebar_bg_ui1"
+			android:focusable="true" android:focusableInTouchMode="true" />
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:fadingEdge="none" android:scrollbars="none" android:id="@+id/ChildActivityView"
+			android:layout_height="fill_parent" android:addStatesFromChildren="false"
+			android:alwaysDrawnWithCache="false" android:drawingCacheQuality="low"
+			android:background="@color/white" />
+
+	</LinearLayout>
+
+
+
+	<com.pvi.ap.reader.activity.pviappframe.PviBottomBar
+		android:id="@+id/BottomBar" android:layout_width="fill_parent"
+		android:layout_height="49dp" android:background="@color/white"
+		android:focusable="true" android:focusableInTouchMode="true" />
+
+</LinearLayout>

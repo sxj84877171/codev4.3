@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffff" android:id="@+id/mainblock">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:background="@drawable/tab_bgimg_3_ui1">
+		<TextView android:text="@string/editorRecommended"
+			android:id="@+id/catalogBtn01" android:nextFocusRight="@+id/catalogBtn02"
+			style="@style/nav_textview" android:textColorHighlight="#000000"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/categoryPart"
+			android:id="@+id/catalogBtn02" android:nextFocusRight="@+id/catalogBtn03"
+			android:nextFocusLeft="@+id/catalogBtn01"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/hotRanking"
+			android:id="@+id/catalogBtn03" android:nextFocusLeft="@+id/catalogBtn02"
+			android:nextFocusRight="@+id/catalogBtn04"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/famousWork"
+			android:id="@+id/catalogBtn04" android:nextFocusLeft="@+id/catalogBtn03"
+			android:nextFocusRight="@+id/catalogBtn05"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/highQualityPart"
+			android:id="@+id/catalogBtn05" android:nextFocusLeft="@+id/catalogBtn04"
+			android:nextFocusRight="@+id/catalogBtn06"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn06"
+			android:nextFocusLeft="@+id/catalogBtn05" android:nextFocusDown="@+id/moreBtn"
+			android:text="包月书包"></TextView>
+
+
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_below="@+id/LinearLayout01" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:minHeight="600dp"
+		android:paddingLeft="30dp" android:paddingRight="30dp">
+
+
+		<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:id="@+id/authorName" android:textAppearance="@style/normal.black.bigger"
+			android:minWidth="100dp" android:layout_marginTop="20dp"
+			android:layout_marginBottom="10dp"></com.pvi.ap.reader.activity.pviappframe.BoldTextView>
+
+
+		<ImageView android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:id="@+id/ImageView03"
+			android:background="@drawable/style2_newline" android:layout_width="fill_parent"
+			android:layout_below="@+id/authorName"></ImageView>
+		<TextView android:id="@+id/authorDetails"
+			android:layout_below="@+id/ImageView03" android:layout_width="fill_parent"
+			android:padding="10dp" android:maxLines="6" android:minLines="6"
+			android:layout_height="175dp" android:textAppearance="@style/normal.black.big">
+			</TextView>
+
+		<com.pvi.ap.reader.activity.pviappframe.BoldButton android:layout_below="@+id/authorDetails" style="@style/button_ui1"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:id="@+id/viewAuthorInfo" android:layout_width="wrap_content"
+			android:layout_marginTop="10dp" android:layout_marginBottom="20dp"
+			android:text="查看完整介绍" android:lines="1"></com.pvi.ap.reader.activity.pviappframe.BoldButton>
+
+		<RelativeLayout android:id="@+id/RelativeLayout03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/viewAuthorInfo">
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/TextView02" android:text="@string/mainBooks"
+				style="@style/main_book_textview"></com.pvi.ap.reader.activity.pviappframe.BoldTextView>
+			<ImageView android:layout_below="@+id/TextView02"
+				android:layout_height="wrap_content" android:id="@+id/ImageView02"
+				android:layout_width="fill_parent" android:background="@drawable/style2_newline"
+				android:layout_marginTop="3dp"></ImageView>
+			<LinearLayout android:gravity="center_vertical"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_marginTop="5dp" android:layout_marginLeft="145dp"
+				android:focusable="true" android:id="@+id/moreBtn"
+				android:layout_alignParentRight="true">
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/icon_total_book_count"
+					android:layout_marginTop="1px" android:background="@drawable/booksummarymore"
+					android:duplicateParentState="true"></ImageView>
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:layout_height="wrap_content"
+					android:layout_marginLeft="3px" android:textColor="@color/black"
+					android:textStyle="bold" android:id="@+id/more_recent_read_record"
+					android:textSize="16sp" android:text="更多" android:layout_width="40dp"
+					android:layout_marginTop="1dp"></com.pvi.ap.reader.activity.pviappframe.BoldTextView>
+
+
+
+			</LinearLayout>
+			<ListView android:layout_below="@+id/ImageView02"
+				android:choiceMode="singleChoice" android:id="@+id/authorBookList"
+				android:divider="@color/white" android:dividerHeight="0dp"
+				android:layout_height="290dp" android:layout_width="560dp"
+				android:layout_marginTop="5dp">
+
+			</ListView>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout08"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingLeft="15dp" android:layout_alignParentBottom="true" android:paddingRight="25dp" android:layout_marginBottom="10dp">
+		<EditText android:id="@+id/searchInput"	android:layout_marginLeft="15dp" style="@style/search_edittext_ui1"></EditText>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/Serach"
+			android:id="@+id/searchButton" android:layout_alignParentRight="true"
+			style="@style/search_button_ui1"></Button>
+	</RelativeLayout>
+
+</RelativeLayout>

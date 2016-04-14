@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:drawable="@drawable/selecttextviewfs" />
+	<item android:state_focused="true" android:drawable="@drawable/selecttextviewfs" />
+	<item android:state_focused="false" android:drawable="@drawable/selecttextviewuf" />
+	<item android:drawable="@drawable/selecttextviewuf" />
+</selector> 
+
+
+

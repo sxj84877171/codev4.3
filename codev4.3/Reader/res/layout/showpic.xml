@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:id="@+id/absolut"
+    
+   >
+   
+	<LinearLayout
+		android:layout_width="fill_parent" android:focusable="true"
+		android:gravity="center"
+		 android:id="@+id/showpic"
+		  android:layout_height="680px" android:layout_alignParentTop="true">
+	 <ImageView 
+			android:id="@+id/fp_showpic_img"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" android:scaleType="center"/>
+	</LinearLayout>
+		 <!-- 页码 -->
+			<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:layout_height="49dp" >
+		<ImageView android:layout_width="fill_parent" android:background="@drawable/statusbar_bottom_ui1" android:layout_height="wrap_content"  android:layout_above="@+id/bottombar" android:paddingTop="0dp" android:id="@+id/mainblock">
+	</ImageView>
+	  <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="3dp">
+		<ImageButton android:id="@+id/menubtn" android:layout_gravity="left|center_vertical" 
+		android:background="@null" android:src="@drawable/button_menu_ui1" 
+		android:layout_height="38dp" android:layout_width="wrap_content" 
+		android:layout_marginLeft="5dp"/>
+          
+         
+		<RelativeLayout android:id="@+id/RelativeLayout02" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_centerVertical="true" android:focusable="true"
+            android:layout_marginLeft="30dp" android:background="@drawable/pic_big_style"
+            android:layout_width="wrap_content" android:id="@+id/pic_big"
+           android:layout_height="wrap_content"  />
+           <TextView android:layout_centerVertical="true" android:layout_toRightOf="@+id/pic_big"
+            android:background="@drawable/pic_smoll_style" android:focusable="true"
+            android:layout_width="wrap_content" android:id="@+id/pic_smoll"
+           android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+          <TextView android:layout_centerVertical="true" android:layout_toRightOf="@+id/pic_smoll"
+           android:background="@drawable/pic_all_style" android:layout_marginLeft="20dp"
+           android:layout_width="wrap_content" android:id="@+id/pic_all" android:focusable="true"
+           android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/LinearLayout05" android:layout_height="fill_parent"
+				android:gravity="center"
+				android:layout_centerHorizontal="true">
+				<ImageButton android:id="@+id/prev"
+					android:background="@null" android:layout_height="38dp" android:layout_width="40dp" android:src="@drawable/button_prepage_normal_ui1"></ImageButton>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/curpage" android:textAppearance="@style/normal.black.big" android:gravity="right" android:text="1" android:minWidth="25px"></TextView>
+				<TextView android:id="@+id/TextView02"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="/" android:textColor="@color/black" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:textAppearance="@style/normal.black.big"></TextView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="1" android:id="@+id/pages" android:textAppearance="@style/normal.black.big" android:minWidth="25px"></TextView>
+				<ImageButton android:id="@+id/next"
+					android:background="@null" android:layout_height="38dp" android:layout_width="40dp" android:src="@drawable/button_nextpage_normal_ui1"></ImageButton>
+			</LinearLayout>
+
+
+			<LinearLayout android:id="@+id/LinearLayout08"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:layout_centerVertical="true">
+				<ImageButton android:id="@+id/fp_application" android:layout_marginRight="5dp" android:background="@null"
+				 android:src="@drawable/allapp" android:layout_width="40dp" android:layout_height="38dp" 
+				 android:visibility="gone"></ImageButton><ImageButton android:id="@+id/fp_settings" 
+				 android:layout_width="40dp" android:layout_height="38dp" android:src="@drawable/button_setting_ui1" 
+				 android:background="@null" android:layout_marginRight="20dp"></ImageButton>
+				 <ImageButton android:id="@+id/fp_music" android:background="@null" 
+				 android:layout_width="40dp" android:layout_height="38dp" android:src="@drawable/button_music_ui1" 
+				 android:layout_marginRight="20dp"></ImageButton><ImageButton android:id="@+id/back"
+					android:layout_height="38dp" android:layout_width="40dp" android:background="@null" 
+					android:src="@drawable/button_back_ui1" android:layout_marginRight="5dp"></ImageButton>
+					
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>	
+	
+	
+	<!--  	<LinearLayout android:id="@+id/bottombar" android:gravity="center_vertical"
+  	android:background="@drawable/white" android:orientation="horizontal"  android:paddingTop="4dp"
+  android:layout_x="0dp" android:layout_y="654dp" android:layout_width="fill_parent"
+  android:layout_height="38px" android:layout_alignParentBottom="true">
+
+  <TextView android:layout_alignParentBottom="true"
+   android:layout_marginLeft="6dp" android:background="@drawable/button_menu_ui1"
+   android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dp" android:gravity="center"
+   android:layout_gravity="left" android:textColor="@color/white" android:id="@+id/menubtn"/>
+  <TextView android:layout_alignParentBottom="true"
+   android:layout_marginLeft="30dp" android:background="@drawable/pic_big"
+   android:layout_width="wrap_content" android:id="@+id/pic_big"
+   android:layout_height="wrap_content" android:layout_marginRight="20dp" />
+  <TextView android:layout_alignParentBottom="true"
+     android:background="@drawable/pic_smoll"
+   android:layout_width="wrap_content" android:id="@+id/pic_smoll"
+   android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+   <TextView android:layout_alignParentBottom="true"
+    android:background="@drawable/pic_all"
+   android:layout_width="wrap_content" android:id="@+id/pic_all"
+   android:layout_height="wrap_content" />
+
+ 
+ 
+ 
+			<ImageButton android:id="@+id/upPage" android:background="@null"
+				android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/button_prepage_ui1"
+				android:textColor="@color/black" android:layout_marginLeft="60dp" />
+
+
+
+			<TextView android:id="@+id/mtpages"
+				android:layout_marginLeft="30dp" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:gravity="center" android:text="1/1"
+				 android:textAppearance="@style/normal.black.big" android:minWidth="40dp" />
+
+			<ImageButton android:id="@+id/nextPage" android:src="@drawable/button_nextpage_ui1"
+				android:layout_marginLeft="30dp" android:layout_alignParentBottom="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@null" android:textColor="@color/black" />
+ 
+<LinearLayout android:layout_width="fill_parent"
+				android:gravity="right" android:layout_marginRight="10px"
+				android:layout_height="wrap_content">
+
+  <ImageButton android:src="@drawable/button_setting_ui1" android:background="@null"
+   android:layout_width="wrap_content" 
+   android:layout_height="wrap_content" android:id="@+id/fp_settings"  ></ImageButton>
+  <ImageButton android:src="@drawable/button_music_ui1" android:layout_width="wrap_content"  android:background="@null"
+  android:layout_marginLeft="30dp" android:layout_height="wrap_content" android:id="@+id/fp_music"></ImageButton>
+  <ImageButton android:src="@drawable/button_back_ui1" android:id="@+id/back" android:background="@null" 
+   android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_marginLeft="30dp"></ImageButton>
+   </LinearLayout>
+   </LinearLayout>
+   -->
+	</RelativeLayout>	
+		
+	
+	
+</RelativeLayout>

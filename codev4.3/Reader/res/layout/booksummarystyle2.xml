@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:id="@+id/mainblock"
+	android:background="@color/white" android:orientation="vertical"
+	android:layout_height="fill_parent">
+	<com.pvi.ap.reader.view.BookSummaryView
+		android:id="@+id/booksummaryView" android:layout_width="wrap_content"
+		android:layout_height="635dp" android:background="@color/white">
+	</com.pvi.ap.reader.view.BookSummaryView>
+	<LinearLayout android:layout_marginLeft="20dp"
+		android:layout_width="fill_parent" android:layout_height="36dp">
+		<EditText android:longClickable="false" android:focusable="true"
+			android:background="@drawable/bg_search_input_ui1"
+			android:focusableInTouchMode="true" android:cursorVisible="true"
+			android:layout_marginRight="5dp" android:singleLine="true"
+			android:layout_height="wrap_content" android:id="@+id/searchInput"
+			android:layout_width="wrap_content" />
+		<Button android:layout_width="wrap_content" android:focusable="true"
+			android:focusableInTouchMode="true" android:layout_height="wrap_content"
+			android:text="@string/Serach" android:id="@+id/searchButton"
+			android:layout_marginLeft="5dp" style="@style/search_button_ui1" />
+	</LinearLayout>
+</LinearLayout>

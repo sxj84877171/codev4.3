@@ -1,0 +1,364 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:background="@color/white"
+	android:layout_width="fill_parent" android:id="@+id/mainblock">
+
+	<LinearLayout android:orientation="horizontal"
+		android:paddingLeft="22dp" android:paddingRight="22dp"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="2dp" android:id="@+id/linear01">
+		<!--
+			继续阅读
+		-->
+		<Button android:id="@+id/catalogButton04" android:background="@drawable/fpbutton4_landscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:focusable="true" android:nextFocusRight="@+id/catalogButton01"
+			android:focusableInTouchMode="true" android:nextFocusDown="@+id/recommendbtn"
+			android:nextFocusLeft="@+id/catalogButton04" />
+		<!--
+			无线书城
+		-->
+		<Button android:id="@+id/catalogButton01" android:background="@drawable/fpbutton1_lanscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:nextFocusLeft="@+id/catalogButton04" android:focusable="true"
+			android:focusableInTouchMode="true" android:nextFocusRight="@+id/catalogButton02"
+			android:nextFocusDown="@+id/recommendbtn" android:clickable="true" />
+		<!--
+			我的书架
+		-->
+		<Button android:id="@+id/catalogButton02" android:background="@drawable/fpbutton2_landscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:focusable="true" android:nextFocusRight="@+id/catalogButton03"
+			android:focusableInTouchMode="true" android:nextFocusLeft="@+id/catalogButton01"
+			android:nextFocusDown="@+id/recommendBtn" />
+		<!--
+			本地书库
+		-->
+		<Button android:id="@+id/catalogButton03" android:background="@drawable/fpbutton3_landscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:focusable="true" android:nextFocusRight="@+id/catalogButton05"
+			android:nextFocusDown="@+id/zjydbtn" android:focusableInTouchMode="true"
+			android:nextFocusLeft="@+id/catalogButton02" />
+
+		<!--
+		资源中心
+		-->
+		<Button android:id="@+id/catalogButton05" android:background="@drawable/fpbutton5_landscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:focusable="true" android:nextFocusRight="@+id/catalogButton06"
+			android:nextFocusDown="@+id/zjydbtn" android:focusableInTouchMode="true"
+			android:nextFocusLeft="@+id/catalogButton03" />
+		<!--
+		个人空间
+		-->
+		<Button android:id="@+id/catalogButton06" android:background="@drawable/fpbutton6_landscape"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:nextFocusDown="@+id/more_recent_records_button"
+			android:focusableInTouchMode="true" android:nextFocusRight="@+id/catalogButton06"
+			android:focusable="true" android:nextFocusLeft="@+id/catalogButton05" />
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:paddingLeft="22dp" android:paddingRight="22dp"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:id="@+id/linear01" android:layout_marginTop="110dp">
+		<TextView android:id="@+id/Catalog04" android:layout_width="126px"
+			android:text="继续阅读" android:gravity="center" android:textAppearance="@style/bold.black.big"
+			android:layout_height="wrap_content" android:lines="1" />
+		<TextView android:id="@+id/Catalog01" android:textAppearance="@style/bold.black.big"
+			android:gravity="center" android:layout_width="126px" android:text="无线书城"
+			android:layout_height="wrap_content" android:lines="1" />
+		<TextView android:id="@+id/Catalog02" android:gravity="center"
+			android:layout_width="126dp" android:text="我的书架"
+			android:textAppearance="@style/bold.black.big" android:layout_height="wrap_content"
+			android:lines="1" />
+		<TextView android:id="@+id/Catalog03" android:textAppearance="@style/bold.black.big"
+			android:gravity="center" android:layout_width="126px" android:text="本地书库"
+			android:layout_height="wrap_content" android:lines="1" />
+		<TextView android:id="@+id/Catalog05" android:gravity="center"
+			android:layout_width="126px" android:text="资源中心"
+			android:textAppearance="@style/bold.black.big" android:layout_height="wrap_content"
+			android:lines="1" />
+		<TextView android:id="@+id/Catalog06" android:textAppearance="@style/bold.black.big"
+			android:gravity="center" android:layout_width="126px" android:text="个人空间"
+			android:layout_height="wrap_content" android:lines="1" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:visibility="gone" android:layout_x="0px" android:layout_width="fill_parent"
+		android:layout_y="123px" android:layout_height="30dp" android:id="@+id/linear01"
+		android:layout_marginTop="123dp">
+		<TextView android:textColor="@color/black" android:id="@+id/zjydbookname"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:gravity="center" android:text="@string/fp_details4"
+			android:padding="5dp" android:singleLine="true" android:textSize="16sp" />
+		<TextView android:textColor="@color/black" android:id="@+id/wirlessstorebooknum"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:text="@string/fp_details1" android:padding="5dp"
+			android:textSize="16sp" android:gravity="center" />
+		<TextView android:textColor="@color/black"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:text="@string/fp_details2" android:padding="5dp"
+			android:textSize="16sp" />
+		<TextView android:textColor="@color/black" android:id="@+id/localbookbooknum"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:text="@string/fp_details3" android:padding="5dp"
+			android:textSize="16sp" android:gravity="center_horizontal" />
+
+		<TextView android:textColor="@color/black"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:text="@string/fp_details6" android:padding="5dp"
+			android:textSize="16sp" />
+		<TextView android:textColor="@color/black"
+			android:layout_width="100px" android:layout_height="wrap_content"
+			android:text="@string/fp_details7" android:padding="5dp"
+			android:textSize="16sp" />
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:paddingLeft="20dp" android:orientation="vertical"
+		android:layout_width="424dp" android:layout_height="340dp"
+		android:layout_marginTop="173dp">
+		<LinearLayout android:id="@+id/LinearLayout06"
+			android:gravity="bottom" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/recommendbtn"
+				android:layout_width="118px" android:nextFocusLeft="@+id/recommendbtn"
+				android:nextFocusRight="@+id/recommendBtn" android:textSize="20sp"
+				android:layout_height="wrap_content" android:nextFocusUp="@+id/catalogButton04"
+				style="@style/blockname_wsma" android:text="编辑推荐" />
+
+			<LinearLayout android:layout_width="120dp" android:id="@+id/recommendBtn"
+				android:focusableInTouchMode="true" android:layout_alignBottom="@+id/zjydbtn"
+				android:gravity="center_vertical|right" android:paddingBottom="0dp"
+				android:nextFocusLeft="@+id/recommendbtn" android:nextFocusRight="@+id/zjydbtn"
+				android:nextFocusUp="@+id/catalogButton02" android:nextFocusDown="@+id/recommend01"
+				android:focusable="true" android:layout_marginLeft="166dp"
+				android:clickable="true" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<ImageView android:background="@drawable/booksummarymore"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></ImageView>
+				<TextView android:text="更多" android:layout_width="wrap_content"
+					android:id="@+id/more_recommend_read_record"
+					android:duplicateParentState="true" android:layout_marginLeft="6dp"
+					android:textAppearance="@style/normal.black.small"
+					android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/style2_newline" />
+		<RelativeLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:orientation="horizontal"
+			android:layout_marginTop="10dp" android:layout_height="139px"
+			android:id="@+id/recommend01" android:focusable="true"
+			android:nextFocusLeft="@+id/recommend01" android:nextFocusDown="@+id/recommend02"
+			android:nextFocusUp="@+id/recommendbtn" android:clickable="true">
+			<!--
+				android:nextFocusRight="@+id/recent02"
+			-->
+			<ImageView android:layout_width="wrap_content"
+				android:duplicateParentState="true" android:scaleType="center"
+				android:background="@drawable/imageframe_mainpage"
+				android:layout_height="wrap_content" android:src="@drawable/image_book_01"
+				android:id="@+id/img01" android:layout_marginRight="10dp" />
+			<TextView android:id="@+id/book01" android:layout_height="40dp"
+				android:singleLine="true" android:ellipsize="end"
+				android:layout_width="fill_parent" android:textAppearance="@style/normal.black.common"
+				android:layout_toRightOf="@+id/img01" />
+			<TextView android:id="@+id/details01" android:text=""
+				android:layout_height="60px" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:maxLines="2"
+				android:ellipsize="end" android:textAppearance="@style/normal.black.common"
+				android:layout_toRightOf="@+id/img01" android:layout_below="@+id/book01" />
+			<TextView android:id="@+id/author01" android:layout_height="30dp"
+				android:layout_width="fill_parent" android:maxLines="1"
+				android:ellipsize="end" android:gravity="bottom" android:text=""
+				android:layout_below="@+id/details01" android:layout_alignBottom="@+id/img01"
+				android:textAppearance="@style/normal.black.common"
+				android:layout_toRightOf="@+id/img01" />
+			<ImageView android:duplicateParentState="true"
+				android:scaleType="center" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:src="@drawable/recommendline_bg_landscape"
+				android:layout_alignParentBottom="true"></ImageView>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:focusableInTouchMode="true" android:orientation="horizontal"
+			android:layout_marginTop="10dp" android:layout_height="139px"
+			android:id="@+id/recommend02" android:focusable="true"
+			android:nextFocusLeft="@+id/recommend02" android:nextFocusDown="@+id/recommend03"
+			android:nextFocusUp="@id/recommend01" android:clickable="true">
+			<!--
+				android:nextFocusRight="@+id/recent04"
+			-->
+			<ImageView android:layout_width="wrap_content"
+				android:duplicateParentState="true" android:scaleType="center"
+				android:background="@drawable/imageframe_mainpage"
+				android:layout_height="wrap_content" android:src="@drawable/image_book_01"
+				android:id="@+id/img02" android:layout_marginRight="10dp" />
+			<TextView android:layout_height="40dp" android:singleLine="true"
+				android:ellipsize="end" android:text="" android:layout_width="fill_parent"
+				android:id="@+id/book02" android:textAppearance="@style/normal.black.common"
+				android:layout_toRightOf="@+id/img02" />
+			<TextView android:text="" android:layout_height="60px"
+				android:ellipsize="end" android:maxLines="2" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:id="@+id/details02"
+				android:textAppearance="@style/normal.black.common"
+				android:layout_toRightOf="@+id/img02" android:layout_below="@+id/book02" />
+			<TextView android:textAppearance="@style/normal.black.common"
+				android:layout_height="30dp" android:layout_width="fill_parent"
+				android:layout_alignBottom="@+id/img02" android:gravity="bottom"
+				android:text="" android:id="@+id/author02" android:layout_toRightOf="@+id/img02"
+				android:layout_below="@+id/details02" />
+			<ImageView android:duplicateParentState="true"
+				android:scaleType="center" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:src="@drawable/recommendline_bg_landscape"
+				android:layout_alignParentBottom="true"></ImageView>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<ImageView android:id="@+id/ImageView02" android:scaleType="center"
+		android:focusableInTouchMode="true" android:layout_width="wrap_content"
+		android:layout_height="296dp" android:src="@drawable/style2_line_verticle_landscape"
+		android:layout_marginTop="208dp" android:layout_marginLeft="461dp"></ImageView>
+	<!-- @drawable/style2_line_verticle -->
+	<RelativeLayout android:id="@+id/LinearLayout03"
+		android:layout_width="280dp" android:layout_height="340dp"
+		android:layout_marginTop="173dp" android:layout_marginLeft="500dp">
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:gravity="bottom" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/zjydbtn" android:layout_width="118dp"
+				android:nextFocusLeft="@+id/recommendBtn" android:nextFocusRight="@+id/more_recent_records_button"
+				style="@style/blockname_wsma" android:textSize="20sp"
+				android:layout_height="wrap_content" android:text="最近阅读" />
+			<LinearLayout android:layout_width="99dp"
+				android:layout_marginLeft="63dp" android:id="@+id/more_recent_records_button"
+				android:nextFocusLeft="@+id/zjydbtn" android:nextFocusRight="@+id/more_recent_records_button"
+				android:focusableInTouchMode="true" android:layout_alignBottom="@+id/zjydbtn"
+				android:gravity="center_vertical|right" android:focusable="true"
+				android:paddingBottom="0dp" android:clickable="true"
+				android:layout_alignParentRight="true" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<ImageView android:background="@drawable/booksummarymore"
+					android:duplicateParentState="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></ImageView>
+				<TextView android:text="更多" android:layout_width="wrap_content"
+					android:id="@+id/more_recent_read_record"
+					android:duplicateParentState="true" android:layout_marginLeft="6dp"
+					android:textAppearance="@style/normal.black.small"
+					android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView android:background="@drawable/newline"
+			android:layout_width="fill_parent" android:cropToPadding="false"
+			android:layout_height="wrap_content" android:layout_below="@+id/LinearLayout02"
+			android:id="@+id/img" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:focusableInTouchMode="true" android:orientation="vertical"
+			android:layout_height="300dp" android:id="@+id/no_recent_read_records"
+			android:layout_below="@+id/img" android:focusable="true"
+			android:nextFocusLeft="@+id/recommend02" android:nextFocusRight="@+id/no_recent_read_records"
+			android:gravity="center" android:clickable="true" android:visibility="visible">
+
+			<TextView android:gravity="center_vertical|center_horizontal"
+				android:text="@string/no_recent_read_books_tip_mainpage"
+				android:paddingLeft="10dp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="10dp"
+				android:nextFocusUp="@+id/more_recent_records_button"
+				android:textAppearance="@style/normal.black.common" />
+			<ImageView android:duplicateParentState="true"
+				android:layout_marginTop="4dp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/zjydline_bg_landscape"></ImageView>
+		</LinearLayout>
+		<RelativeLayout android:id="@+id/recent01"
+			android:focusableInTouchMode="true" android:nextFocusDown="@+id/recent02"
+			android:focusable="true" android:nextFocusUp="@id/more_recent_records_button"
+			android:clickable="true" android:layout_below="@+id/img"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:nextFocusLeft="@+id/recommend01" android:nextFocusRight="@+id/recent01"
+			android:layout_marginTop="4dp">
+			<TextView android:id="@+id/fp_zjyd_1title"
+				android:singleLine="true" android:ellipsize="end"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:textAppearance="@style/normal.black.common"
+				android:duplicateParentState="true" />
+			<TextView android:id="@+id/fp_zjyd_textview1"
+				android:layout_height="wrap_content" android:singleLine="true"
+				android:ellipsize="end" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:textAppearance="@style/normal.black.common"
+				android:layout_below="@+id/fp_zjyd_1title"
+				android:duplicateParentState="true" />
+			<TextView android:id="@+id/fp_zjyd_textview2"
+				android:layout_height="wrap_content" android:text=""
+				android:layout_width="fill_parent" android:layout_marginTop="5dp"
+				android:textAppearance="@style/normal.black.common"
+				android:layout_below="@+id/fp_zjyd_textview1"
+				android:duplicateParentState="true" />
+			<ImageView android:duplicateParentState="true"
+				android:scaleType="center" android:layout_marginTop="4dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/zjydline_bg_landscape" android:layout_below="@+id/fp_zjyd_textview2"></ImageView>
+		</RelativeLayout>
+		<RelativeLayout android:focusable="true"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:id="@+id/recent02" android:nextFocusDown="@+id/recent03"
+			android:nextFocusUp="@+id/recent01" android:layout_below="@+id/recent01"
+			android:layout_width="fill_parent" android:layout_marginTop="4dp"
+			android:nextFocusLeft="@+id/recommend01" android:nextFocusRight="@+id/recent02"
+			android:layout_height="wrap_content">
+			<TextView android:focusable="true" android:singleLine="true"
+				android:ellipsize="end" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_2title" />
+			<TextView android:layout_height="wrap_content"
+				android:focusable="true" android:singleLine="true"
+				android:ellipsize="end" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_textview3" android:layout_below="@+id/fp_zjyd_2title" />
+			<TextView android:layout_height="wrap_content"
+				android:focusable="true" android:text="" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_textview4" android:layout_below="@+id/fp_zjyd_textview3" />
+			<ImageView android:duplicateParentState="true"
+				android:layout_marginTop="4dp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/zjydline_bg_landscape"
+				android:layout_below="@+id/fp_zjyd_textview4"></ImageView>
+		</RelativeLayout>
+		<RelativeLayout android:focusable="true"
+			android:focusableInTouchMode="true" android:clickable="true"
+			android:nextFocusUp="@+id/recent02" android:nextFocusDown="@+id/recent04"
+			android:id="@+id/recent03" android:layout_below="@+id/recent02"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:nextFocusLeft="@+id/recommend02" android:nextFocusRight="@+id/recent03"
+			android:layout_marginTop="4dp">
+
+			<TextView android:focusable="true" android:singleLine="true"
+				android:ellipsize="end" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_3title" />
+			<TextView android:layout_height="wrap_content"
+				android:focusable="true" android:singleLine="true"
+				android:ellipsize="end" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_textview5" android:layout_below="@+id/fp_zjyd_3title" />
+			<TextView android:layout_height="wrap_content"
+				android:focusable="true" android:text="" android:layout_width="fill_parent"
+				android:layout_marginTop="5dp" android:textAppearance="@style/normal.black.common"
+				android:id="@+id/fp_zjyd_textview6" android:layout_below="@+id/fp_zjyd_textview5" />
+			<ImageView android:duplicateParentState="true"
+				android:layout_marginTop="4dp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/zjydline_bg_landscape"
+				android:layout_below="@+id/fp_zjyd_textview6"></ImageView>
+		</RelativeLayout>
+
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true">
+		<include layout="@layout/footer"
+			android:layout_alignParentBottom="true">
+		</include>
+	</RelativeLayout>
+</RelativeLayout>

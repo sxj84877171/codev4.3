@@ -1,0 +1,29 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:clickable="true" android:background="@drawable/bg_datalist"
+	android:layout_height="42dp" android:focusable="true">
+	<TextView android:layout_width="350px" android:textColor="@color/black"
+		android:layout_marginLeft="5px" android:id="@+id/tv_title"
+		android:text="title" android:layout_height="fill_parent"
+		android:gravity="center_vertical" android:lines="1"
+		android:duplicateParentState="true" android:textSize="21sp"></TextView>
+	<!--<TextView android:visibility="gone" android:id="@+id/tv_fromuser" android:layout_height="wrap_content"
+		android:singleLine="true" android:paddingLeft="5pt" android:textColor="@color/black"
+		android:textSize="21sp" android:layout_marginRight="20px"
+		android:text="fromuser" android:layout_width="10px"></TextView>
+	--><TextView android:id="@+id/tv_time" android:text="time"
+		android:gravity="center_vertical|right" android:layout_height="fill_parent"
+		android:lines="1" android:layout_width="150px"
+		android:layout_gravity="right" android:textColor="@color/black"
+		android:layout_marginRight="5px"
+		android:duplicateParentState="true" android:textSize="21sp"></TextView>
+
+	<CheckBox android:id="@+id/messageID" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="right|center_vertical"
+		android:layout_marginLeft="20px"
+		android:duplicateParentState="true" style="@style/CheckBoxPviUi1"></CheckBox>
+	
+	
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width = "wrap_content" 
+android:layout_height = "wrap_content" android:paddingLeft="0px"
+android:background="@color/white"
+>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width = "wrap_content" 
+android:layout_height = "wrap_content" android:paddingLeft="0px"
+android:background="@color/white"
+>
+	<TextView
+			android:id = "@+id/lefttip"
+		   android:layout_width = "130px"
+		   android:layout_height = "wrap_content"
+		   android:textSize = "8pt"
+		   android:text = " 在前面编辑已经介绍过购买高端内存要谨慎，今日编辑告诉大家：大 编辑告诉大家：大 "
+		   android:textColor="@color/black"
+	/>
+	
+	<TextView
+			android:id = "@+id/middletip"
+		   android:layout_width = "130px"
+		   android:layout_height = "wrap_content"
+		   android:textSize = "8pt"
+		   android:text = " order this book,3yuan order this book,3yuanorder this book,3yuanorder this book,3yuan"
+		   android:textColor="@color/black"
+		   android:paddingLeft="10px"
+	/>
+	<TextView
+			android:id = "@+id/righttip"
+		   android:layout_width = "130px"
+		   android:layout_height = "wrap_content"
+		   android:textSize = "8pt"
+		   android:text = " order this book,3yuan order this book,3yuanorder this book,3yuanorder this book,3yuan"
+		   android:textColor="@color/black"
+		   android:paddingLeft="10px"
+	/>
+</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width = "wrap_content" 
+	android:layout_height = "wrap_content" android:paddingLeft="0px"
+	android:background="@color/white"
+	>
+		<TextView
+		   android:layout_width = "22px"
+		   android:layout_height = "2px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+		<TextView 
+			style="@style/button"
+			android:focusable="true" 
+			android:text="确认" 
+			android:textSize = "8pt"
+			android:id="@+id/leftbtn"
+			android:layout_width = "wrap_content"
+		  	 android:layout_height = "wrap_content"
+		  	 android:textColor="@color/black"
+		/>
+		<TextView
+		   android:layout_width = "40px"
+		   android:layout_height = "2px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+		<TextView 
+			style="@style/button"
+			android:focusable="true" 
+			android:text="确认" 
+			android:textSize = "8pt"
+			android:id="@+id/middlebtn"
+			android:layout_width = "wrap_content"
+		  	 android:layout_height = "wrap_content"
+		  	 android:textColor="@color/black"
+		/>
+		<TextView
+		   android:layout_width = "40px"
+		   android:layout_height = "2px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+		<TextView 
+			style="@style/button"
+			android:focusable="true" 
+			android:text="确认" 
+			android:textSize = "8pt"
+			android:id="@+id/rightbtn"
+			android:layout_width = "wrap_content"
+		  	 android:layout_height = "wrap_content"
+		  	 android:textColor="@color/black"
+		/>
+	</LinearLayout>
+
+</LinearLayout>

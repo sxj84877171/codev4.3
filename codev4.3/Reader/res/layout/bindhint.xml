@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@color/white"
+	android:layout_width="500px" android:gravity="center"
+	android:layout_height="350px">
+	<TextView android:layout_width="450px" android:layout_height="90px" android:textColor="@color/black"
+		android:id="@+id/hintmsg"></TextView>
+
+	<LinearLayout android:orientation="horizontal" android:id="@+id/inputlayout"
+		android:layout_marginTop="10px" android:layout_height="40px"
+		android:layout_width="450px" android:gravity="center">
+		<TextView android:text="请输入绑定手机号码: " android:layout_width="wrap_content"
+			android:id="@+id/inputmsg" android:gravity="center_vertical"
+			android:textColor="@color/black" android:layout_height="fill_parent"></TextView>
+		<EditText android:longClickable="false" android:id="@+id/phoneinput" android:layout_width="fill_parent"
+			android:layout_height="fill_parent"></EditText>
+	</LinearLayout>
+
+	<TextView android:id="@+id/hintmsg2" android:layout_width="450px" android:textColor="@color/black"
+		android:layout_marginTop="10px" android:layout_height="30px"></TextView>
+
+	<LinearLayout android:orientation="horizontal" android:id="@+id/btnlayout"
+		android:layout_marginTop="15px" android:layout_height="40px"
+		android:layout_width="450px" android:gravity="center">
+		<Button android:id="@+id/leftbtn" android:text="同意协议并获取验证码 "
+			android:gravity="center" android:layout_width="200px"
+			android:layout_height="fill_parent"></Button>
+		<Button android:id="@+id/rightbtn" android:text="查看协议内容 "
+			android:gravity="center" android:layout_width="200px"
+			android:layout_marginLeft="15px" android:layout_height="fill_parent"></Button>
+	</LinearLayout>
+	<Button android:id="@+id/centerbtn" android:layout_width="80px"
+		android:layout_height="40px" android:text="关闭 "></Button>
+</LinearLayout>

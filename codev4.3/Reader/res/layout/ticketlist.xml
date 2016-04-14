@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	android:id="@+id/mainblock"
+>
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/tab_bgimg_3_ui1">
+		<TextView android:text="用户信息"
+			android:id="@+id/catalogBtn01" android:nextFocusRight="@+id/catalogBtn02" style="@style/nav_textview" android:textColorHighlight="#000000"></TextView>
+		<TextView style="@style/nav_textview" android:text="好友管理 "
+			android:id="@+id/catalogBtn02" android:nextFocusRight="@+id/catalogBtn03"
+			android:nextFocusLeft="@+id/catalogBtn01"></TextView>
+		<TextView style="@style/nav_textview" android:text="消费记录"
+			android:id="@+id/catalogBtn03" android:nextFocusLeft="@+id/catalogBtn02"
+			android:nextFocusRight="@+id/catalogBtn04"></TextView>
+		<TextView android:text="包月退订" style="@style/nav_textview"
+			android:id="@+id/catalogBtn04" android:nextFocusLeft="@+id/catalogBtn03"
+			android:nextFocusRight="@+id/catalogBtn05"></TextView>
+		<TextView style="@style/nav_textview" android:text="连载预订"
+			android:id="@+id/catalogBtn05" android:nextFocusLeft="@+id/catalogBtn04"
+			android:nextFocusRight="@+id/catalogBtn06"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn06" android:nextFocusLeft="@+id/catalogBtn05"
+			android:nextFocusDown="@+id/moreBtn" android:text="消息中心"></TextView>
+		</LinearLayout>
+		
+
+	<TextView 
+				android:layout_marginTop="18px"
+				android:layout_marginLeft="20px"
+				android:layout_gravity="left"
+				android:textSize="21sp"
+				android:textColor="@color/black" android:layout_width="560px"
+				android:layout_height="wrap_content" android:text="用户您好：" />
+
+	<TextView 	android:id="@+id/ticketinfo"
+				android:layout_marginTop="18px"
+				android:layout_marginLeft="20px"
+				android:layout_gravity="left"
+				android:textSize="21sp"
+				android:textColor="@color/black" android:layout_width="560px"
+				android:layout_height="wrap_content" android:text="您现在有书券50元，其中有20元，将在2011年4月1号失效，请尽快使用。" />
+
+
+	
+	<Button
+				android:id="@+id/returnB"
+				android:text="返回消费记录"
+				android:layout_gravity="right"
+				android:layout_marginTop="18px"
+				android:layout_marginRight="60px"
+				style="@style/button"
+			  />
+			
+		
+
+
+		<!--item1-->
+		<RelativeLayout  android:layout_marginTop="18px"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView 
+				android:layout_alignParentLeft="true"
+				android:layout_height="wrap_content" android:text="书券列表" android:layout_width="wrap_content"
+				android:textStyle="bold" android:textSize="21sp" android:textColor="@color/black"/>
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:src="@drawable/timeset_split"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<TextView android:id="@+id/norecord"
+				  android:layout_marginLeft="20px"
+				  android:text="您还没有书券记录！"
+				  android:textColor="@color/black"
+				  android:textSize="21sp"
+				  android:layout_marginTop="20px"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:visibility="gone"
+				  />
+
+		
+		<!--item1-->
+		<RelativeLayout android:id="@+id/r1"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist01"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg0"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item2-->
+		<RelativeLayout  android:id="@+id/r2"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist02"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg1"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item3-->
+		<RelativeLayout  android:id="@+id/r3"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist03"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg2"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item4-->
+		<RelativeLayout  android:id="@+id/r4"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist04"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg3"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item5-->
+		<RelativeLayout  android:id="@+id/r5"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist05"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg4"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item6-->
+		<RelativeLayout  android:id="@+id/r6"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist06"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>	
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg5"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+		
+		<!--item7-->
+		<RelativeLayout  android:id="@+id/r7"
+		     android:layout_height="42px" android:layout_width="560px" android:layout_gravity="center_horizontal" android:gravity="center_vertical">
+			
+			<TextView
+			android:id="@+id/ticketlist07"
+			android:text="fdfsdfsdfsdfsdffdsfsdfsdfsdf"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/black"
+			 android:textSize="21sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			/>
+			<ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:id="@+id/selectbg6"
+					   android:src="@drawable/friendlist"
+					   android:layout_alignParentBottom="true"
+			/>
+		</RelativeLayout>
+</LinearLayout>
+
+
+	<LinearLayout android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_y="679px"
+	>
+		<include layout="@layout/footer_page_ui1"></include>
+	</LinearLayout>	
+</AbsoluteLayout>

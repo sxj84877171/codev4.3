@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/reader-data.jar"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/javabase64-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/androidutil.jar"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/chardet.jar"/>
+	<classpathentry exported="true" kind="lib" path="/ReaderLib/lib/cpdetector_1.0.7.jar"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

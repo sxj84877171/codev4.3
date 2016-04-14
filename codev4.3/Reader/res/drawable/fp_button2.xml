@@ -1,0 +1,23 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <item android:state_window_focused="false" 
+        android:drawable="@drawable/fpbutton2" /> 
+<!-- 
+    <item android:state_focused="true" android:state_enabled="false" 
+        android:state_pressed="true" 
+        android:drawable="@drawable/pressed" /> 
+ 
+    <item android:state_focused="true" android:state_enabled="false" 
+        android:drawable="@drawable/pressed" /> 
+
+    <item android:state_focused="true" android:state_pressed="true" 
+        android:drawable="@drawable/pressed" /> 
+    <item android:state_focused="false" android:state_pressed="true" 
+        android:drawable="@drawable/icon" /> 
+    <item android:state_focused="true" 
+        android:drawable="@drawable/fpbutton2"/> 
+ -->
+</selector> 
+
+
+

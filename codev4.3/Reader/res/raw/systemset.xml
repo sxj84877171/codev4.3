@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<string name="NetSet">AUTO</string>
+<string name="change_state">3</string>
+<string name="auto_state">close</string>
+<string name="RefreshSet">GC16_FLASH</string>
+<string name="RotatingSet">close</string>
+<string name="SkinSet">SKIN1</string>
+<string name="DATE_FORMAT">DATE_FORMAT_24</string>
+<string name="Language">ENGLISH</string>
+<string name="StartUpSet">mainPage</string>
+<string name="WelcomeSet">close</string>
+<string name="SoundSet">close</string>
+</map>

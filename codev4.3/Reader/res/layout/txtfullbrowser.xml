@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/white"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.pvi.ap.reader.activity.PageTextView
+		android:layout_width="fill_parent" android:id="@+id/view_contents"
+		android:textColor="@color/black" android:background="@color/white"
+		android:textSize="20sp" android:focusableInTouchMode="true" android:focusable="true"
+		android:gravity="top" android:cursorVisible="false" android:editable="false"
+		android:selectable="true" android:layout_height="fill_parent"
+		android:text="">
+	</com.pvi.ap.reader.activity.PageTextView>
+</RelativeLayout>
+	

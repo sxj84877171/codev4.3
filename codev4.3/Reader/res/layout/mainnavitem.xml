@@ -1,0 +1,9 @@
+<LinearLayout 
+android:id="@+id/LinearLayout01" 
+xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:clickable="true" android:focusable="true" android:layout_gravity="center">	
+<ImageView android:scaleType="fitXY" android:id="@+id/ImageViewNavImage" android:src="@drawable/mainnav_image_1" android:layout_gravity="center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:duplicateParentState="true"></ImageView>
+<TextView android:singleLine="true" android:id="@+id/NavTitle" android:text="无线书城 " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:duplicateParentState="true" android:textAppearance="@style/normal.black.big"></TextView>
+<!-- <ImageView android:layout_width="wrap_content" android:scaleType="fitXY" android:layout_height="wrap_content" android:src="@drawable/tab_indicator_ui2" android:id="@+id/ImageViewSwicher" android:visibility="gone"></ImageView>
+ -->
+
+</LinearLayout>

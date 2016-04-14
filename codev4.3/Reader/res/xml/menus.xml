@@ -1,0 +1,749 @@
+<pvimenus xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader">
+
+	<pvimenu pvi:act="activity.BookSearchActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.ListFileActivity">
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem pvi:op="mainpage" android:text="返回首页" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.UserInfoActivity">
+		<pvimenuitem android:tag="edit" android:text="@string/modifyuserinfo" />
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.ModifyUserInfoActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+
+	<pvimenu pvi:act="activity.MyFriendListActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	
+	<pvimenu pvi:act="activity.RecommendToFriend">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	
+	<pvimenu pvi:act="activity.PresentToFriend">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.ExpenseProActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.UnsubscribeActivity"><!-- 包月退订 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!--
+MEB'menu
+-->
+	<pvimenu pvi:act="activity.MebViewFileActivity">
+		<pvimenuitem pvi:op="mainpage" android:text="返回首页" />
+		<pvimenuitem android:tag="addBookMark" android:text="添加书签" />
+		<pvimenuitem android:tag="bookMarkList" android:text="我的书签" />
+		<pvimenuitem android:tag="typefaces" android:text="设  置" />
+		<pvimenuitem android:tag="serach" android:text="内容搜索" />
+		<pvimenuitem android:tag="autoPager" android:text="自动翻页" />
+		<pvimenuitem android:tag="postil" android:text="开启批注" />
+		<pvimenuitem android:tag="openNote" android:text="开启便笺" />
+		<pvimenuitem android:tag="openpage" android:text="开启触屏翻页" />
+		<pvimenuitem android:tag="myAnnotation" android:text="我的批注" />
+		<pvimenuitem pvi:sub="forward" android:text="           跳  转       >>" />
+		<pvimenuitem android:tag="jumpChapter" android:text="跳转章节"
+			pvi:p="forward" />
+		<pvimenuitem android:tag="returncontents" android:text="目录页"
+			pvi:p="forward" />
+		<pvimenuitem android:tag="returnpic" android:text="封面页"
+			pvi:p="forward" />
+		<pvimenuitem android:tag="bookSummary" android:text="摘要页"
+			pvi:p="forward" />
+		<pvimenuitem pvi:sub="inactive" android:text="           互  动       >>" />
+
+		<pvimenuitem android:tag="flowers" android:text="送鲜花"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="comments" android:text="查看/设置评论"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="friends" android:text="推荐给好友"
+			pvi:p="inactive" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<!--
+txtReader'menu
+-->
+
+	<pvimenu pvi:act="activity.TxtReaderActivity">
+		<pvimenuitem android:tag="navigation" android:text="返回首页" />
+		<!--    <pvimenuitem android:tag="OpenTTS" android:text="打开TTS" /> -->
+		<pvimenuitem android:text="添加书签" android:tag="addBookMark" />
+		<pvimenuitem android:text="我的书签" android:tag="bookMarkList" />
+
+		<pvimenuitem android:tag="WordType" android:text="设  置" />
+		<pvimenuitem android:tag="search" android:text="内容搜索" />
+		<pvimenuitem android:tag="TurnpageAuto" android:text="自动翻页" />
+		<pvimenuitem android:text="开启批注" android:tag="addannotation" />
+		<pvimenuitem android:text="开启便笺" android:tag="touchnote" />
+		<pvimenuitem android:text="开启触屏翻页" android:tag="touchpage" />
+		<pvimenuitem android:tag="showannotation" android:text="我的批注" />
+		<pvimenuitem android:tag="JumpPage" android:text="跳  转" />
+		<!-- <pvimenuitem android:tag="rotation" android:text="旋转" /> -->
+
+		<pvimenuitem android:tag="fullScreem" android:text="全  屏" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!--
+		<pvimenu pvi:act="activity.TxtReaderActivity"> <pvimenuitem
+		android:tag="navigation" android:text="返回导航页面" /> <pvimenuitem
+		android:tag="OpenTTS" android:text="打开TTS" /> <pvimenuitem
+		android:tag="TurnpageAuto" android:text="自动翻页" /> <pvimenuitem
+		android:tag="ZoomOut" android:text="缩小" /> <pvimenuitem
+		android:tag="ZoomIn" android:text="放大" /> <pvimenuitem
+		android:tag="WordType" android:text="字体" /> <pvimenuitem
+		android:tag="WordSpace" android:text="字间距" /> <pvimenuitem
+		android:tag="LineSpace" android:text="行间距" /> <pvimenuitem
+		android:tag="addBookMark" android:text="添加书签" /> <pvimenuitem
+		android:tag="bookMarkList" android:text="我的书签" /> <pvimenuitem
+		android:tag="addannotation" android:text="开启批注" /> <pvimenuitem
+		android:tag="JumpPage" android:text="跳转" /> <pvimenuitem
+		android:tag="rotation" android:text="旋转" /> <pvimenuitem
+		android:tag="search" android:text="内容搜索" /> <pvimenuitem
+		android:text="打开背景音乐" pvi:op="bgmusic" /> <pvimenuitem android:text="返
+		回" pvi:op="back" /> </pvimenu>
+	-->
+
+	<!--
+kyle's-->
+	<pvimenu pvi:act="activity.InfoContentActivity">
+		<pvimenuitem android:text="欢迎页" pvi:op="welcome" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.MainpageInsideActivity">
+		<!--
+			<pvimenuitem android:text="二级菜单" pvi:sub="wxsc" /> 二级菜单项的配置xml
+			一定要放置在二级菜单框的定义之后 <pvimenuitem android:text="书城搜索"
+			pvi:op="g3booksearch" pvi:p="wxsc" /> <pvimenuitem
+			android:text="我的书架" pvi:op="mybookshelf" pvi:p="wxsc" /> <pvimenuitem
+			android:text="返回" pvi:op="back" pvi:p="wxsc" />
+		-->
+		<pvimenuitem android:id="@+id/m1" android:text="打开背景音乐"
+			pvi:op="bgmusic" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="绑  定" android:tag="bind" />
+
+		<pvimenuitem android:text="版权声明" android:tag="copyright" />
+		<pvimenuitem android:text="隐私声明" android:tag="privacy" />
+		<!--
+			<pvimenuitem android:text="二级菜单1" pvi:sub="wxsc1" /> <pvimenuitem
+			android:text="书城搜索" pvi:op="g3booksearch" pvi:p="wxsc1" />
+			<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" pvi:p="wxsc1"
+			/> <pvimenuitem android:text="返回" pvi:op="back" pvi:p="wxsc1" />
+			<pvimenuitem android:text="书城搜索" pvi:op="g3booksearch" pvi:p="wxsc1"
+			/> <pvimenuitem android:text="我的书架" pvi:op="mybookshelf"
+			pvi:p="wxsc1" /> <pvimenuitem android:text="返回" pvi:op="back"
+			pvi:p="wxsc1" />
+		-->
+		<pvimenuitem android:text="用户服务协议" android:tag="protocol" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.WirelessStoreMainpageActivity">
+		<pvimenuitem android:text="欢迎页" pvi:op="welcome" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.WirelessTabActivity">
+		<pvimenuitem android:text="欢迎页" pvi:op="welcome" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.BookPackageInfoActivity">
+
+		<pvimenuitem android:text="我要订购" android:tag="subscribe" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.WriterActivity">
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.RankingActivity">
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.WirelessRankActivity">
+		<pvimenuitem android:text="欢迎页" pvi:op="welcome" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.CatalogHomepageActivity">
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="反馈/点书" android:tag="feedback" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.BookListActivity">
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="图书搜索" pvi:op="g3booksearch" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+
+
+	<pvimenu pvi:act="activity.SerialSubscribeActivity"><!-- 连载预定 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.MessageCenterActivity"><!-- 连载预定 -->
+		<pvimenuitem android:text="全  选" android:tag="selall" />
+		<pvimenuitem android:text="查看消息" android:tag="view" />
+		<pvimenuitem android:text="删  除" android:tag="del" />
+		<pvimenuitem android:text="清  空" android:tag="delall" />
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<!-- PDF control menu (Arthur) -->
+	<pvimenu pvi:act="activity.PDFReadActivity">
+		<pvimenuitem android:tag="navigation" android:text="@string/str_backToHome" />
+		<!-- pvimenuitem android:tag="open"         android:text="打开" / -->
+		<!--pvimenuitem android:tag="close"        android:text="关闭" /-->
+		<!-- pvimenuitem android:tag="prev"     android:text="上一页" /-->
+		<!-- pvimenuitem android:tag="next"     android:text="下一页" /-->
+		<pvimenuitem android:tag="addbm" android:text="@string/str_pdf_add_mark" />
+		<pvimenuitem android:tag="delbm" android:text="@string/str_pdf_del_mark" />
+		<pvimenuitem android:tag="mybookmark" android:text="@string/str_pdf_my_mark" />
+		<pvimenuitem android:tag="fontsize" android:text="@string/str_pdf_font_size" />
+		<pvimenuitem android:tag="autocut" android:text="@string/str_pdf_auto_cut" />
+		<pvimenuitem android:tag="autoplay" android:text="@string/str_pdf_start_auto_play" />
+		<!-- pvimenuitem android:tag="search" android:text="搜索 >>" /-->
+		<pvimenuitem android:tag="addnote" android:text="@string/str_pdf_add_note" />
+		<pvimenuitem pvi:sub="pagingmode" android:tag="pagingmode" android:text="@string/str_pdf_paging_mode" />
+		
+		<pvimenuitem android:tag="pagingmodeview0" android:text="@string/str_pdf_pm_singlepage"
+			pvi:p="pagingmode" />
+		<pvimenuitem android:tag="pagingmodeview1" android:text="@string/str_pdf_pm_scrolling"
+			pvi:p="pagingmode" />
+
+		
+		<pvimenuitem android:tag="notelist" android:text="@string/str_pdf_note_list" />
+		<!--
+			pvimenuitem android:tag="scaling"
+			android:text="@string/str_pdf_scaling" /
+		-->
+		<!--
+			pvimenuitem android:tag="select"
+			android:text="@string/str_pdf_rect_selete" /
+		-->
+		<pvimenuitem android:tag="input" android:text="@string/str_pdf_jump_page" />
+		<!--
+			pvimenuitem android:tag="touchfunc"
+			android:text="@string/str_pdf_touch_func" /
+		-->
+		<!--pvimenuitem android:tag="pageadjust" android:text="页面适应 >>"/-->
+		<pvimenuitem android:tag="toc" android:text="@string/str_pdf_show_toc" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="back" android:text="@string/str_pdf_back" />
+		<!-- pvimenuitem android:text="返  回" pvi:op="back" /-->
+	</pvimenu>
+
+
+	<pvimenu pvi:act="activity.SystemConfigActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.RecoveryFactoryActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.ConfigHandsetInfoActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.TimeSetActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" android:tag="back1" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.TimeSetActivityUI2">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="gotoMain" android:text="返  回" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.SubscribeRemindActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.StartUpActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.StandbyActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.WelcomeSetActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.LanguageSetActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.SkinSetActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.NetSetActivity"> <!--联网设置 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.MyAnnotationActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="delAnnotation" android:text="删  除" />
+		<pvimenuitem android:tag="delAnnotationBook" android:text="删除本书全部" />
+		<pvimenuitem android:tag="delAnnotationAll" android:text="全部删除" />
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+		<pvimenuitem android:tag="sortByTime" android:text="按时间排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="sortByBook" android:text="按书名排序"
+			pvi:p="rearrange" />
+
+
+
+		<pvimenuitem android:tag="gotoMain" android:text="返  回" />
+
+	</pvimenu>
+
+	<!--denice -->
+	<pvimenu pvi:act="activity.MyNoteActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="d_note" android:text="删  除" />
+		<pvimenuitem android:text="           排  序       >>"
+			pvi:sub="wxsc" />
+		<pvimenuitem android:tag="sort_note" android:text="按文件名排序"
+			pvi:p="wxsc" />
+		<pvimenuitem android:tag="sort_time" android:text="按时间排序"
+			pvi:p="wxsc" />
+
+		<pvimenuitem android:tag="m_note" android:text="修  改" />
+		<pvimenuitem android:tag="c_note" android:text="新  建" />
+		<pvimenuitem android:tag="r_note" android:text="重命名" />
+		<pvimenuitem android:tag="s_note" android:text="搜  索" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.ShowNoteTextActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<!-- BookSummary Iris -->
+	<pvimenu pvi:act="activity.BookSummaryActivity">
+		<pvimenuitem android:tag="bookshelf" android:text="我的书架" />
+		<pvimenuitem android:tag="usercenter" android:text="个人空间" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="收  藏" android:tag="favorite" />
+
+		<pvimenuitem pvi:sub="inactive" android:text="           互  动       >>" />
+
+		<pvimenuitem android:tag="flowers" android:text="送鲜花"
+			pvi:p="inactive" />
+
+		<pvimenuitem android:tag="comments" android:text="查看/发表评论"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="presentbook" android:text="赠送好友"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="recommendtofriends"
+			android:text="推荐给好友" pvi:p="inactive" />
+		<pvimenuitem android:text="反馈/点书" android:tag="orderbook" />
+		<pvimenuitem android:tag="authorinfo" android:text="查看作者信息" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- BookCatalog Iris -->
+	<pvimenu pvi:act="activity.BookCatalogActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="一键更新" android:tag="reflash" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- MyDoc Iris -->
+	<pvimenu pvi:act="activity.MyDocumentActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="delete" android:text="删  除" />
+		<pvimenuitem android:tag="deleteAll" android:text="全部删除" />
+		<pvimenuitem android:text="           排  序       >>"
+			pvi:sub="wxsc" />
+		<pvimenuitem android:tag="sortName" android:text="按文件名排序"
+			pvi:p="wxsc" />
+		<pvimenuitem android:tag="sortRead" android:text="按时间排序"
+			pvi:p="wxsc" />
+		<pvimenuitem android:tag="rename" android:text="重命名" />
+		<pvimenuitem android:tag="search" android:text="搜  索" />
+		<!--
+			<pvimenuitem android:tag="retparentdir" android:text="返回父目录" />
+		-->
+		<pvimenuitem android:text="返  回" android:tag="back1" />
+	</pvimenu>
+	<!-- AssociateBookList Iris -->
+	<pvimenu pvi:act="activity.AssociatedBookListActivity">
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- LocalBook Iris -->
+	<pvimenu pvi:act="activity.LocalBookActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- LocalBookList Iris -->
+	<pvimenu pvi:act="activity.LocalBookListActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:tag="search" android:text="搜  索" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- Storage Iris -->
+	<pvimenu pvi:act="activity.StorageStatActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<!--	<pvimenuitem android:tag="search" android:text="搜索" />-->
+		<!--
+			<pvimenuitem android:tag="sortbybookname" android:text="按书名排序" />
+		-->
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- ReadingOnline Iris -->
+	<pvimenu pvi:act="activity.ReadingOnlineActivity">
+		<pvimenuitem android:tag="bookshelf" android:text="我的书架" />
+		<pvimenuitem android:tag="usercenter" android:text="个人空间" />
+		<pvimenuitem android:tag="bookmark" android:text="添加书签" />
+		<pvimenuitem android:tag="bookmarks" android:text="我的书签" />
+		<pvimenuitem android:tag="typefaces" android:text="设  置" />
+		<pvimenuitem android:tag="search" android:text="搜  索" />
+		<pvimenuitem android:tag="openNote" android:text="开启便笺" />
+		<pvimenuitem android:tag="favorite" android:text="收  藏" />
+		<pvimenuitem pvi:sub="forward" android:text="           跳  转       >>" />
+		
+            <pvimenuitem android:tag="returncontents" android:text="目录页"
+            pvi:p="forward" />
+            <pvimenuitem android:tag="bookSummary" android:text="摘要页"
+            pvi:p="forward" />
+            <pvimenuitem android:tag="authorinfo" android:text="作者页" 
+            pvi:p="forward" />
+		<pvimenuitem pvi:sub="inactive" android:text="           互  动       >>" />
+		<pvimenuitem android:tag="flowers" android:text="送鲜花"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="comments" android:text="查看/设置评论"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="presentbook" android:text="赠送好友"
+			pvi:p="inactive" />
+		<pvimenuitem android:tag="recommendtofriends"
+			android:text="推荐给好友" pvi:p="inactive" />
+		<pvimenuitem android:tag="authorinfo" android:text="查看作者信息" />
+
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!--
+		MyMusic Iris <pvimenuitem android:tag="backgroundmusicactivity"
+		android:text="背景音乐库管理" />
+	-->
+	<pvimenu pvi:act="activity.MyMusicActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:tag="addtobackground" android:text="添加到背景音乐库" />
+		<pvimenuitem android:tag="delbackground" android:text="删除背景音乐" />
+		<pvimenuitem android:tag="delete" android:text="删  除" />
+		<pvimenuitem android:tag="alldelete" android:text="全部删除" />
+		<pvimenuitem android:text="           排  序       >>"
+			pvi:sub="wxsc" />
+		<pvimenuitem android:tag="filecompositor" android:text="按文件名排序"
+			pvi:p="wxsc" />
+		<pvimenuitem android:tag="timecompositor" android:text="按时间排序"
+			pvi:p="wxsc" />
+		<pvimenuitem android:tag="search" android:text="搜  索" />
+
+		<pvimenuitem android:text="返  回" android:tag="back1" />
+	</pvimenu>
+	<!-- backgroundMusic Iris -->
+	<pvimenu pvi:act="activity.BackgroundMusicActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:tag="mymusic" android:text="我的音乐" />
+		<pvimenuitem android:tag="delete" android:text="删  除" />
+		<pvimenuitem android:tag="search" android:text="搜  索" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- VolmnList Iris -->
+	<pvimenu pvi:act="activity.FascicleListActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.CommentsListActivity"><!-- 查看评论 -->
+		<pvimenuitem android:text="发表评论" android:tag="newComment" />
+		<pvimenuitem android:text="我的书架" pvi:op="mybookshelf" />
+		<pvimenuitem android:text="个人空间" pvi:op="userspace" />
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.RecentBookActivity"><!-- 最近阅读 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="删  除" android:tag="delete" />
+		<pvimenuitem android:text="全部删除" android:tag="deleteAll" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+		<pvimenuitem android:text="按时间排序" android:tag="time"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="author" android:text="按作者排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:text="按书名排序" android:tag="bookname"
+			pvi:p="rearrange" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MyDownloadsActivity"><!-- 我的下载 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="重新下载" android:tag="xin" />
+		<pvimenuitem android:text="继续下载" android:tag="jixu" />
+		<pvimenuitem android:text="暂停下载" android:tag="pause" />
+		<pvimenuitem android:text="删  除" android:tag="delete" />
+		<pvimenuitem android:text="全部删除" android:tag="deleteAll" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+		<pvimenuitem android:text="按时间排序" android:tag="time"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="author" android:text="按作者排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:text="按书名排序" android:tag="bookname"
+			pvi:p="rearrange" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MyBookMarkActivity"><!-- 我的书签 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+
+		<pvimenuitem android:text="删  除" android:tag="delete" />
+		<pvimenuitem android:text="全部删除" android:tag="deleteAll" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+		<pvimenuitem android:text="按时间排序" android:tag="time"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="author" android:text="按作者排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:text="按书名排序" android:tag="bookname"
+			pvi:p="rearrange" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MySubscribesActivity"><!-- 我的订购 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+			<pvimenuitem android:text="按时间排序" android:tag="time"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="author" android:text="按作者排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:text="按书名排序" android:tag="bookname"
+			pvi:p="rearrange" />
+	
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MyFavoriteActivity"><!-- 我的收藏 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="删  除" android:tag="delete" />
+		<pvimenuitem android:text="全部删除" android:tag="deleteAll" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+		<pvimenuitem pvi:sub="rearrange" android:text="           排  序       >>" />
+		<pvimenuitem android:text="按时间排序" android:tag="time"
+			pvi:p="rearrange" />
+		<pvimenuitem android:tag="author" android:text="按作者排序"
+			pvi:p="rearrange" />
+		<pvimenuitem android:text="按书名排序" android:tag="bookname"
+			pvi:p="rearrange" />
+
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MyMonthlyPaymentActivity"> <!-- 我的包月 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.ShowAgreementActivity"> <!-- 显示协议，隐私，版权 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.MyImageActivity"><!-- 我的图片 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+
+		<pvimenuitem android:text="删  除" android:tag="delete" />
+		<pvimenuitem android:text="全部删除" android:tag="deleteAll" />
+
+		<pvimenuitem android:text="           排  序       >>"
+			pvi:sub="wxsc" />
+		<pvimenuitem android:text="按文件名排序" android:tag="filecompositor"
+			pvi:p="wxsc" />
+		<pvimenuitem android:text="按时间排序" android:tag="timecompositor"
+			pvi:p="wxsc" />
+		<pvimenuitem android:text="重命名" android:tag="rename" />
+		<pvimenuitem android:text="搜  索" android:tag="search" />
+		<pvimenuitem android:text="返  回" android:tag="back1" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.ShowPicActivity"><!-- 打开图片 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+	<!--	 <pvimenuitem android:text="全  屏" android:tag="all" />  -->
+		<pvimenuitem android:text="实际大小" android:tag="size" />
+	<!--	<pvimenuitem android:text="放  大" android:tag="big" />
+		<pvimenuitem android:text="缩  小" android:tag="small" /> -->
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<pvimenu pvi:act="activity.RecommendToFriend"><!-- 推荐好友 -->
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- 书籍列表  -->
+	<pvimenu pvi:act="activity.BookListActivity">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+	<!-- 最新资讯内容页  -->
+	<pvimenu pvi:act="activity.InfoContentActivity ">
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.ExpenseInfoActivity">
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem pvi:op="mainpage" android:text="首  页" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.TicketListActivity">
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem pvi:op="mainpage" android:text="首  页" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+
+	</pvimenu>
+
+	<pvimenu pvi:act="activity.PresentListActivity">
+		<pvimenuitem android:text="打开背景音乐" pvi:op="bgmusic" />
+		<pvimenuitem android:text="无线书城" pvi:op="wirelessstore" />
+		<pvimenuitem android:text="返  回" pvi:op="back" />
+
+	</pvimenu>
+
+</pvimenus>

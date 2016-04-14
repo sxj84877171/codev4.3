@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffffff"
+	android:id="@+id/mainblock">
+	<RelativeLayout android:id="@+id/norecordlayout"
+		android:visibility="invisible" android:paddingLeft="20dp"
+		android:paddingRight="20dp" android:layout_x="0dp" android:layout_y="0dp"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:id="@+id/tishi" android:layout_width="fill_parent"
+			android:paddingTop="20dp" android:layout_height="wrap_content"
+			android:textAppearance="@style/bold.black.big" />
+		<com.pvi.ap.reader.activity.pviappframe.BoldTextView 
+			android:id="@+id/gotowirlessstore" android:layout_marginTop="50dp"
+			android:layout_below="@+id/tishi" android:textAppearance="@style/bold.black.common"
+			android:layout_centerHorizontal="true" android:focusable="true"
+			android:focusableInTouchMode="true" android:clickable="true" style="@style/button" />
+	</RelativeLayout>
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+		android:focusableInTouchMode="true" android:layout_height="585dp"
+		android:id="@+id/list" android:layout_width="fill_parent" pvi:lineBgLeft="100"
+		android:background="#fff" android:focusable="true" pvi:lineHeight="83"></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+
+	<TextView style="@style/button" android:gravity="center"
+		android:layout_alignParentBottom="true" android:layout_marginBottom="21dp"
+		android:focusable="true" android:nextFocusDown="@+id/addButton"
+		android:layout_alignParentRight="true" android:layout_marginRight="30dp"
+		android:text="删 除" android:id="@+id/deleteButton"></TextView>
+	<TextView android:text="全选" style="@style/button"
+		android:gravity="center" android:focusable="true"
+		android:layout_alignTop="@+id/deleteButton" android:layout_toLeftOf="@+id/deleteButton"
+		android:layout_marginRight="20dp" android:id="@+id/selectAllButton"></TextView>
+	<TextView android:text="查 看" style="@style/button"
+		android:layout_alignTop="@+id/deleteButton" android:gravity="center"
+		android:id="@+id/viewButton" android:focusable="true"
+		android:nextFocusDown="@+id/addButton" android:layout_toLeftOf="@+id/selectAllButton"
+		android:layout_marginRight="20dp"></TextView>
+</RelativeLayout>

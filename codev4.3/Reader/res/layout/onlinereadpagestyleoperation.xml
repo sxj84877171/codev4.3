@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/white" android:layout_width="fill_parent"
+	android:id="@+id/mainblock" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:padding="20dp"
+		android:orientation="vertical" android:layout_height="470dp">
+		<com.pvi.ap.reader.activity.PageTextView
+			android:focusable="true" android:id="@+id/contentview"
+			android:textColor="@color/black" android:textSize="16sp"
+			android:cursorVisible="false" android:background="@drawable/white"
+			android:gravity="top" android:editable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		</com.pvi.ap.reader.activity.PageTextView>
+	</LinearLayout>
+
+
+	<LinearLayout android:layout_width="fill_parent" android:id="@+id/menubar" android:orientation="vertical" android:background="@color/white" android:layout_height="40dp" android:layout_alignParentBottom="true">
+				<ImageView android:layout_width="fill_parent" android:background="@drawable/statusbar_bottom_ui1" android:layout_height="wrap_content">
+				</ImageView>
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+
+						<ImageButton android:id="@+id/menubtn" 
+						android:layout_height="38dp" android:layout_width="40dp"
+						android:layout_alignParentLeft="true" 
+						android:src="@drawable/button_menu_ui1"
+						android:background="@null" />
+
+
+					<LinearLayout android:layout_width="wrap_content" android:id="@+id/LinearLayout05" android:layout_height="fill_parent" android:gravity="center" android:layout_marginRight="30dp" android:layout_centerHorizontal="true">
+						<ImageButton  
+						android:id="@+id/prechapter" 
+						 android:layout_height="wrap_content" android:src="@drawable/button_prechapter_ui1" android:background="@null" android:layout_width="wrap_content"/>
+						
+						<ImageButton android:id="@+id/prepage" android:background="@null" android:src="@drawable/button_prepage_ui1" android:layout_marginRight="5dp" android:layout_width="40dp" android:layout_height="38dp"></ImageButton>
+						<TextView android:layout_width="wrap_content" android:text="0/0" android:layout_height="wrap_content" android:id="@+id/pagetxt" android:textAppearance="@style/normal.black.big"></TextView>
+
+						<ImageButton android:id="@+id/nextpage" android:background="@null" android:src="@drawable/button_nextpage_ui1" android:layout_marginLeft="5dp" android:layout_height="38dp" android:layout_width="40dp"></ImageButton>
+
+						<ImageButton android:id="@+id/nextchapter" 
+						android:layout_height="wrap_content" android:layout_alignParentBottom="true" 
+						android:text="@string/nextchapter" android:layout_width="wrap_content" 
+						android:layout_marginLeft="5dp" android:minWidth="50dp" android:gravity="left" android:background="@null" android:src="@drawable/button_nextchapter_ui1"/>
+
+					</LinearLayout>
+
+
+					<LinearLayout android:id="@+id/LinearLayout08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+
+						<ImageButton android:id="@+id/fp_application" android:layout_marginRight="5dp" android:background="@null" android:src="@drawable/allapp" android:layout_width="40dp" android:layout_height="38dp" android:visibility="invisible"></ImageButton>
+						<ImageButton android:id="@+id/fp_settings" android:layout_width="40dp" android:layout_height="38dp" android:src="@drawable/button_setting_ui1" android:background="@null" android:layout_marginRight="20dp"></ImageButton>
+						<ImageButton android:id="@+id/fp_music" android:background="@null" android:layout_width="40dp" android:layout_height="38dp" android:src="@drawable/button_music_ui1" android:layout_marginRight="20dp"></ImageButton>
+						<ImageButton android:id="@+id/back" android:layout_marginRight="5dp" android:layout_height="38dp" android:layout_width="40dp" android:background="@null" android:src="@drawable/button_back_ui1"></ImageButton>
+					</LinearLayout>
+				</RelativeLayout>
+			</LinearLayout><RelativeLayout android:layout_width="fill_parent" android:visibility="invisible" android:layout_height="wrap_content" android:id="@+id/buttonLay" android:layout_alignParentBottom="true" android:layout_marginBottom="46dp">
+		
+		
+			<!--<EditText android:longClickable="false" android:id="@+id/serach" android:background="@drawable/pviapreaderserch" android:layout_width="fill_parent" android:layout_marginLeft="25dp" android:layout_height="wrap_content" android:gravity="left|center"/>
+			<Button android:id="@+id/find" android:gravity="center" android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_toRightOf="@+id/serach" android:layout_height="wrap_content" style="@style/button" android:text="@string/Serach"></Button>
+			<Button android:gravity="center" android:layout_toRightOf="@+id/find" android:text="关  闭" android:layout_marginLeft="20dp" android:layout_marginRight="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/button" android:id="@+id/close"></Button>-->
+	
+	<EditText android:longClickable="false" android:id="@+id/serach" android:background="@drawable/pviapreaderserch"
+					android:layout_width="fill_parent" android:layout_marginLeft="25dp"
+					android:maxLength="30" android:gravity="top" android:layout_marginRight="20dp"
+					android:layout_toLeftOf="@+id/find" android:layout_height="28dp" android:singleLine="true"
+					android:layout_alignTop="@+id/find" />
+				<Button android:id="@+id/find" android:text="@string/Serach"
+					android:layout_marginRight="20dp" android:layout_height="wrap_content"
+					style="@style/button"
+					android:layout_toLeftOf="@+id/close"></Button>
+				<Button android:id="@+id/close" android:text="@string/standby_auto_close"
+					android:layout_marginRight="25dp"
+					android:layout_height="wrap_content" android:layout_alignParentRight="true"
+					style="@style/button"></Button>
+	</RelativeLayout>
+
+</RelativeLayout>

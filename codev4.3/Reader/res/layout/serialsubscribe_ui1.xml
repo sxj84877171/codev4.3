@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white">
+	<LinearLayout android:id="@+id/mainblock"
+		android:orientation="vertical" android:layout_height="0dip"
+		android:layout_weight="1.0" android:layout_gravity="center_horizontal"
+		android:layout_width="fill_parent">
+		<LinearLayout android:orientation="vertical"
+			android:layout_marginTop="20dp" android:layout_height="560px"
+			android:layout_width="560px" android:layout_gravity="center_horizontal">
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+				android:id="@+id/productname" android:focusable="true"
+				android:layout_height="39px" android:nextFocusUp="@+id/productname07"
+				android:gravity="left" android:nextFocusDown="@+id/productname01"
+				android:text="预订书籍         最新章节               作者       预订时间"
+				android:layout_width="fill_parent" android:layout_marginLeft="5px"
+				android:textAppearance="@style/bold.black.big" />
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="560px" android:src="@drawable/timeset_split" />
+			<com.pvi.ap.reader.activity.pviappframe.PviDataList
+				android:minHeight="400dp" android:layout_height="500px"
+				android:focusableInTouchMode="true" android:id="@+id/bookupdateList"
+				android:layout_width="560px" android:background="@color/white"
+				android:focusable="true" android:divider="@null" pvi:lineHeight="50"
+				pvi:lineBgLeft="0" pvi:lineBgNormal="@drawable/bg_datalist_normal"
+				pvi:lineBgHighlight="@drawable/bg_datalist_press" />
+		</LinearLayout>
+		<LinearLayout android:layout_marginBottom="20px"
+			android:id="@+id/LinearLayout01" android:layout_height="wrap_content"
+			android:gravity="center" android:layout_width="wrap_content"
+			android:layout_gravity="right">
+			<Button android:layout_marginLeft="60dp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text=" 进入阅读 "
+				android:id="@+id/readBtn" style="@style/button"></Button>
+			<Button android:layout_marginLeft="30dp" android:id="@+id/notify"
+				android:focusable="true" android:clickable="true" android:gravity="center"
+				android:text="提醒设置 " style="@style/button" />
+			<Button android:layout_marginRight="30px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="取消预订 " android:layout_marginLeft="30dp" android:id="@+id/cancelBtn"
+				style="@style/button">
+			</Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

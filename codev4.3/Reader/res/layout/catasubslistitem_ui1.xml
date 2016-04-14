@@ -1,0 +1,22 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="560px" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_vertical" android:background="@drawable/bg_datalist"
+	android:layout_height="42dp" android:clickable="true">
+	<TextView android:layout_height="fill_parent" android:gravity="center_vertical"
+		android:layout_width="160px" android:id="@+id/cataname" android:textColor="@color/black"
+		android:textSize="21sp" android:text="5元测试栏目 "
+		android:layout_marginLeft="21dp"
+		android:duplicateParentState="true" android:lines="1"></TextView>
+	<TextView android:layout_height="fill_parent" android:id="@+id/substime"
+		android:layout_width="150dp" android:text="2010/12/22 14:00"
+		android:gravity="center_vertical" android:textSize="21sp" android:textColor="@color/black"
+		android:lines="1" android:duplicateParentState="true"></TextView>
+	<TextView android:layout_height="fill_parent" android:id="@+id/subsfee"
+		android:layout_width="90dp" android:textSize="21sp" android:textColor="@color/black"
+		android:text="5元 " android:gravity="center_vertical" android:lines="1"></TextView>
+	<Button android:layout_width="wrap_content"  android:layout_marginLeft="20px"
+		android:layout_height="wrap_content" android:text="退 订 " android:id="@+id/unsubsbtn"
+		android:textSize="21sp" android:clickable="false" android:duplicateParentState="true"
+		android:focusable="false" android:focusableInTouchMode="false"
+		style="@style/button"></Button>
+</LinearLayout>

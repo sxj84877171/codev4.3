@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/mainblock"
+		>
+<com.pvi.ap.reader.activity.StandbyView android:id="@+id/stand" 
+   android:layout_width="fill_parent"  android:nextFocusDown="@+id/ok"
+   android:layout_height="wrap_content">
+</com.pvi.ap.reader.activity.StandbyView>
+
+
+			  
+			  <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/ok" 
+				android:text="确  定" android:nextFocusUp="@+id/stand"
+				android:layout_marginRight="20dp"
+				style="@style/button_ui1"
+				android:layout_alignParentBottom="true"
+				android:layout_toLeftOf="@+id/cancel"
+				android:layout_marginBottom="20dp"
+				android:focusable="true"
+			  />
+			  
+			  <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/cancel" android:nextFocusUp="@+id/stand"
+				android:text="取  消"
+				android:focusable="true"
+				style="@style/button_ui1"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="20dp"
+				android:layout_marginRight="21dp"
+				android:layout_alignParentRight="true"
+				
+			  />
+			  
+			
+			
+			  
+
+
+
+
+</RelativeLayout>
+
+

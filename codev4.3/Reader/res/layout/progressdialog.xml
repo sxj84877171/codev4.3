@@ -1,0 +1,17 @@
+<AbsoluteLayout android:id="@+id/mainLayout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="300px"
+android:layout_height="100px"
+android:background="@color/white"
+>
+
+	<TextView android:id="@+id/details"
+	android:layout_width="300px"
+	android:layout_height="100px" 
+	android:textColor="@color/black"
+	android:text="数据载入中请稍候" 
+	android:textSize="8pt"
+	android:layout_x="0px"
+	android:layout_y="0px"	/>
+
+</AbsoluteLayout>

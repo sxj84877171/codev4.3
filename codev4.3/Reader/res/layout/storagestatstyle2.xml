@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:gravity="center_horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	android:id="@+id/mainblock"
+>
+
+	<TextView android:text="存储信息" android:layout_width="fill_parent"
+	android:gravity="center"
+	android:textSize="25px"
+	android:layout_marginTop="40px"
+	android:textColor="@color/black"
+	android:layout_height="wrap_content"/>
+	
+	<ImageView android:layout_width="wrap_content" android:id="@+id/image"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="10px"
+			   android:src="@drawable/timeset_split"/>
+			   
+			   
+		<LinearLayout android:id="@+id/LinearLayout02" android:layout_marginTop="20px" android:layout_above="@+id/line"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			
+			<TextView android:id="@+id/TextView02"
+				android:layout_height="wrap_content" android:text="已用空间"
+				android:layout_marginLeft="0dp" android:layout_width="100dp" android:textSize="18dp"
+				android:textColor="@color/black"></TextView>
+			<TextView android:id="@+id/TextView03"
+				android:layout_height="wrap_content" android:text="可用空间" android:textSize="18dp"
+				android:layout_width="100dp" android:layout_marginLeft="100dp"
+				android:textColor="@color/black"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout04"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp">
+			
+			<TextView android:layout_height="wrap_content" android:text="0MB"
+				android:textColor="@color/black" android:layout_width="100dp"
+				android:id="@+id/inside_used_text"></TextView>
+			<TextView android:layout_height="wrap_content" android:text="0MB"
+				android:textColor="@color/black" android:layout_width="100dp"
+				android:id="@+id/inside_unused_text" android:layout_marginLeft="100dp"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/TextView05"
+				android:layout_height="wrap_content" android:textColor="@color/black" android:paddingTop="8dp"
+				android:textSize="18dp" android:layout_width="40dp" android:text="内存"></TextView>
+			<LinearLayout android:layout_height="wrap_content"
+				android:background="@drawable/strorage_black" 
+				
+				 android:layout_width="450dp" android:id="@+id/inside_total"
+				 android:gravity="right">
+				
+				<!--
+					<TextView android:layout_height="wrap_content"
+					android:background="@color/black" android:layout_width="10dp"
+					android:id="@+id/inside_used"></TextView>
+				-->
+				<TextView android:layout_height="wrap_content"
+					android:background="@drawable/strorage_white" android:layout_width="wrap_content" 
+					android:id="@+id/inside_unused"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+
+
+
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginTop="30dp">
+			<TextView android:id="@+id/TextView02"
+				android:layout_height="wrap_content" android:text="已用空间"  android:textSize="18dp"
+				android:layout_marginLeft="0dp" android:layout_width="100dp"
+				android:textColor="@color/black"></TextView>
+			<TextView android:id="@+id/TextView03"
+				android:layout_height="wrap_content" android:text="可用空间" android:textSize="18dp"
+				android:layout_width="100dp" android:layout_marginLeft="100dp"
+				android:textColor="@color/black"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout04" android:layout_marginLeft="0dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			
+			<TextView android:layout_height="wrap_content" android:text="0MB"
+				android:textColor="@color/black" android:layout_width="100dp"
+				android:id="@+id/outside_used_text"></TextView>
+			<TextView android:layout_height="wrap_content" android:text="0MB"
+				android:textColor="@color/black" android:layout_width="100dp"
+				android:layout_marginLeft="100dp" android:id="@+id/outside_unused_text"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/TextView05"
+				android:layout_height="wrap_content" android:layout_width="40dp"
+				android:textColor="@color/black" android:textSize="18dp" android:paddingTop="8dp"
+				android:text="SD卡"></TextView>
+			<LinearLayout android:layout_height="wrap_content"
+				android:background="@drawable/strorage_black" 
+				
+				 android:layout_width="450dp"
+				 android:gravity="right"
+				android:id="@+id/outside_total">
+				<!--
+					<TextView android:layout_height="wrap_content"
+					android:background="@color/black" android:layout_width="10dp"
+					android:id="@+id/inside_used"></TextView>
+				-->
+				<TextView android:layout_height="wrap_content"
+					android:background="@drawable/strorage_white" android:layout_width="wrap_content"
+					android:id="@+id/outside_unused"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	
+
+</AbsoluteLayout>
+

@@ -1,0 +1,222 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:gravity="top|center"
+	android:background="@color/white">
+
+	<!--
+		<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="20px"
+		android:background="#404040" android:textColor="#FFFFFF"
+		android:gravity="center" android:text="评论列表"/>
+	-->
+	<LinearLayout android:id="@+id/comment"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_marginLeft="20px"
+		android:layout_marginRight="20px">
+		<EditText android:longClickable="false" android:id="@+id/comment_content"
+			android:background="@drawable/commentinput_bg" android:padding="5dp"
+			android:hint="点击输入评论（256字以内）" android:gravity="top"
+			android:layout_height="160dp" android:layout_width="fill_parent"
+			android:layout_marginTop="10dp" android:maxLength="256"></EditText>
+
+		<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:nextFocusDown="@+id/ButtonNew" style="@style/button"
+			android:text="发表评论 " android:layout_gravity="right"
+			android:clickable="true" android:focusable="true"
+			android:layout_marginTop="8dp" android:id="@+id/ButtonNew" />
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/mainblock"
+		android:layout_marginLeft="20px" android:layout_marginRight="20px"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal">
+		<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+			android:layout_width="fill_parent" android:layout_marginLeft="10dp"
+			android:layout_height="wrap_content" android:textAppearance="@style/bold.black.common"
+			android:text="评论列表" />
+		<ImageView android:layout_width="fill_parent"
+			android:layout_marginTop="1dp" android:layout_height="4dp"
+			android:background="@drawable/style2_newline"></ImageView>
+
+		<!--
+			<ListView android:layout_width="wrap_content"
+			android:descendantFocusability="afterDescendants"
+			android:layout_height="wrap_content" android:id="@+id/commentList"
+			android:minHeight="600dp" android:background="#fff"
+			android:cacheColorHint="#fff" android:divider="@null"
+			android:dividerHeight="0dp" android:fadingEdge="none"
+			android:fadingEdgeLength="0dp" android:listSelector="#fff"
+			android:layout_marginTop="10dp"> </ListView>
+		-->
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="436dp">
+			<RelativeLayout android:id="@+id/commentlayout01"
+				android:visibility="invisible" android:clickable="true"
+				android:focusable="true" android:background="@drawable/commentview_bg"
+				android:paddingLeft="10dp" android:paddingRight="10dp"
+				android:layout_width="fill_parent" android:layout_height="109dp">
+				<TextView android:id="@+id/tv_floor01"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:paddingTop="3dp" android:layout_width="wrap_content"
+					android:textAppearance="@style/normal.black.common" />
+				<TextView android:id="@+id/tv_fromuser01"
+					android:textAppearance="@style/normal.black.common"
+					android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_floor01"
+					android:layout_marginLeft="20px" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/tv_floor01">
+				</TextView>
+				<TextView android:id="@+id/tv_time01"
+					android:layout_alignBottom="@+id/tv_floor01"
+					android:layout_alignParentRight="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:lines="1"
+					android:textAppearance="@style/normal.black.common">
+				</TextView>
+				<TextView android:id="@+id/tv_content01"
+					android:layout_below="@+id/tv_time01" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="评论内容 "
+					android:lines="2" android:ellipsize="end" android:textAppearance="@style/normal.black.common" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/ding01" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:layout_toLeftOf="@+id/bo01" android:layout_marginBottom="3dp"
+					android:nextFocusRight="@+id/bo01"
+					android:layout_alignParentBottom="true" android:layout_height="wrap_content"
+					android:text="顶 " style="@style/button" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/bo01" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:nextFocusRight="@+id/bo01" android:nextFocusLeft="@+id/ding01"
+					android:layout_alignParentRight="true" android:layout_marginBottom="3dp"
+					android:layout_alignParentBottom="true" android:layout_marginLeft="30dp"
+					android:layout_height="wrap_content" android:text="驳 " style="@style/button"
+					android:textColor="@color/black" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/commentlayout02"
+				android:visibility="invisible" android:clickable="true"
+				android:focusable="true" android:layout_below="@+id/commentlayout01"
+				android:background="@drawable/commentview_bg" android:paddingLeft="10dp"
+				android:paddingRight="10dp" android:layout_width="fill_parent"
+				android:layout_height="109dp">
+				<TextView android:id="@+id/tv_floor02"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:paddingTop="3dp" android:layout_width="wrap_content"
+					android:textAppearance="@style/normal.black.common" />
+				<TextView android:id="@+id/tv_fromuser02"
+					android:textAppearance="@style/normal.black.common"
+					android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_floor02"
+					android:layout_marginLeft="20px" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/tv_floor02">
+				</TextView>
+				<TextView android:id="@+id/tv_time02"
+					android:layout_alignBottom="@+id/tv_floor02"
+					android:layout_alignParentRight="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:lines="1"
+					android:textAppearance="@style/normal.black.common">
+				</TextView>
+				<TextView android:id="@+id/tv_content02"
+					android:layout_below="@+id/tv_time02" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="评论内容 "
+					android:lines="2" android:ellipsize="end" android:textAppearance="@style/normal.black.common" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/ding02" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:nextFocusRight="@+id/bo02" android:layout_toLeftOf="@+id/bo02"
+					android:layout_marginBottom="3dp" android:layout_alignParentBottom="true"
+					android:layout_height="wrap_content" android:text="顶 " style="@style/button" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/bo02" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:nextFocusLeft="@+id/ding02" android:nextFocusRight="@+id/bo02"
+					android:layout_alignParentRight="true" android:layout_marginBottom="3dp"
+					android:layout_alignParentBottom="true" android:layout_marginLeft="30dp"
+					android:layout_height="wrap_content" android:text="驳 " style="@style/button"
+					android:textColor="@color/black" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/commentlayout03"
+				android:visibility="invisible" android:layout_below="@+id/commentlayout02"
+				android:clickable="true" android:focusable="true"
+				android:background="@drawable/commentview_bg" android:paddingLeft="10dp"
+				android:paddingRight="10dp" android:layout_width="fill_parent"
+				android:layout_height="109dp">
+				<TextView android:id="@+id/tv_floor03"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:paddingTop="3dp"
+					android:layout_width="wrap_content" android:textAppearance="@style/normal.black.common" />
+				<TextView android:id="@+id/tv_fromuser03"
+					android:textAppearance="@style/normal.black.common"
+					android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_floor03"
+					android:layout_marginLeft="20px" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/tv_floor03">
+				</TextView>
+				<TextView android:id="@+id/tv_time03"
+					android:nextFocusLeft="@+id/ding02" android:nextFocusRight="@+id/bo02"
+					android:layout_alignBottom="@+id/tv_floor03"
+					android:layout_alignParentRight="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:lines="1"
+					android:textAppearance="@style/normal.black.common">
+				</TextView>
+				<TextView android:id="@+id/tv_content03"
+					android:layout_below="@+id/tv_time03" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="评论内容 "
+					android:lines="2" android:ellipsize="end" android:textAppearance="@style/normal.black.common" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/ding03" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:nextFocusRight="@+id/bo03" android:layout_toLeftOf="@+id/bo03"
+					android:layout_marginBottom="3dp" android:layout_alignParentBottom="true"
+					android:layout_height="wrap_content" android:text="顶 " style="@style/button" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/bo03" android:layout_width="wrap_content"
+					android:focusable="true" android:clickable="true"
+					android:nextFocusLeft="@+id/ding03" android:nextFocusRight="@+id/bo03"
+					android:layout_alignParentRight="true" android:layout_marginBottom="3dp"
+					android:layout_alignParentBottom="true" android:layout_marginLeft="30dp"
+					android:layout_height="wrap_content" android:text="驳 " style="@style/button"
+					android:textColor="@color/black" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/commentlayout04"
+				android:visibility="invisible" android:layout_below="@+id/commentlayout03"
+				android:clickable="true" android:focusable="true"
+				android:background="@drawable/commentview_bg" android:paddingLeft="10dp"
+				android:paddingRight="10dp" android:layout_width="fill_parent"
+				android:layout_height="109dp">
+				<TextView android:id="@+id/tv_floor04"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:paddingTop="3dp" android:layout_width="wrap_content"
+					android:textAppearance="@style/normal.black.common" />
+				<TextView android:id="@+id/tv_fromuser04"
+					android:textAppearance="@style/normal.black.common"
+					android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_floor04"
+					android:layout_marginLeft="20px" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/tv_floor03">
+				</TextView>
+				<TextView android:id="@+id/tv_time04"
+					android:layout_alignBottom="@+id/tv_floor03"
+					android:layout_alignParentRight="true" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:lines="1"
+					android:textAppearance="@style/normal.black.common">
+				</TextView>
+				<TextView android:id="@+id/tv_content04"
+					android:layout_below="@+id/tv_time04" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="评论内容 "
+					android:lines="2" android:ellipsize="end" android:textAppearance="@style/normal.black.common" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/ding04" android:layout_width="wrap_content"
+					android:nextFocusRight="@+id/bo04" android:focusable="true"
+					android:clickable="true" android:layout_toLeftOf="@+id/bo04"
+					android:layout_marginBottom="3dp" android:layout_alignParentBottom="true"
+					android:layout_height="wrap_content" android:text="顶 " style="@style/button" />
+				<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+					android:id="@+id/bo04" android:layout_width="wrap_content"
+					android:nextFocusLeft="@+id/ding04" android:nextFocusRight="@+id/bo04"
+					android:focusable="true" android:clickable="true"
+					android:layout_alignParentRight="true" android:layout_marginBottom="3dp"
+					android:layout_alignParentBottom="true" android:layout_marginLeft="30dp"
+					android:layout_height="wrap_content" android:text="驳 " style="@style/button"
+					android:textColor="@color/black" />
+			</RelativeLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:id="@+id/mainblock" android:orientation="vertical"
+	android:background="@color/white">
+
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="560px" android:layout_height="wrap_content"
+		android:layout_marginTop="5dp" android:layout_gravity="center_horizontal">
+		<Button style="@style/button" android:text="全部 " android:id="@+id/showallBtn"></Button>
+		<Button android:layout_marginLeft="15px" style="@style/button"
+			android:text="已读 " android:id="@+id/showReadedBtn"></Button>
+		<Button android:layout_marginLeft="15px" style="@style/button"
+			android:text="未读 " android:id="@+id/showUnreadBtn"></Button>
+		<Button android:layout_marginLeft="15px" style="@style/button"
+			android:text="获赠记录" android:id="@+id/showGetBtn"></Button>
+		<Button android:layout_marginLeft="15px" style="@style/button"
+			android:text="赠出记录 " android:id="@+id/showSendBtn"></Button>
+	</LinearLayout>
+
+	<TextView android:layout_height="wrap_content" android:id="@+id/totalRecordCount"
+		android:layout_marginTop="5px" android:textColor="@color/black"
+		android:text="    您共有0条消息(0条未读)" android:gravity="left" android:textSize="21sp"
+		android:layout_width="560dp" />
+
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+		android:focusableInTouchMode="true" android:layout_height="520px"
+		android:id="@+id/messageList" android:layout_width="560px"
+		android:background="@color/white" android:focusable="true"
+		android:divider="@null" pvi:lineHeight="52" pvi:lineBgLeft="20"
+		pvi:lineBgNormal="@drawable/bg_datalist_normal" pvi:lineBgHighlight="@drawable/bg_datalist_press" />
+
+
+	<LinearLayout android:id="@+id/LinearLayout03" android:layout_marginTop="3px"
+		android:layout_gravity="right|bottom" android:layout_marginRight="20px"
+		android:layout_marginBottom="5px" android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="全选 " android:id="@+id/selallBtn"
+			android:layout_marginRight="20px" style="@style/button"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="删除 "
+			android:layout_marginRight="20px" android:id="@+id/delBtn" style="@style/button"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="清空未读消息 "
+			android:id="@+id/delallBtn" style="@style/button"></Button>
+	</LinearLayout>
+
+</LinearLayout>

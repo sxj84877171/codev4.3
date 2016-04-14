@@ -1,0 +1,4 @@
+echo "apk signature started"
+/opt/jdk1.6.0_12/bin/java -jar rootpower.jar root.CF root.key ../../bin/SystemSet.apk SystemSet.apk
+mv SystemSet.apk ../../bin/SystemSet.apk 
+echo "apk signature succeed"

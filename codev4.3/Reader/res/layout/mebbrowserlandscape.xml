@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_x="0px" android:background="@color/white" android:layout_y="0px" android:id="@+id/mainblock">
+
+	<TextView android:textColor="@color/white" android:background="@drawable/mebnames"
+		android:layout_width="600px" android:id="@+id/mebnames"
+		android:textSize="20sp" android:gravity="center" android:focusable="true"
+		android:layout_height="0px" android:visibility="invisible" />
+
+	<AbsoluteLayout android:id="@+id/view_sv"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_y="0px">
+
+		<TextView android:textColor="@color/black"
+			android:background="@color/white" android:id="@+id/free"
+			android:text="" android:layout_height="0px" android:layout_y="0px"
+			android:textSize="14sp" android:visibility="invisible"
+			android:gravity="top" android:focusable="true" android:layout_width="60px"
+			android:layout_x="0px" />
+		<TextView android:textColor="@color/black"
+			android:background="@color/white" android:id="@+id/chapterName"
+			android:text="" android:layout_x="0px" android:textSize="0sp"
+			android:typeface="monospace" android:gravity="left"
+			android:focusable="true" android:layout_width="0px"
+			android:visibility="invisible" android:layout_y="0px"
+			android:layout_height="wrap_content" />
+		<TextView android:layout_width="0px" android:background="@drawable/meblines"
+			android:layout_height="0px" android:layout_x="0px" android:layout_y="0px"
+			android:visibility="invisible" android:gravity="top"
+			android:focusable="true" />
+		<com.pvi.ap.reader.activity.PageTextView
+			android:layout_width="550px" android:id="@+id/view_contents"
+			android:textColor="@color/black" 
+			android:background="@color/white" android:textSize="16sp" android:lineSpacingMultiplier="1.2"
+			android:layout_x="25px" android:gravity="top" android:cursorVisible="false"
+			android:editable="false" android:selectable="true" android:layout_y="2px"
+			android:layout_height="630px">
+		</com.pvi.ap.reader.activity.PageTextView>
+	</AbsoluteLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		
+		android:visibility="invisible"
+		android:layout_above="@+id/bottom"
+		android:layout_marginBottom="52dp"
+		android:id="@+id/serachs" 
+		android:layout_alignBottom="@+id/bottom"
+		android:layout_height="wrap_content">
+		
+		
+			<EditText android:longClickable="false" android:id="@+id/serach" android:background="@drawable/read_search"
+				android:layout_width="wrap_content" android:layout_marginLeft="25dp" android:maxLength="15"
+				 android:gravity="top" android:layout_height="wrap_content"
+				  />
+			<Button android:id="@+id/find" android:text="搜  索" android:gravity="center"
+				android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_toRightOf="@+id/serach"
+				android:layout_height="wrap_content"   style="@style/button"></Button>
+			<Button android:id="@+id/Close" android:gravity="center" android:layout_toRightOf="@+id/find"
+				android:text="关  闭" android:layout_marginLeft="20dp" android:layout_marginRight="25dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"  style="@style/button"></Button>
+	
+	</RelativeLayout>
+   <RelativeLayout android:layout_width="fill_parent" android:id="@+id/bottom" android:layout_alignParentBottom="true"
+     android:layout_height="40dp">
+	<LinearLayout android:layout_width="fill_parent" android:id="@+id/mebmenus"
+		android:orientation="vertical" android:layout_alignParentBottom="true" 
+		android:layout_height="wrap_content">
+
+		<ImageView android:layout_x="0dp" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/statusbar_bottom_ui1" />
+		<LinearLayout  android:gravity="center_vertical" android:layout_marginTop="4dp"
+			android:background="@drawable/white" android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="35dp" >
+
+			<ImageButton android:layout_alignParentBottom="true"
+				android:layout_marginLeft="6dp" android:background="@drawable/button_menu_ui1"
+				android:layout_width="wrap_content" android:id="@+id/menubtn"
+				android:layout_height="wrap_content" android:textSize="18dp" 
+				android:gravity="center_vertical" android:layout_gravity="left"
+				android:textColor="@color/white" />
+
+
+			<ImageButton android:textColor="@color/black"
+				android:layout_width="wrap_content" android:id="@+id/upBadge" android:background="@drawable/button_prechapter_ui1"
+				android:layout_alignParentBottom="true" android:layout_height="wrap_content"
+				android:layout_marginLeft="115dp" />
+
+			<ImageButton android:id="@+id/upPage"
+				android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/button_prepage_ui1"
+				android:textColor="@color/black" android:layout_marginLeft="20dp" />
+
+
+
+			<TextView android:id="@+id/mtpages"
+				android:layout_marginLeft="10px" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:gravity="center"
+				 android:textAppearance="@style/normal.black.big" android:minWidth="40dp" />
+
+			<ImageButton android:id="@+id/nextPage"
+				android:layout_marginLeft="10px" android:layout_alignParentBottom="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/button_nextpage_ui1" android:textColor="@color/black" />
+
+			<ImageButton android:textColor="@color/black" android:id="@+id/nextBadge"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true" android:background="@drawable/button_nextchapter_ui1"
+				android:layout_marginLeft="20dp" android:layout_width="wrap_content"
+				android:gravity="left" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="right" android:layout_marginRight="10px"
+				android:layout_height="wrap_content" android:layout_centerVertical="true">
+				
+				<ImageButton android:background="@drawable/allapp" android:id="@+id/allapp"
+					android:layout_width="32dp" android:layout_height="32dp" android:visibility="gone"></ImageButton>
+				<ImageButton android:background="@drawable/button_setting_ui1"
+					android:id="@+id/syssetting" android:layout_width="32dp" 
+					android:layout_height="32dp"></ImageButton>
+				<ImageButton android:background="@drawable/button_music_ui1" android:id="@+id/music" android:layout_marginLeft="20dp"
+					android:layout_width="32dp" android:layout_height="32dp"></ImageButton>
+				<ImageButton android:background="@drawable/button_back_ui1" android:id="@+id/back" android:layout_marginLeft="20dp"
+					android:layout_width="32dp" android:layout_height="32dp"></ImageButton>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	</RelativeLayout>
+	
+</RelativeLayout>
+
+
+

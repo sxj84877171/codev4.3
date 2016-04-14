@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_height="fill_parent" android:layout_width="230dp">
+	
+		<com.pvi.ap.reader.activity.pviappframe.GifView
+        android:src="@null"
+         android:id="@+id/loadingstate" 
+         android:layout_gravity="center_vertical"          
+         android:layout_height="wrap_content" 
+         android:layout_width="wrap_content" 
+         android:layout_marginLeft="6dp">
+         </com.pvi.ap.reader.activity.pviappframe.GifView>
+         
+		<TextView android:layout_height="wrap_content" 
+		android:id="@+id/tip" android:layout_marginLeft="6dp" 
+		android:layout_width="0dip" android:layout_weight="1"
+		 android:textAppearance="@style/normal.black.common" 
+		 android:lines="1"></TextView>
+		 
+		</LinearLayout>
+		
+	

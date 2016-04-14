@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <drawable name="black">#000</drawable>
+  <drawable name="white">#FFF</drawable> 
+  <drawable name="red">#FF0000</drawable>
+  <drawable name="gray">#666666</drawable>
+  <drawable name="gray1">#66666670</drawable>
+      <color name="bright_foreground_light_pviapp">#ff000000</color>
+    <color name="bright_foreground_light_inverse_pviapp">#ffffffff</color>
+    <color name="bright_foreground_light_disabled_pviapp">#80000000</color>
+</resources> 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width = "wrap_content" 
+android:layout_height = "fill_parent" android:paddingLeft="19px">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width = "fill_parent"
+	android:layout_height = "fill_parent"
+	>
+		<TextView
+		   android:id = "@+id/prompt"
+		   android:layout_height = "wrap_content"
+		   android:text = "您在使用本电子书过程中是否有问题？请将您的意见，建议反馈给我们。您可以在下方输入并点击提交按钮，您的任何反馈都是对我们的帮助： "
+		   android:textColor="@color/black"
+		   android:layout_width="354px" android:textSize="9pt"/>
+		<TextView
+		   android:layout_width = "325px"
+		   android:layout_height = "wrap_content"
+		   android:textSize = "8pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+		<EditText android:longClickable="false"
+		   android:id = "@+id/editText"
+		   android:layout_height = "200px"
+		   android:gravity = "top" android:background="@drawable/orderbook" android:layout_width="354px"/>
+		<TextView
+		   android:layout_width = "325px"
+		   android:layout_height = "38px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+		
+			<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			>   
+				<TextView
+		   android:layout_width = "37px"
+		   android:layout_height = "2px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black"
+		   />
+				<TextView 
+			style="@style/button"
+			android:focusable="true" 
+			android:text="我有话说" 
+			android:textSize = "8pt"
+			android:id="@+id/leaveword"
+			android:layout_width = "wrap_content"
+		  	 android:layout_height = "wrap_content"
+		  	 android:textColor="@color/black"
+			/>
+			
+			<TextView
+		   android:layout_height = "2px"
+		   android:textSize = "2pt"
+		   android:text = " "
+		   android:textColor="@color/black" android:layout_width="100dp"/>
+		   
+			<TextView 
+			style="@style/button"
+			android:focusable="true" 
+			android:text="我要点书" 
+			android:textSize = "8pt"
+			android:id="@+id/orderbook"
+			android:layout_width = "wrap_content"
+		  	 android:layout_height = "wrap_content"
+		  	 android:textColor="@color/black"
+			/>
+		   </LinearLayout>
+		  
+		   <LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width = "fill_parent"
+			android:layout_height = "45px"
+			>   
+		
+		   </LinearLayout>
+	</LinearLayout>
+	
+
+
+
+</LinearLayout>

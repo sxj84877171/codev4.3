@@ -1,0 +1,289 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="wrap_content"
+	android:background="@color/white" android:id="@+id/mainblock">
+	
+<ImageView android:id="@+id/selector"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_y="0px" 
+	android:layout_x="0px" 
+	android:background="@drawable/ranking_1"/>
+ 
+<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_y="0px" 
+		android:layout_x="0px" 
+		android:layout_height="30px" android:layout_width="fill_parent">
+		
+		<TextView android:id="@+id/week" 
+		android:text=" 周  榜 "
+		android:textStyle="bold" 
+		android:textSize="8pt" 
+		android:clickable="true"
+		android:focusable="true" 
+		android:layout_width="195px"
+		android:textColor="@color/black" 
+		android:gravity="right" 
+		android:layout_height="wrap_content"/>
+
+		<TextView android:id="@+id/month" 
+		android:text=" 月  榜 "
+		android:textStyle="bold" 
+		android:textSize="8pt" 
+		android:clickable="true"
+		android:focusable="true" 
+		android:layout_width="128px"
+		android:textColor="@color/black" 
+		android:gravity="right" 
+		android:layout_height="wrap_content"/>
+		
+		<TextView android:id="@+id/total" 
+		android:text=" 总  榜 "
+		android:textStyle="bold" 
+		android:textSize="8pt" 
+		android:clickable="true"
+		android:focusable="true" 
+		android:layout_width="128px"
+		android:textColor="@color/black" 
+		android:gravity="right" 
+		android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+	
+	
+	<LinearLayout
+android:id="@+id/primaryBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_y="50px" android:layout_x="0px">
+	<Button
+	android:id="@+id/primaryBtn01"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn02"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn03"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn04"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn05"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn06"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	<Button
+	android:id="@+id/primaryBtn07"
+	android:layout_height="wrap_content" android:nextFocusDown="@id/primaryBtn07"
+	android:layout_width="wrap_content" android:background="@drawable/button4_ui1"/>
+	
+	
+</LinearLayout><LinearLayout
+android:id="@+id/primaryImage"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_x="30px" android:layout_y="60px">
+	<ImageView android:id="@+id/primaryImage01"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+	
+	<ImageView android:id="@+id/primaryImage02"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+	
+	<ImageView android:id="@+id/primaryImage03"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+		
+	<ImageView android:id="@+id/primaryImage04"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+		
+	<ImageView android:id="@+id/primaryImage05"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+		
+	<ImageView android:id="@+id/primaryImage06"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+	<TextView
+	android:layout_width="1px"
+	android:layout_height="10px"
+	android:text="">
+	</TextView>
+		
+	<ImageView android:id="@+id/primaryImage07"
+	android:layout_width="60px"
+	android:layout_height="80px"/>
+
+		
+</LinearLayout><LinearLayout
+android:id="@+id/primary"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_x="102px" android:layout_y="77px">
+	<TextView
+	android:id="@+id/primary01"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary02"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary03"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary04"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary05"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary06"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	<TextView
+	android:id="@+id/primary07"
+	android:textColor="@color/black"
+	android:layout_width="320px"
+	android:layout_height="90px"
+	android:text=""
+	android:textStyle="bold" android:textSize="21sp">
+	</TextView>
+	
+</LinearLayout><LinearLayout
+android:id="@+id/slave"
+android:layout_width="280px"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_x="300px" android:layout_y="75px">
+	<TextView
+	android:id="@+id/slave01" 
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave02"
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave03"  
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave04"  
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave05"  
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave06"  
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	<TextView
+	android:id="@+id/slave07"  
+	android:gravity="right"
+	android:layout_height="90px"
+	android:textColor="@color/black"
+	android:text="" android:layout_width="fill_parent" android:textSize="7pt"/>
+	
+	
+</LinearLayout>
+	
+
+	
+
+	
+
+
+	<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_x="0px"
+					android:layout_y="0px">
+	<RelativeLayout android:id="@+id/bottombar" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true">
+	
+		<include layout="@layout/footer_page_ui1"></include>
+
+	</RelativeLayout>
+	</RelativeLayout>
+</AbsoluteLayout>

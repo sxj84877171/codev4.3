@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:gravity="center"
+	android:layout_height="fill_parent" android:background="@color/white">
+				
+				
+				<LinearLayout 
+							  android:layout_width="fill_parent"
+							  android:layout_height="wrap_content"
+							   android:layout_marginLeft="30px"
+							  android:orientation="horizontal"
+							  >
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/phonename_label" android:text="消费项目"
+						android:gravity="center_vertical|right" android:layout_width="80px"
+						android:layout_height="wrap_content" android:textColor="@color/black"
+						android:textSize="20dp"/>
+			
+					<TextView android:id="@+id/expenseproject" android:textColor="@color/black"
+						android:layout_marginLeft="20dp"
+						android:gravity="center_vertical" android:layout_width="wrap_content"
+						android:lines="1" android:layout_height="wrap_content"
+						 android:textSize="20dp"></TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="20px"
+							  android:layout_height="wrap_content"
+							   android:layout_marginLeft="30px"
+							  android:orientation="horizontal"
+							  >
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/nickname_label" android:text="消费类型"
+						android:gravity="center_vertical|right" android:layout_width="80px"
+						android:layout_height="wrap_content" android:textColor="@color/black"
+						android:textSize="20dp"/>
+				
+					<TextView android:id="@+id/expensetype" android:textColor="@color/black"
+						android:layout_marginLeft="20dp"
+						android:gravity="center_vertical" android:layout_width="wrap_content"
+						android:lines="1" android:layout_height="wrap_content"
+						 android:textSize="20dp"></TextView>
+				</LinearLayout>
+	
+				<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="20px"
+							  android:layout_height="wrap_content"
+							   android:layout_marginLeft="30px"
+							  android:orientation="horizontal"
+							  >
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:text="消费时间"
+						android:gravity="center_vertical|right" android:layout_width="80px"
+						android:layout_height="wrap_content" android:textColor="@color/black"
+						android:textSize="20dp"/>
+
+					
+					<TextView android:id="@+id/expensetime" android:textColor="@color/black"
+						android:layout_marginLeft="20dp"
+						android:gravity="center_vertical" android:layout_width="wrap_content"
+						android:lines="1" android:layout_height="wrap_content"
+						 android:textSize="20dp"></TextView>
+		
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="20px"
+							  android:layout_height="wrap_content"
+							   android:layout_marginLeft="30px"
+							  android:orientation="horizontal"
+							  >
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView  android:text="消费价钱"
+						android:gravity="center_vertical|right" android:layout_width="80px"
+						android:layout_height="wrap_content" android:textColor="@color/black"
+						android:textSize="20dp"/>
+					
+					<TextView android:id="@+id/expenseprice" android:textColor="@color/black"
+						android:layout_marginLeft="20dp"
+						android:gravity="center_vertical" android:layout_width="wrap_content"
+						android:lines="1" android:layout_height="wrap_content"
+						 android:textSize="20dp"></TextView>
+		
+				</LinearLayout>
+				
+	</LinearLayout>

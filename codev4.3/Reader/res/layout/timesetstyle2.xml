@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:gravity="center_horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	android:id="@+id/mainblock"
+>
+
+	<TextView android:text="日期及时间设置" android:layout_width="fill_parent"
+	android:gravity="center"
+	android:textSize="25px"
+	android:layout_marginTop="40px"
+	android:textColor="@color/black"
+	android:layout_height="wrap_content"/>
+	
+	<ImageView android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="10px"
+			   android:src="@drawable/timeset_split"/>
+			   
+			   
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_marginTop="15px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+		<TextView android:text="日期 " android:layout_width="wrap_content"
+				  android:textSize="22px"
+				  android:textColor="@color/black"
+				  android:layout_marginLeft="40px"
+				  android:layout_height="wrap_content"/>
+				  
+		<TextView android:text="2010/12/24" android:layout_width="wrap_content"
+				  android:id="@+id/dateview"
+				  android:textSize="22px"
+				  android:layout_marginLeft="20px"
+				  android:textColor="@color/black"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:orientation="horizontal" 
+	android:layout_height="wrap_content" android:background="@drawable/timeset_back" android:id="@+id/linear_date"
+		android:gravity="center_vertical">
+		
+	
+		<EditText android:longClickable="false"
+			android:id="@+id/year"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50dp"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="4"
+			android:gravity="center"			
+			android:layout_marginRight="10dp"/>
+		<TextView android:text="年 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+	
+		
+	
+		<EditText android:longClickable="false"
+			android:id="@+id/month"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50px"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="2"
+			android:gravity="center"
+			
+			android:layout_marginRight="10dp"
+		/>
+		<TextView android:text="月 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+		
+		
+		<EditText android:longClickable="false"
+			android:id="@+id/date"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50px"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="2"
+			android:gravity="center"
+			android:layout_marginRight="10dp"
+			
+		/>
+		<TextView android:text="日 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_marginTop="15px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+		<TextView android:text=" 时间  " android:layout_width="wrap_content"
+				  android:textSize="22px"
+				  android:textColor="@color/black"
+				  android:layout_marginLeft="40px"
+				  android:layout_height="wrap_content"/>
+				  
+		<TextView android:text="22:32:32" android:layout_width="wrap_content"
+				  android:textSize="22px"
+				  android:id="@+id/timeview"
+				  android:layout_marginLeft="20px"
+				  android:textColor="@color/black"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:orientation="horizontal" 
+	android:layout_height="wrap_content" android:background="@drawable/timeset_back" android:id="@+id/linear_time"
+		android:gravity="center_vertical">
+		
+		
+		<EditText android:longClickable="false"
+			android:id="@+id/hour"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50px"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="2"
+			android:gravity="center"
+			android:layout_marginRight="10dp"
+			
+		/>
+		<TextView android:text="时 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+		
+		
+		
+		<EditText android:longClickable="false"
+			android:id="@+id/miniuter"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50px"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="2"
+			android:gravity="center"
+			android:layout_marginRight="10dp"
+			
+			
+		/>
+		<TextView android:text="分 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+		
+		
+		<EditText android:longClickable="false"
+			android:id="@+id/second"
+			android:layout_width="70px"
+			android:layout_height="32px" 
+			android:layout_marginLeft="50px"
+			android:background="@drawable/timeset_input"
+			android:paddingBottom="0px" 
+			android:numeric="integer"
+			android:maxLength="2"
+			android:gravity="center"
+			android:layout_marginRight="10dp"
+			
+			
+		/>
+		<TextView android:text="秒 " android:layout_width="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  android:layout_height="25px"/>
+		
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_marginTop="15px"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+		<TextView android:text="显示格式" android:layout_width="wrap_content"
+				  android:textSize="22px"
+				  android:textColor="@color/black"
+				  android:layout_marginLeft="40px"
+				  android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:orientation="horizontal" 
+	android:layout_height="wrap_content" android:background="@drawable/timeset_back"
+		android:gravity="center_vertical">
+		
+		
+		<LinearLayout android:layout_width="260px" android:orientation="horizontal" 
+					  android:gravity="center_horizontal"	android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/format12"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/notcheck"
+			android:layout_marginRight="10dp"
+		/>
+		<TextView android:text="12小时 " android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  />
+		</LinearLayout>
+		
+		
+		<LinearLayout android:layout_width="260px" android:orientation="horizontal" 
+					  android:gravity="center_horizontal"	android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/format24"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/notcheck"
+			android:layout_marginRight="10dp"
+		/>
+		<TextView android:text="24小时 " android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				  />
+		</LinearLayout>
+		
+		
+		
+	</LinearLayout>
+	
+	
+	
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:gravity="right"
+			  android:layout_height="wrap_content" android:layout_y="635dp">
+			   <Button
+				android:id="@+id/nettime"
+				android:text="获取网络时间"
+				android:layout_marginRight="20px"
+				
+				style="@style/button_ui1"
+			  />
+			  <Button
+				android:id="@+id/ok"
+				android:text="确  定"
+				android:layout_marginRight="20px"
+				
+				style="@style/button_ui1"
+			  />
+			  
+			  <Button
+				android:id="@+id/cancel"
+				android:text="取  消"
+				android:layout_marginRight="31px"
+				
+				style="@style/button_ui1"
+			  />
+			  
+			
+			  
+			  
+</LinearLayout>
+ 
+
+
+</AbsoluteLayout>
+
+

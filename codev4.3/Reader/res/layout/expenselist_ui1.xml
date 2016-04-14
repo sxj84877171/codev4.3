@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="@color/white">
+	
+		 
+	<LinearLayout android:id="@+id/mainblock" 
+        android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dip" android:layout_weight="1.0" android:gravity="center_horizontal">
+
+	<LinearLayout 
+		android:orientation="horizontal" android:layout_height="40px" 
+		android:layout_width="560px"  android:layout_marginTop="20dp">
+	<com.pvi.ap.reader.activity.pviappframe.BoldTextView
+		android:id="@+id/TextView02" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textAppearance="@style/normal.black.big"
+		android:text="消费月份： " />
+	<ImageButton android:visibility="gone" android:id="@+id/lastmon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@null"></ImageButton>
+		
+		<com.pvi.ap.reader.activity.pviappframe.SelectSpinner 
+	    	android:id="@+id/yearselect" 
+	    	android:layout_marginLeft="5px"
+ 			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		pvi:gravity="center"
+    		pvi:width="100"
+    	/>
+		 
+		 <com.pvi.ap.reader.activity.pviappframe.SelectSpinner 
+	    	android:id="@+id/monthselect" 
+	    	android:layout_marginLeft="20px"
+ 			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		pvi:gravity="center"
+    		pvi:width="100"
+    	/>
+    	
+
+		 <Button android:layout_marginLeft="38px" android:text="查询" android:gravity="center" android:layout_width="100px" android:id="@+id/select" android:layout_height="wrap_content" style="@style/button">
+			<requestFocus/>
+		 </Button>
+		<TextView android:visibility="gone" android:layout_height="40px"
+			android:clickable="false" android:layout_width="100px" android:id="@+id/queryYear" android:background="@drawable/text1" android:textColor="@color/black"></TextView>
+		<TextView android:visibility="gone" android:layout_height="fill_parent"
+			android:textColor="@color/black" android:text="年" android:gravity="center" android:layout_width="30px"></TextView>
+		<TextView android:visibility="gone" android:layout_height="40px" android:clickable="false" android:layout_width="60px" android:id="@+id/queryMonth" android:background="@drawable/text1" android:textColor="@color/black"></TextView>
+		<TextView android:visibility="gone" android:layout_width="30px" android:layout_height="fill_parent"
+			android:textColor="@color/black" android:text="月" android:gravity="center"></TextView>
+		
+		
+	    
+	
+
+</LinearLayout>
+
+	<LinearLayout android:orientation="vertical" android:layout_width="560px"
+		 android:layout_height="wrap_content">
+		
+		
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<LinearLayout android:id="@+id/LinearLayout01"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_width="fill_parent">
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView  android:text="手机号码： " android:layout_width="fill_parent"
+						android:layout_marginTop="8px" android:textColor="@color/black"
+						android:id="@+id/phonenum"
+						android:layout_height="wrap_content" android:textAppearance="@style/normal.black.big"/>
+					<com.pvi.ap.reader.activity.pviappframe.BoldTextView  android:layout_width="fill_parent" android:layout_marginTop="8px"
+						android:id="@+id/totalexpense"
+						android:layout_height="wrap_content" android:textColor="@color/black"
+						android:textAppearance="@style/normal.black.big" android:text="消费总计： "/>
+				</LinearLayout>
+				
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayout02"
+								android:layout_height="wrap_content" android:layout_width="fill_parent"
+								android:gravity="right">
+					<Button android:text="我的书券 " android:gravity="center"
+							android:layout_marginTop="8px" 
+							android:layout_width="100px" android:id="@+id/myticket"
+							android:layout_height="wrap_content" style="@style/button"></Button>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+
+
+
+	<LinearLayout android:layout_marginTop="15px" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="560px">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="39px" android:orientation="horizontal" 
+			android:id="@+id/exp_table_head">
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/productname" android:paddingLeft="5pt" android:layout_height="fill_parent" android:gravity="left" android:layout_width="190px" android:text="项目 " android:textAppearance="@style/bold.black.big"/>
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/chargemode" android:layout_height="fill_parent" android:text="类型 " android:gravity="left" android:layout_width="80dp" android:textAppearance="@style/bold.black.big"/>
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/time" android:layout_height="fill_parent" android:gravity="center_horizontal" android:text="时间 " android:layout_width="200dp" android:textAppearance="@style/bold.black.big"/>
+			<com.pvi.ap.reader.activity.pviappframe.BoldTextView android:id="@+id/expense" android:layout_marginRight="5pt"
+				android:layout_height="fill_parent" android:gravity="right" android:layout_width="fill_parent" android:text="价钱 " android:textAppearance="@style/bold.black.big"/>
+		
+
+
+
+</LinearLayout>
+		
+ <ImageView android:layout_height="wrap_content"
+					   android:layout_width="560px" 
+					   android:src="@drawable/timeset_split"
+			/>
+			
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+				android:focusableInTouchMode="true" android:layout_height="350dp"
+				android:id="@+id/list" android:layout_width="560dp"
+				android:background="#fff" android:focusable="true"
+				pvi:lineHeight="50"
+				pvi:lineBgLeft="0"
+				pvi:lineBgNormal="@drawable/friendlist"
+				pvi:lineBgHighlight="@drawable/lines"
+				></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+ 
+ <TextView android:id="@+id/hinttext" 
+ android:text="该消费记录仅供参考，如有疑问请咨询营业厅！ "
+  android:textAppearance="@style/normal.black.small" 
+  android:layout_marginTop="10px"
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  ></TextView></LinearLayout>
+ 	
+ 	
+
+	<RelativeLayout android:id="@+id/RelativeLayout01" android:visibility="gone"
+		android:layout_width="wrap_content" android:layout_height="70dp">
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/total_consume"
+			android:layout_marginTop="45dp" android:layout_marginLeft="20dp"
+			android:layout_toLeftOf="@+id/totalConsume" android:textAppearance="@style/bold.black.big"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@color/black"
+			android:textSize="20sp" android:layout_marginTop="15dp"
+			android:layout_alignParentRight="true" android:id="@+id/totalConsume"
+			android:layout_marginRight="10dp"></TextView>
+	</RelativeLayout>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textColor="@color/black"
+		android:id="@+id/total" android:textSize="20sp"
+		android:layout_marginTop="15dp" android:layout_alignParentRight="true"
+		android:visibility="invisible"></TextView>
+	
+
+
+</LinearLayout>	
+</LinearLayout>

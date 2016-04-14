@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white" android:id="@+id/mainblock"
+	>
+
+	<LinearLayout android:orientation="horizontal" android:id="@+id/titlelayout"
+		android:layout_y="0dp" android:layout_x="0dp" android:layout_width="fill_parent" android:layout_height="36dp" android:background="@drawable/ranking_1">
+
+		<TextView android:id="@+id/recommend" android:text="精品推荐 "
+			android:textStyle="bold" android:textSize="9pt" android:clickable="true"
+			android:focusable="true" android:layout_width="200dp"
+			android:textColor="@color/black" android:gravity="center"
+			android:layout_height="fill_parent" />
+
+		<TextView android:id="@+id/hot" android:text="本类热榜 "
+			android:textStyle="bold" android:textSize="9pt" android:clickable="true"
+			android:focusable="true" android:layout_width="200dp"
+			android:textColor="@color/black" android:gravity="center"
+			android:layout_height="fill_parent" />
+
+		<TextView android:id="@+id/total" android:text="本类书库 "
+			android:textStyle="bold" android:textSize="9pt" android:clickable="true"
+			android:focusable="true" android:layout_width="200dp"
+			android:textColor="@color/black" android:gravity="center"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:gravity="center_vertical" android:layout_width="wrap_content"
+		android:id="@+id/rankSelection" android:paddingLeft="30dp" android:paddingRight="30dp"
+		android:layout_marginBottom="20dp" android:paddingTop="25dp" android:layout_below="@+id/titlelayout">
+
+		<com.pvi.ap.reader.activity.pviappframe.SelectSpinner
+			android:id="@+id/rankTypeSelection" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" pvi:width="100" pvi:gravity="center" />
+		<com.pvi.ap.reader.activity.pviappframe.SelectSpinner
+			android:id="@+id/catalogSelection" android:layout_marginLeft="8dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			pvi:width="100" android:layout_toRightOf="@+id/rankTypeSelection"
+			pvi:gravity="center" />
+		<com.pvi.ap.reader.activity.pviappframe.SelectSpinner
+			android:id="@+id/rankTimeSelection" android:layout_marginLeft="8dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			pvi:width="100" android:layout_toRightOf="@+id/catalogSelection" pvi:gravity="center" />
+		<Button android:textAppearance="@style/normal.black.big"
+			android:text="@string/aboutOK" style="@style/button_ui1" android:id="@+id/rankBtn"
+			android:layout_alignParentRight="true"></Button>
+		<!--
+		-->
+	</RelativeLayout>
+	
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+                android:focusableInTouchMode="true" android:layout_height="wrap_content"
+                android:id="@+id/list" android:layout_width="550dp"
+                android:background="#fff" android:focusable="true"
+                android:layout_marginLeft="20dp" pvi:lineHeight="85" android:layout_below="@+id/rankSelection"></com.pvi.ap.reader.activity.pviappframe.PviDataList>
+
+
+		<RelativeLayout android:id="@+id/searchlayout" android:paddingLeft="30dp" android:paddingRight="20dp"
+			android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="5dp" android:layout_alignParentBottom="true" android:layout_marginBottom="10dp">
+			<EditText android:longClickable="false" android:background="@drawable/bg_search_input_ui1"
+				android:cursorVisible="true" android:paddingLeft="5dp"
+				android:layout_height="wrap_content" android:id="@+id/searchInput"
+				android:layout_width="wrap_content" android:lines="1"></EditText>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/Serach"
+				android:id="@+id/searchButton" android:layout_alignParentRight="true"
+				style="@style/search_button_ui1"></Button>
+		</RelativeLayout>
+
+</RelativeLayout>

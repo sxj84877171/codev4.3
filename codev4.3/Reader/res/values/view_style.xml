@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="nav_textview">
+        <item name="android:textAppearance">@style/bold.black.big</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+	<style name="nav_textview.index_on">
+		<item name="android:background">@drawable/tab_selected_ui1
+		</item>
+	</style>
+
+	<style name="main_book_textview">
+		<item name="android:textAppearance">@style/bold.black.big</item>
+		<item name="android:paddingLeft">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:minWidth">110dp</item>
+	</style>
+
+	<style name="more_textview">
+		<item name="android:textAppearance">@style/bold.black.common
+		</item>
+		<item name="android:layout_marginRight">25dp</item>
+		<item name="android:layout_height">20dp</item>
+		<item name="android:layout_width">60dp</item>
+		<item name="android:minWidth">60dp</item>
+		<item name="android:drawableLeft">@drawable/style2_more</item>
+		<item name="android:gravity">center|top</item>
+		<item name="android:text">更多</item>
+		<item name="android:textColor">@color/black_white</item>
+
+	</style>
+
+	<style name="author_book_textview">
+		<item name="android:textAppearance">@style/normal.black.big
+		</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:minWidth">60dp</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:gravity">left</item>
+	</style>
+
+	<style name="author_book_textview_ui2">
+		<item name="android:textAppearance">@style/normal.black.bigger
+		</item>
+		<item name="android:layout_marginLeft">25dp</item>
+		<item name="android:layout_marginTop">15dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:minWidth">60dp</item>
+
+		<item name="android:gravity">left</item>
+	</style>
+
+	<style name="wireless_index_icon_textview">
+		<item name="android:textAppearance">@style/normal.black.big
+		</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:clickable">true</item>
+		<item name="android:maxWidth">90dp</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+
+	<style name="button">
+		<item name="android:background">@drawable/booksummarybtn
+		</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:textAppearance">@style/normal.black.common</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:paddingTop">2dp</item>
+		<item name="android:paddingBottom">2dp</item>
+		<item name="android:paddingRight">5dp</item>
+		<item name="android:minWidth">50dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="button_ui1">
+		<item name="android:background">@drawable/booksummarybtn
+        </item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:textAppearance">@style/bold.black.common</item>
+		<item name="android:paddingLeft">2dp</item>
+		<item name="android:paddingTop">1dp</item>
+		<item name="android:paddingBottom">1dp</item>
+		<item name="android:paddingRight">2dp</item>
+		<item name="android:minWidth">50dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	
+    <style name="search_edittext_ui1">
+        <item name="android:longClickable">false</item>
+        <item name="android:background">@drawable/bg_search_input_ui1</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_width">457dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+	<style name="search_button_ui1">
+		<item name="android:background">@drawable/searchbtn_bg
+        </item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:paddingTop">0dp</item>
+		<item name="android:paddingBottom">0dp</item>
+		<item name="android:paddingRight">5dp</item>
+		<item name="android:minWidth">50dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="recommendImage">
+		<item name="android:clickable">false</item>
+		<item name="android:focusable">false</item>
+		<item name="android:layout_height">76dp</item>
+		<item name="android:layout_width">58dp</item>
+		<item name="android:background">@drawable/border_stroke
+        </item>
+		<item name="android:layout_marginLeft">30dp</item>
+		<item name="android:padding">2dp</item>
+		<item name="android:duplicateParentState">true</item>
+		<item name="android:layout_marginTop">7dp</item>
+		<item name="android:singleLine">true</item>
+	</style>
+
+	<style name="recommendText">
+		<item name="android:clickable">false</item>
+		<item name="android:focusable">false</item>
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginBottom">5dp</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:textAppearance">@style/normal.black.common
+		</item>
+		<item name="android:duplicateParentState">true</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textSize">19sp</item>
+	</style>
+
+	<style name="linksText">
+		<item name="android:paddingLeft">15dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:maxWidth">100dp</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+
+	<style name="famousAuthorText">
+		<item name="android:layout_height">44dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:maxWidth">100dp</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+	<style name="famousAuthorBookText">
+		<item name="android:layout_height">44dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">right|center_vertical</item>
+		<!--
+			<item name="android:minWidth">145dp</item> -->
+		<item name="android:maxWidth">155dp</item>
+
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+	<style name="goodsText">
+		<item name="android:layout_height">44dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:maxWidth">127dp</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:background">@drawable/wsma_bg</item>
+		<item name="android:textSize">19sp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+
+	<style name="welcome_dialog_msg_item">
+		<item name="android:layout_height">50dp</item>
+		<item name="android:layout_width">360dp</item>
+		<item name="android:gravity">center_vertical|left</item>
+		<item name="android:minWidth">360dp</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:background">@drawable/booksummarybtn</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:layout_marginTop">30dp</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:focusable">true
+		</item>
+		<item name="android:clickable">true
+		</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="border_img_list_76x58">
+		<item name="android:layout_height">76dp</item>
+		<item name="android:layout_width">58dp</item>
+		<item name="android:background">@drawable/border_stroke
+        </item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:padding">2dp</item>
+		<item name="android:duplicateParentState">true</item>
+	</style>
+
+	<style name="border_img_list_margin_left30" parent="border_img_list_76x58">
+		<item name="android:layout_marginLeft">30dp</item>
+		<item name="android:src">@drawable/default_bookcover_6080</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="border_img_list2_76x58">
+		<item name="android:clickable">false</item>
+		<item name="android:focusable">false</item>
+		<item name="android:layout_height">76dp</item>
+		<item name="android:layout_width">58dp</item>
+		<item name="android:background">@drawable/border_stroke
+        </item>
+		<item name="android:padding">2dp</item>
+		<item name="android:duplicateParentState">true</item>
+		<item name="android:singleLine">true</item>
+	</style>
+
+
+	<style name="border_img_list2_76x58_booksummary">
+		<item name="android:layout_height">76px</item>
+		<item name="android:layout_width">58px</item>
+		<item name="android:background">@drawable/nobook</item>
+		<item name="android:padding">2px</item>
+		<item name="android:duplicateParentState">true</item>
+	</style>
+
+	<style name="wireless_list_item_layout">
+		<item name="android:layout_height">82dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:paddingTop">2dp</item>
+		<item name="android:layout_marginTop">2dp</item>
+		<item name="android:background">@drawable/button4_ui1
+        </item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:paddingRight">20dp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+
+	<!-- title -->
+	<style name="blockname_wsma">
+		<item name="android:textAppearance">@style/normal.black.common</item>
+		<item name="android:background">@drawable/recommendbtn_bg</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:focusable">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:focusableInTouchMode">true</item>
+	</style>
+	<!-- bookshelf -->
+	<style name="layout_bookshelf">
+		<item name="android:layout_height">90dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<!-- 	<item name="android:maxWidth">263dp</item> -->
+		<item name="android:background">@drawable/button4_ui1
+        </item>
+		<item name="android:paddingRight">20dp</item>
+		<item name="android:paddingLeft">30dp</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:visibility">invisible</item>
+	</style>
+
+	<style name="bookname_bookshelf">
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentTop">true</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:textAppearance">@style/normal.black.big</item>
+		<item name="android:maxWidth">235dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:gravity">bottom</item>
+	</style>
+	<style name="author_bookshelf">
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentBottom">true</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textAppearance">@style/bold.black.common</item>
+		<item name="android:maxWidth">230dp</item>
+		<item name="android:paddingRight">5dp</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="chapter_bookshelf_sub">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginRight">10dp</item>
+		<item name="android:textAppearance">@style/bold.black.common</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="time_bookshelf">
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginRight">10dp</item>
+		<item name="android:textAppearance">@style/bold.black.small</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:gravity">bottom</item>
+	</style>
+	<style name="chapter_bookshelf">
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentBottom">true</item>
+		<item name="android:layout_marginRight">10dp</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:textAppearance">@style/bold.black.common</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:maxWidth">260dp</item>
+	</style>
+	<style name="size_bookshelf">
+		<item name="android:layout_height">45dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_alignParentBottom">true</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:textAppearance">@style/bold.black.common</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_marginLeft">250dp</item>
+	</style>
+	<style name="selector_bookshelf">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:background">@drawable/notcheck</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:duplicateParentState">true</item>
+	</style>
+</resources>

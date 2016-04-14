@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:background="@drawable/bg_box_black" 
+android:layout_height="wrap_content" 
+android:layout_width="fill_parent" android:focusable="true" android:duplicateParentState="true" android:padding="0dip" android:id="@+id/mainNav" android:layout_gravity="center">
+
+<!--
+<HorizontalScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" 
+android:scrollbars="none">
+
+<LinearLayout android:layout_height="fill_parent" android:orientation="horizontal" 
+android:layout_width="fill_parent">
+
+<ListView android:id="@+id/navList" 
+android:fadingEdge="none" 
+android:divider="@null" 
+android:listSelector="@null" 
+android:background="@null" 
+android:focusable="true" 
+android:minWidth="500dp"
+ android:layout_height="wrap_content" 
+ android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_weight="1" android:clickable="true">
+ 
+</ListView>
+-->
+
+
+
+
+<GridView 
+android:id="@+id/navList" 
+android:numColumns="6" 
+android:fadingEdge="none" android:layout_width="fill_parent" android:focusable="true" android:scrollbars="none" android:duplicateParentState="true" android:layout_height="160dp">
+</GridView>
+
+
+<!-- </LinearLayout>
+
+</HorizontalScrollView>
+        -->
+        <requestFocus />
+        </LinearLayout>

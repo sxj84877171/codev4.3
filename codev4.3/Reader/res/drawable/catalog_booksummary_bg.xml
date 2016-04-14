@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_window_focused="false" android:state_focused="false"
+		android:drawable="@drawable/catalog_booksummary_normal" />
+	<item android:state_window_focused="false" android:state_focused="true"
+		android:drawable="@drawable/catalog_booksummary_sel" />
+	<item android:state_pressed="true" android:drawable="@drawable/catalog_booksummary_sel" />
+	<item android:state_focused="true" android:drawable="@drawable/catalog_booksummary_sel" />
+
+</selector> 
+
+
+

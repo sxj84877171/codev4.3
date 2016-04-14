@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pvi.ap.reader.external.txt.ReadSetView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="390px"
+android:background="@drawable/white">
+	<LinearLayout
+  		android:id="@+id/font_selection_dialog_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation = "vertical"
+	>
+	  	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="330px"
+			android:orientation = "horizontal"
+		>
+	<TableLayout
+	android:id="@+id/font_select_font_size_view"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content"
+	>
+	<TableRow>
+		<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		<ImageView android:id="@+id/fonesize1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:src="@drawable/readsetfone_a_ui2" android:layout_marginTop="6px" 
+			android:nextFocusLeft="@+id/fonesize26"
+			android:nextFocusRight="@+id/fonesize16"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:tag="16" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize16" android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize16b" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/fonesize26"
+			android:nextFocusRight="@+id/fonesize18"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:tag="16" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize18" android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize16"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize18b" android:tag="18"
+			android:nextFocusLeft="@+id/fonesize16"
+			android:nextFocusRight="@+id/fonesize20"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:layout_marginRight="0px" android:layout_marginTop="6px">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize20"  android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize18"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize20b" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/fonesize18"
+			android:nextFocusRight="@+id/fonesize22"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:tag="20" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize22"  android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize20"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize22b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/fonesize20"
+			android:nextFocusRight="@+id/fonesize24"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="22">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize24"  android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize22"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize24b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/fonesize22"
+			android:nextFocusRight="@+id/fonesize26"
+			android:nextFocusDown = "@+id/linesize1" 
+			android:nextFocusUp = "@+id/linesize1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="24">
+		</ImageView>
+		<ImageView android:id="@+id/fonesize26"  android:layout_alignBottom="@id/fonesize1" android:layout_toRightOf="@id/fonesize24"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/fonesize26b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/fonesize24"
+			android:nextFocusRight="@+id/fonesize16"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="26">
+		</ImageView>
+		</RelativeLayout>
+	</TableRow>
+	 <TableRow>
+	 <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		<ImageView android:layout_width="wrap_content" android:id="@+id/sufang1"
+			android:layout_height="wrap_content" android:src="@drawable/readsetsufang_a_ui2"
+			android:nextFocusLeft="@+id/sufang250"
+			android:nextFocusRight="@+id/sufang75"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="14">
+		</ImageView>
+		<ImageView android:id="@+id/sufang75"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/sufang75b" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/sufang250"
+			android:nextFocusRight="@+id/sufang100"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang1"
+			android:tag="0.75" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/sufang100"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang75"
+			android:src="@drawable/sufang100b" android:tag="1.0"
+			android:nextFocusLeft="@+id/sufang75"
+			android:nextFocusRight="@+id/sufang125"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_marginRight="0px" android:layout_marginTop="6px">
+		</ImageView>
+		<ImageView android:id="@+id/sufang125"
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang100"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/sufang125b" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/sufang100"
+			android:nextFocusRight="@+id/sufang150"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:tag="1.25" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/sufang150"
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang125"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/sufang150b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/sufang125"
+			android:nextFocusRight="@+id/sufang200"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="1.5">
+		</ImageView>
+		<ImageView android:id="@+id/sufang200"
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang150"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/sufang200b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/sufang150"
+			android:nextFocusRight="@+id/sufang250"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="2.0">
+		</ImageView>
+		<ImageView android:id="@+id/sufang250"
+			android:layout_alignBottom="@+id/sufang1" android:layout_toRightOf="@+id/sufang200"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/sufang250b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/sufang200"
+			android:nextFocusRight="@+id/sufang75"
+			android:nextFocusDown = "@+id/sufang1" 
+			android:nextFocusUp = "@+id/sufang1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="2.5">
+		</ImageView>
+		</RelativeLayout>
+	</TableRow>
+	<TableRow>
+	<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		<ImageView 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/readsetline_a_ui2" android:id="@+id/linesize1"
+			android:layout_marginTop="6px" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/linesize30"
+			android:nextFocusRight="@+id/linesize05"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:tag="3513513">
+		</ImageView>
+		<ImageView android:id="@+id/linesize05"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize1"
+			android:src="@drawable/linesize05a" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/linesize30"
+			android:nextFocusRight="@+id/linesize10"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:tag="5" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/linesize10"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize05"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/linesize10b" android:tag="10"
+			android:nextFocusLeft="@+id/linesize05"
+			android:nextFocusRight="@+id/linesize15"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:layout_marginRight="0px" android:layout_marginTop="6px">
+		</ImageView>
+		<ImageView android:id="@+id/linesize15"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize10"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/linesize15b" android:layout_marginTop="6px"
+			android:nextFocusLeft="@+id/linesize10"
+			android:nextFocusRight="@+id/linesize20"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:tag="15" android:layout_marginRight="0px">
+		</ImageView>
+		<ImageView android:id="@+id/linesize20"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize15"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/linesize20b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/linesize15"
+			android:nextFocusRight="@+id/linesize25"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="20">
+		</ImageView>
+		<ImageView android:id="@+id/linesize25"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize20"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/linesize25b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/linesize20"
+			android:nextFocusRight="@+id/linesize30"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="25">
+		</ImageView>
+		<ImageView android:id="@+id/linesize30"
+			android:layout_alignBottom="@+id/linesize1" android:layout_toRightOf="@+id/linesize25"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/linesize30b" android:layout_marginRight="0px"
+			android:nextFocusLeft="@+id/linesize25"
+			android:nextFocusRight="@+id/linesize05"
+			android:nextFocusDown = "@+id/fonesize1" 
+			android:nextFocusUp = "@+id/fonesize1"
+			android:focusable="true" 
+			android:layout_marginTop="6px" android:tag="30">
+		</ImageView>
+		</RelativeLayout>
+	</TableRow>
+	</TableLayout>
+		
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="40px"
+			android:layout_marginTop="20px"
+			android:orientation = "horizontal"
+			android:layout_alignParentRight="true"
+			android:layout_marginBottom = "6px">
+			<Button android:id="@+id/cancel" 
+		            android:text="@string/cancelButtonTitle"
+		            android:layout_alignParentRight="true"
+		            style="@style/button"
+		            android:layout_marginRight = "50px"
+		            android:focusable="true" 
+		            android:layout_marginBottom = "10px"/>
+			<Button android:id="@+id/ok" 
+		            style="@style/button"
+		            android:text="@string/okButtonTitle" 
+		            android:layout_toLeftOf="@id/cancel"
+		            android:focusable="true" 
+		            android:layout_marginRight = "30px"
+		            android:layout_marginBottom = "10px"/>
+		</RelativeLayout>
+	            
+	</LinearLayout>
+</com.pvi.ap.reader.external.txt.ReadSetView>

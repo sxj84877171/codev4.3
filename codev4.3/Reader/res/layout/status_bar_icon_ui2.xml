@@ -1,0 +1,7 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_marginRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<com.pvi.ap.reader.activity.PviAnimatedImageView 
+android:id="@+id/image" 
+android:layout_height="wrap_content" 
+android:layout_width="wrap_content" android:scaleType="center"/>
+<TextView android:id="@+id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|bottom" android:layout_marginRight="1dp" android:layout_marginBottom="1dp" android:textSize="10sp" android:textColor="#ffffffff" android:gravity="center" android:textStyle="bold"/>
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:id="@+id/mainblock">
+	<LinearLayout android:layout_width="wrap_content"
+		android:orientation="vertical" android:layout_height="660dp">
+		<TextView android:id="@+id/tishi" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textAppearance="@style/normal.black.big"
+			android:layout_marginTop="20dp" android:layout_marginLeft="20dp"
+			android:visibility="gone" android:text="没有相关音乐记录  " />
+		<LinearLayout android:orientation="vertical" android:id="@+id/alertpage"
+			android:background="@color/white" android:gravity="center"
+			android:visibility="gone" android:layout_width="564dp"
+			android:layout_height="600dp">
+			<include layout="@layout/nosdcard"></include>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/filelist" android:paddingRight="20dp"
+			android:paddingLeft="20dp" android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<com.pvi.ap.reader.activity.pviappframe.PviDataList 
+			      android:focusableInTouchMode="true" 
+			      android:layout_height="534dp" android:id="@+id/list" 
+			      android:layout_width="550dp" android:background="#fff" 
+			      android:focusable="true" >
+			</com.pvi.ap.reader.activity.pviappframe.PviDataList>
+		
+			<RelativeLayout android:background="@drawable/playmusic"
+				android:visibility="gone" android:layout_width="550dp"
+				android:layout_height="98dp" android:id="@+id/playmusic"
+				android:layout_marginTop="5dp" android:gravity="center"
+				android:paddingRight="0dp" android:layout_marginLeft="10dp">
+				<LinearLayout android:layout_width="fill_parent" 
+					android:id="@+id/photomuisc" android:gravity="top"
+					android:layout_height="32dp" android:orientation="horizontal"
+					android:duplicateParentState="true">
+					<TextView android:text="" android:gravity="center"
+						android:id="@+id/curmusicname" android:textColor="@drawable/black"
+						android:layout_marginLeft="0dp" android:singleLine="true"
+						android:layout_width="480dp" android:layout_height="30dp"
+						android:layout_alignParentTop="true"></TextView>
+					<ImageView android:background="@drawable/closemuisc"
+						android:id="@+id/closemusisc"  
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginRight="0dp">
+					</ImageView>
+				</LinearLayout>
+				<SeekBar android:id="@+id/curplaypos" android:layout_width="540dp"
+					android:thumbOffset="0dp" android:layout_marginLeft="5dp"
+					android:progressDrawable="@drawable/test" android:layout_marginTop="10dp"
+					android:thumb="@drawable/soundprogressbar" android:max="100"
+					android:layout_height="13dp" android:fitsSystemWindows="true"
+					android:layout_below="@+id/photomuisc"></SeekBar>
+				<LinearLayout android:id="@+id/mymusics"
+					android:paddingTop="2dp" android:gravity="center"
+					android:paddingBottom="3dp" android:layout_width="540dp"
+					android:layout_height="fill_parent" android:orientation="horizontal"
+					android:layout_below="@+id/curplaypos">
+					<TextView android:layout_width="70dp" android:text="0:00"
+						android:layout_marginLeft="10dp" android:clickable="true"
+						android:focusable="true" android:id="@+id/musicprocess"
+						android:textAppearance="@style/normal.black.big"
+						android:layout_height="wrap_content"></TextView>
+					<ImageButton android:src="@drawable/stop_mymusic"
+						android:background="@null" android:id="@+id/stop"
+						android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+
+					<ImageButton android:src="@drawable/premusic_mymusic"
+						android:background="@null" android:id="@+id/premusic"
+						android:layout_marginLeft="20dp" android:layout_width="48dp"
+						android:layout_height="fill_parent"></ImageButton>
+
+					<ImageButton android:id="@+id/pause" android:src="@drawable/pause_mymusic"
+						android:layout_marginLeft="20dp" android:clickable="true"
+						android:background="@null" android:focusable="true"
+						android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+					<ImageButton android:clickable="true"
+						android:focusable="true" android:background="@null"
+						android:src="@drawable/nextmusic_mymusic" android:id="@+id/nextmusic"
+						android:layout_marginLeft="20dp" android:layout_width="48dp"
+						android:layout_height="fill_parent"></ImageButton>
+
+					<ImageButton android:src="@drawable/soundsub_mymusic"
+						android:id="@+id/soundsub" android:background="@null"
+						android:layout_marginLeft="20dp" android:layout_width="48dp"
+						android:layout_height="fill_parent"></ImageButton>
+
+					<TextView android:background="@drawable/musicsound1"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel0"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+					<TextView android:background="@drawable/musicsound2"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel1"
+						android:layout_marginLeft="6dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					<TextView android:background="@drawable/musicsound2"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel2"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					<TextView android:background="@drawable/musicsound3"
+						android:clickable="false" android:id="@+id/soundlevel3"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					 <TextView android:background="@drawable/musicsound3" android:visibility="gone"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel4"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					<TextView android:background="@drawable/musicsound3" android:visibility="gone"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel5"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					<TextView android:background="@drawable/musicsound3" android:visibility="gone"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel6"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>
+					<TextView android:background="@drawable/musicsound3" android:visibility="gone"
+						android:clickable="false" android:focusable="false" android:id="@+id/soundlevel7"
+						android:layout_marginLeft="2dp" android:layout_width="6dp"
+						android:layout_height="6dp"></TextView>  
+					<ImageButton android:src="@drawable/soundadd_mymusic"
+						android:id="@+id/soundadd" android:background="@null"
+						android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="600dp" android:id="@+id/mainblock" android:focusableInTouchMode="true" 
+	android:background="#FFFFFF" android:gravity="center"
+	 android:layout_height="800dp">
+	 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/fp_showpic_img" android:background="#FFFFFF" android:duplicateParentState="true"
+			android:layout_height="fill_parent" 
+            android:layout_width="fill_parent" android:scaleType="center"
+			android:gravity="center"
+			
+			/>	
+			</LinearLayout>	
+<!-- 
+
+ -->

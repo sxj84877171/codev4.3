@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:background="@color/white"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_x="0px"
+android:layout_y="0px"
+>
+
+	
+    
+	<AbsoluteLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    
+	    android:background="@color/white"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_x="0px"
+		android:layout_y="30px"
+	    >
+	    <TextView  
+	    android:id="@+id/text01"
+	    android:layout_width="500px" 
+	    android:layout_height="30px" 
+	    android:text="您当前的预订更新状态为:"
+	    android:textSize="10pt"
+	    android:textColor="@color/black"
+	    android:layout_x="0px"
+		android:layout_y="0px"
+	    />
+	</AbsoluteLayout>
+		
+	<AbsoluteLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    
+	    android:background="@color/white"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_x="0px"
+		android:layout_y="60px"
+	    >
+	    <TextView
+	    android:layout_width="500px" 
+	    android:layout_height="30px" 
+	    android:text="设置您的预订更新提醒时间:"
+	    android:textSize="10pt"
+	    android:textColor="@color/black"
+	    android:layout_x="0px"
+		android:layout_y="0px"
+	    />
+	</AbsoluteLayout>	
+
+	<AbsoluteLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    
+	    android:background="@color/white"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_x="0px"
+		android:layout_y="100px"
+	    >
+	    <TextView  
+	    android:id="@+id/text02"
+	    android:layout_width="500px" 
+	    android:layout_height="30px" 
+	    android:text="定时提醒:每天8:00与20:00发送更新提醒"
+	    android:textSize="10pt"
+	    android:textColor="@color/black"
+	    android:layout_x="0px"
+		android:layout_y="0px"
+		android:focusable="true"
+		android:clickable="true"
+	    />
+	</AbsoluteLayout>	
+	
+	<AbsoluteLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    
+	    android:background="@color/white"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_x="0px"
+		android:layout_y="140px"
+	    >
+	    <TextView  
+	    android:id="@+id/text03"
+	    android:layout_width="500px" 
+	    android:layout_height="60px" 
+	    android:text="即时提醒:预订的图书更新后立即发送提示给您.\n发送时间:8:00-20:00"
+	    android:textSize="10pt"
+	    android:textColor="@color/black"
+	    android:layout_x="0px"
+		android:layout_y="0px"
+		android:focusable="true"
+		android:clickable="true"
+	    />
+	</AbsoluteLayout>
+		
+	<AbsoluteLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    
+	    android:background="@color/white"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_x="0px"
+		android:layout_y="230px"
+	    >
+	    <TextView  
+	    android:id="@+id/text04"
+	    android:layout_width="500px" 
+	    android:layout_height="60px" 
+	    android:text="24小时提醒:预订的图书更新后立即发送提示给您.\n发送时间:全天"
+	    android:textSize="10pt"
+	    android:textColor="@color/black"
+	    android:layout_x="0px"
+		android:layout_y="0px"
+		android:focusable="true"
+		android:clickable="true"
+	    />
+	</AbsoluteLayout>
+	 <TextView  
+    android:id="@+id/result"
+    android:layout_width="500px" 
+    android:layout_height="60px" 
+    android:text=""
+    android:textSize="15pt"
+    android:textColor="@color/black"
+    android:layout_x="100px"
+	android:layout_y="500px"
+	android:visibility="invisible"
+    />	
+		
+</AbsoluteLayout>

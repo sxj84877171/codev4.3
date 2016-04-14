@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:gravity="center"
+	android:orientation="vertical" android:layout_height="wrap_content">
+	<AbsoluteLayout android:background="@color/white"
+		android:layout_width="400px" android:gravity="center"
+		android:layout_x="100px" android:layout_y="300px" android:orientation="vertical"
+		android:layout_height="200px">
+		<TextView android:text="搜索  " android:layout_width="240px"
+			android:gravity="center" android:id="@+id/welcome" android:textColor="@color/black"
+			android:textSize="20px" android:layout_x="0px" android:layout_y="10px"
+			android:layout_marginLeft="30px" android:layout_height="45px"></TextView>
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center_vertical" android:layout_x="0px"
+			android:layout_y="75px" android:layout_width="fill_parent"
+			android:layout_height="40px">
+			<TextView android:layout_width="80px" android:text="文件名: "
+				android:gravity="center" android:textColor="@color/black"
+				android:layout_marginLeft="5px" android:layout_height="fill_parent"></TextView>
+			<EditText android:longClickable="false" android:layout_width="200px"
+				android:layout_height="fill_parent" android:layout_marginLeft="10px"
+				android:id="@+id/keyword" android:textColor="@color/black"></EditText>
+			<Button android:layout_width="80px" android:layout_height="fill_parent"
+				android:layout_marginLeft="15px" android:id="@+id/searchbtn"
+				android:text="搜索 " android:gravity="center"></Button>
+		</LinearLayout>
+		<TextView android:layout_x="0px" android:layout_y="120px"
+			android:id="@+id/hint" android:textColor="@color/black"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	</AbsoluteLayout>
+</LinearLayout>

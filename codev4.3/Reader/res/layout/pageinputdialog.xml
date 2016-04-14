@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:orientation="vertical"
+	android:gravity="center_vertical" android:layout_height="wrap_content"
+	android:layout_marginTop="10dp">
+	<TextView android:id="@+id/input_hint_textview" android:text="请输入要跳转的页码："
+		android:layout_height="30px" android:layout_width="wrap_content"
+		android:textSize="18dp" android:gravity="center_vertical"
+		android:textColor="#000000" android:textStyle="bold"></TextView>
+	<EditText android:longClickable="false" android:id="@+id/input_edittext" android:text=""
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:paddingLeft="20px" android:paddingRight="20px"
+		android:background="@drawable/phoneinput2"
+		 android:singleLine="true"> </EditText>
+</LinearLayout>

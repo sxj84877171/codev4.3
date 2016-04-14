@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Response>
+	<localBook>
+		<typeId>1</typeId>
+		<typeName>历史军事 </typeName>
+		<count>12</count>
+	</localBook>
+	<localBook>
+		<typeId>2</typeId>
+		<typeName>玄幻小说</typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>3</typeId>
+		<typeName>教育社科 </typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>4</typeId>
+		<typeName>都市言情 </typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>5</typeId>
+		<typeName>时尚生活 </typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>6</typeId>
+		<typeName>国学经典 </typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>7</typeId>
+		<typeName>原创精品 </typeName>
+		<count>0</count>
+	</localBook>
+	<localBook>
+		<typeId>8</typeId>
+		<typeName>社科经典</typeName>
+		<count>0</count>
+	</localBook>
+</Response>
+

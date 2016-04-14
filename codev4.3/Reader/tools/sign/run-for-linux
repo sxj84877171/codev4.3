@@ -1,0 +1,5 @@
+cd /media/DATA/G3/cmg3/codev3.0/reader/tools/sign
+echo "apk signature started"
+/usr/local/jdk1.6.0_21/bin/java -jar rootpower.jar root.CF root.key ../../bin/ReaderV30.apk ReaderV30.apk
+mv ReaderV30.apk ../../bin/ReaderV30.apk 
+echo "apk signature succeed"

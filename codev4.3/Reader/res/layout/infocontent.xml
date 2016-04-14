@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:background="@color/white" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mainblock">
+
+	<LinearLayout android:id="@+id/view_sv"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_height="wrap_content" android:paddingLeft="20dp" android:paddingTop="20dp">
+		<TextView android:id="@+id/bookNewPublishDate"
+			android:textColor="@color/black" android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:gravity="left" android:layout_marginLeft="10dp"
+			android:textSize="18sp" android:layout_marginRight="30dp">
+
+		</TextView>
+		<TextView android:id="@+id/bookNewTitle" android:textColor="@color/black"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:text="" android:gravity="left"
+			android:layout_marginLeft="10dp"
+			android:textSize="24sp" android:layout_width="fill_parent" android:layout_marginRight="30dp">
+
+		</TextView>
+		<ImageView android:scaleType="fitXY" android:visibility="visible"
+			android:background="@drawable/newline" android:layout_height="wrap_content" android:layout_width="560dp">
+		</ImageView>
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" android:paddingBottom="10dp">
+			<com.pvi.ap.reader.activity.PageTextView
+			android:focusable="true"
+				android:editable="false" android:cursorVisible="false"
+				android:lineSpacingMultiplier="1.5" android:background="@drawable/white"
+				android:id="@+id/bookNewContent" android:gravity="left"
+				android:textColor="@color/black" android:textSize="18sp"
+				android:layout_height="600dp" android:layout_marginTop="5dp" android:layout_width="560dp">
+
+			</com.pvi.ap.reader.activity.PageTextView>
+
+			<ImageView android:id="@+id/bookNewPic"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:scaleType="fitXY" android:visibility="invisible">
+			</ImageView>
+		</LinearLayout>
+
+		<!--
+			<TextView android:textColor="@color/black"
+			android:background="@color/white" android:layout_width="75px"
+			android:id="@+id/free" android:text="" android:layout_height="30px"
+			android:layout_x="480px" android:layout_y="30px"
+			android:textSize="14sp" android:gravity="center"
+			android:focusable="true"/>
+		-->
+
+
+
+
+	</LinearLayout>
+</RelativeLayout>

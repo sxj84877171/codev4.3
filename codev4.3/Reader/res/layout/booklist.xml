@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:pvi="http://schemas.android.com/apk/res/com.pvi.ap.reader"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/white" android:id="@+id/mainblock">
+	<LinearLayout android:id="@+id/tabs"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:background="@drawable/tab_bgimg_3_ui1">
+		<TextView style="@style/nav_textview" android:text="@string/editorRecommended"
+			android:id="@+id/catalogBtn01" android:nextFocusRight="@+id/catalogBtn02"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/categoryPart"
+			android:id="@+id/catalogBtn02" android:nextFocusRight="@+id/catalogBtn03"
+			android:nextFocusLeft="@+id/catalogBtn01"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/hotRanking"
+			android:id="@+id/catalogBtn03" android:nextFocusLeft="@+id/catalogBtn02"
+			android:nextFocusRight="@+id/catalogBtn04"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/famousWork" 
+		android:id="@+id/catalogBtn04" android:nextFocusLeft="@+id/catalogBtn03"
+			android:nextFocusRight="@+id/catalogBtn05"></TextView>
+		<TextView style="@style/nav_textview" android:text="@string/highQualityPart"
+			android:id="@+id/catalogBtn05" android:nextFocusLeft="@+id/catalogBtn04"
+			android:nextFocusRight="@+id/catalogBtn06"></TextView>
+		<TextView style="@style/nav_textview" android:id="@+id/catalogBtn06"
+			android:nextFocusLeft="@+id/catalogBtn05" android:nextFocusDown="@+id/moreBtn"
+			android:text="包月书包"></TextView>
+	</LinearLayout>
+	
+	<com.pvi.ap.reader.activity.pviappframe.PviDataList
+                android:focusableInTouchMode="true" android:id="@+id/list" android:background="#fff" android:focusable="true"
+                android:layout_marginLeft="20dp" pvi:lineHeight="84" android:layout_width="550dp" android:layout_height="wrap_content" android:layout_below="@+id/tabs">                
+                </com.pvi.ap.reader.activity.pviappframe.PviDataList>
+                
+	<RelativeLayout android:id="@+id/RelativeLayout08"	
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingRight="15dp" android:layout_alignParentBottom="true" android:layout_marginBottom="10dp" android:paddingLeft="5dp">
+		<EditText android:id="@+id/searchInput" android:layout_marginLeft="20dp" style="@style/search_edittext_ui1"></EditText>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/Serach"
+			android:id="@+id/searchButton" android:layout_alignParentRight="true"
+			style="@style/search_button_ui1"></Button>
+	</RelativeLayout>
+
+</RelativeLayout>

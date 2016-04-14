@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:gravity="center"
+	android:layout_x="0px" android:layout_y="0px" android:orientation="vertical"
+	android:layout_height="fill_parent">
+	<TextView android:layout_x="180px" android:layout_y="255px"
+		android:layout_height="2px" android:layout_width="240px"
+		android:background="@color/black"></TextView>
+	<TextView android:layout_x="178px" android:layout_y="256px"
+		android:background="@color/black" android:layout_width="2px"
+		android:layout_height="285px"></TextView>
+	<TextView android:layout_x="420px" android:layout_y="256px"
+		android:background="@color/black" android:layout_width="2px"
+		android:layout_height="285px"></TextView>
+	<TextView android:layout_x="180px" android:layout_y="541px" android:background="@color/black"
+		android:layout_width="240px" android:layout_height="2px"></TextView>
+	<AbsoluteLayout android:background="@color/white"
+		android:layout_width="240px" android:gravity="center"
+		android:layout_x="180px" android:layout_y="257px" android:orientation="vertical"
+		android:layout_height="285px">
+		<TextView android:text="用户你好：" android:layout_width="240px"
+			android:id="@+id/welcome" android:textColor="@color/black"
+			android:layout_x="0px" android:layout_y="0px"
+			android:layout_marginLeft="30px" android:layout_height="45px"></TextView>
+		<TextView android:layout_width="240px" android:id="@+id/ticketinfo"
+			android:background="@color/white" android:layout_marginLeft="30px"
+			android:layout_x="0px" android:layout_y="45px" android:textColor="@color/black"
+			android:layout_height="200px"></TextView>
+		<Button android:layout_width="90px" android:layout_height="40px"
+			android:id="@+id/okbtn" android:layout_marginLeft="105px"
+			android:layout_x="75px" android:layout_y="245px" android:text="确定 "
+			android:gravity="center" android:layout_marginTop="10px"></Button>
+	</AbsoluteLayout>
+</AbsoluteLayout>

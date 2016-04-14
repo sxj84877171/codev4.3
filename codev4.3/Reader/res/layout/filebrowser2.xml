@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_x="0px" android:background="@color/white" android:layout_y="0px" android:id="@+id/mainblock">
+
+	<TextView android:textColor="@color/white" android:background="@drawable/mebnames"
+		android:layout_width="600px" android:id="@+id/mebnames"
+		android:textSize="20sp" android:gravity="center" android:focusable="true"
+		android:layout_height="0px" android:visibility="invisible" />
+
+	<RelativeLayout android:id="@+id/view_sv"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_y="0px"
+		android:layout_above="@+id/bottom">
+
+		<TextView android:textColor="@color/black"
+			android:background="@color/white" android:id="@+id/free"
+			android:text="" android:layout_height="0px" android:layout_y="0px"
+			android:textSize="14sp" android:visibility="invisible"
+			android:gravity="top" android:focusable="true" android:layout_width="60px"
+			android:layout_x="0px" />
+		<TextView android:textColor="@color/black"
+			android:background="@color/white" android:id="@+id/chapterName"
+			android:text="" android:layout_x="0px" android:textSize="0sp"
+			android:typeface="monospace" android:gravity="left"
+			android:focusable="true" android:layout_width="0px"
+			android:visibility="invisible" android:layout_y="0px"
+			android:layout_height="wrap_content" />
+		<TextView android:layout_width="0px" android:background="@drawable/meblines"
+			android:layout_height="0px" android:layout_x="0px" android:layout_y="0px"
+			android:visibility="invisible" android:gravity="top"
+			android:focusable="true" />
+		<com.pvi.ap.reader.activity.PageTextView
+			android:layout_width="590px" android:id="@+id/view_contents"
+			android:padding = "5px"
+			android:textColor="@color/black" 
+			android:layout_centerHorizontal = "true"
+			android:background="@color/white" android:textSize="20sp" android:lineSpacingMultiplier="1.2"
+			android:layout_x="25px" android:gravity="top" android:cursorVisible="false"
+			android:editable="false" android:selectable="true" android:layout_y="2px"
+			android:layout_height="672px"
+			android:focusableInTouchMode="true"
+			android:focusable="true">
+		</com.pvi.ap.reader.activity.PageTextView>
+	</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent" android:visibility="invisible" android:paddingBottom="12dp" 
+				android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/serachs" android:layout_above="@+id/mainblock"
+		android:layout_alignParentBottom="true">
+				<EditText android:longClickable="false" android:id="@+id/serach" android:background="@drawable/read_search"
+					android:layout_width="wrap_content" android:layout_marginLeft="25dp"
+					android:maxLength="30" android:gravity="top" android:layout_marginRight="20dp"
+					android:layout_toLeftOf="@+id/find" android:layout_height="28dp" android:singleLine="true"
+					android:layout_alignTop="@+id/find" />
+				<Button android:id="@+id/find" android:text="@string/Serach"
+					android:layout_marginRight="20dp" android:layout_height="wrap_content"
+					style="@style/button"
+					android:layout_toLeftOf="@+id/close"></Button>
+				<Button android:id="@+id/close" android:text="@string/standby_auto_close"
+					android:layout_marginRight="25dp"
+					android:layout_height="wrap_content" android:layout_alignParentRight="true"
+					style="@style/button"></Button>
+		</RelativeLayout>
+	
+</RelativeLayout>
+
+
+

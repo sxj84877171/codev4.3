@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="primaryPT">"10pt"</string>
+	<string name="hello">Hello World !</string>
+
+	<string name="app_name">ReaderService</string>
+	<string name="menu1">无线书城</string>
+	<string name="menu2">打开背景音乐</string>
+	<string name="menu3">删除</string>
+	<string name="menu4">搜索</string>
+	<string name="menu5">排序</string>
+	<string name="menu6">返回首页</string>
+
+	<string name="menu7">返回上一 页</string>
+	<string name="menu8">新建</string>
+	<string name="menu9">打开</string>
+	<string name="menu10">重命名</string>
+	<string name="menu11">修改</string>
+	<string name="menu12">背景音乐管理 </string>
+	<string name="menu13">停止</string>
+	<string name="menu14">加入背景音乐库</string>
+	<string name="menu15">音量放大</string>
+	<string name="menu16">音量缩小</string>
+	<string name="menu17">按作者排序</string>
+	<string name="menu18">按书名排序</string>
+	<string name="menu19">按时间排序</string>
+	<string name="menu20">重新下载</string>
+	<string name="menu21">继续下载</string>
+	<string name="menu22">暂停下载</string>
+	<string name="menu23">适应页面</string>
+	<string name="menu24">实际大小</string>
+	<string name="menu25">放大</string>
+	<string name="menu26">缩小</string>
+	<string name="selectall">全选</string>
+
+
+
+	<string name="fp_menu1">打开背景音乐</string>
+	<string name="fp_menu1_1">关闭背景音乐</string>
+	<string name="fp_menu2">绑定</string>
+	<string name="fp_menu3">版权声明</string>
+	<string name="fp_menu4">隐私声明</string>
+	<string name="fp_menu5">用户服务协议</string>
+	<string name="fp_menu6">帮助</string>
+	<string name="fp_menu7">返回</string>
+	<string name="fp_menu8">版权声明</string>
+
+    <string name="fp_cat1">无线书城</string>
+    <string name="fp_cat2">我的书架</string>
+    <string name="fp_cat3">本地书库</string>
+    <string name="fp_cat4">我的批注</string>
+    <string name="fp_cat5">我的便笺</string>
+    <string name="fp_cat6">资源中心</string>
+    <string name="fp_cat7">个人空间</string>
+    <string name="fp_cat8">系统设置</string>
+
+	<string name="fp_details1"> 66076本 </string>
+	<string name="fp_details2"></string>
+	<string name="fp_details3"> 300本 </string>
+	<string name="fp_details4"></string>
+	<string name="fp_details5"></string>
+	<string name="fp_details6"></string>
+	<string name="fp_details7"></string>
+	<string name="fp_details8"></string>
+
+	<string name="commit">提交修改</string>
+	<string name="modify">修 改 </string>
+	<string name="bindphone_label">绑定手机号码</string>
+	<string name="devid_label">设备ID号：</string>
+	<string name="nickname_label">昵称</string>
+	<string name="age_label">年龄</string>
+	<string name="sex_label">性别</string>
+	<string name="address_label">所在地</string>
+	<string name="signature_label">个性签名</string>
+	<string name="unbindbtn_label">解 绑 </string>
+
+    <string name="tip_modify_nickname">最大长度30</string>
+    <string name="tip_modify_des">最大长度200</string>
+    
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="secrecy">保密</string>
+	<string name="validation_label">请输入验证码 : </string>
+	<string name="bookstore">无线书城</string>
+	<string name="modifyuserinfo">修改个人信息</string>
+
+	<string name="readonline"> 在线阅读 </string>
+	<string name="readdownload"> 下载阅读  </string>
+	<string name="bookupdate"> 预定更新  </string>
+	<string name="favorite"> 收藏本书 </string>
+	<string name="code_utf8">UTF-8</string>
+	<string name="code_gb2312">GB2312</string>
+	<string name="about">关于</string>
+	<string name="zoom_out">缩小字体</string>
+	<string name="zoom_in">放大字体</string>
+	<!--
+		<string name="set_color_blue">蓝色</string> <string
+		name="set_color_red">红色</string>
+	-->
+	<string name="set_bookmark">增加书签</string>
+	<string name="get_gotoPrev">上一页</string>
+	<string name="get_gotoNext">下一页</string>
+	<string name="set_type_1">粗体</string>
+	<string name="set_type_2">衬线粗体</string>
+	<string name="set_type_3">斜粗</string>
+	<string name="swich_code" />
+	<string name="aboutTitle" />
+	<string name="aboutInfo" />
+	<string name="aboutOK">确定</string>
+
+	<string name="str_start">正在播放音乐...</string>
+	<string name="str_close">停止播放音乐</string>
+	<string name="str_pause">暂停播放音乐</string>
+	<string name="str_OnCompletionListener">播放完毕</string>
+	<string name="str_OnErrorListener">出错</string>
+	<string name="system_soft_update">软件更新</string>
+	<string name="system_soft_update_message">G3阅读器 发现新版本，请更新！</string>
+	<string name="system_soft_isnotexit">升级软件不存在</string>
+	<string name="system_soft_download_fa">系统升级软件下载失败</string>
+	<string name="bookmark_booksummary">评论 </string>
+	<string name="system_soft_cancel">退出</string>
+	<string name="system_soft_unauthorized">确定</string>
+	<!--add by Iris  2010-11-09   我的文档警告页面-->
+	<string name="ret_alertpage">返回前页</string>
+	<string name="msgnull">留言信息不能为空！</string>
+	<string name="friendsel">请输入推荐好友手机号码！</string>
+	<string name="msglengthlong">留言信息不能长于40字符！</string>
+	<string name="recommending">正在向好友推荐，请稍候...</string>
+
+	<!--add by fly  2010-11-09  系统设置主界面-->
+	<string name="systemconfig_load_message">加载数据 ......</string>
+	<string name="systemconfig_pop_message">温馨提示</string>
+	<string name="systemconfig_title">系统设置</string>
+	<string name="systemconfig_dataandtime">日期及时间</string>
+	<string name="systemconfig_startup">开机画面</string>
+	<string name="systemconfig_standup">待机画面</string>
+	<string name="systemconfig_welcome">无线欢迎页</string>
+	<string name="systemconfig_netset">联网方式</string>
+	<string name="systemconfig_refresh">刷新模式</string>
+	<string name="systemconfig_recoveryFactory">恢复出厂设置</string>
+	<string name="systemconfig_rotating">旋转模式</string>
+	<string name="systemconfig_language">语言设置</string>
+	<string name="systemconfig_sound">按键音设置</string>
+	<string name="systemconfig_skin">皮肤设置</string>
+	<string name="systemconfig_subscribeRemind">预订提醒设置</string>
+	<string name="systemconfig_configHandsetInfo">设备信息</string>
+
+	<!--add by fly  2010-11-09  无线欢迎页设置界面-->
+	<string name="welcome_top_title">系统设置 >> 无线欢迎页设置</string>
+	<string name="welcome_form_title">无线欢迎页设置</string>
+	<string name="welcome_open">打开无线欢迎页</string>
+	<string name="welcome_close">关闭无线欢迎页</string>
+	<string name="welcome_ok">设置</string>
+	<string name="welcome_return">返回</string>
+	<string name="welcome_set_open_ok">您设置打开无线欢迎页，操作成功！</string>
+	<string name="welcome_set_close_ok">您设置关闭无线欢迎页，操作成功！</string>
+	<string name="welcome_set_msg">您还没有选择打开或关闭</string>
+
+
+	<!--add by fly  2010-11-09 联网设置界面-->
+	<string name="net_top_title">系统设置 >> 联网设置</string>
+	<string name="net_form_title">联网设置</string>
+	<string name="net_auto">自动切换</string>
+	<string name="net_td">TD</string>
+	<string name="net_edge">EDGE</string>
+	<string name="net_ok">设置</string>
+	<string name="net_return">返回</string>
+	<string name="net_set_auto_ok">您设置联网方式为自动切换，操作成功！</string>
+	<string name="net_set_td_ok">您设置联网方式为TD，操作成功！</string>
+	<string name="net_set_edge_ok">您设置联网方式为EDGE，操作成功！</string>
+	<string name="net_set_msg">您还没有选择联网方式</string>
+
+	<!--add by fly  2010-11-09 刷新模式设置界面-->
+	<string name="refresh_top_title">系统设置 >> 刷新模式设置</string>
+	<string name="refresh_form_title">刷新模式设置</string>
+	<string name="refresh_noflash">GC16_NOFLASH</string>
+	<string name="refresh_flash">GC16_FLASH</string>
+	<string name="refresh_ok">设置</string>
+	<string name="refresh_return">返回</string>
+	<string name="refresh_set_noflash_ok">您设置刷新模式为GC16_NOFLASH，操作成功！
+	</string>
+	<string name="refresh_set_flash_ok">您设置刷新模式为GC16_FLASH，操作成功！
+	</string>
+	<string name="refresh_set_msg">您还没有选择刷新模式</string>
+
+	<!--add by fly  2010-11-09 旋转模式设置界面-->
+	<string name="rotating_top_title">系统设置 >> 旋转模式设置</string>
+	<string name="rotating_form_title">旋转模式设置</string>
+	<string name="rotating_open">打开旋转模式</string>
+	<string name="rotating_close">关闭旋转模式</string>
+	<string name="rotating_ok">设置</string>
+	<string name="rotating_return">返回</string>
+	<string name="rotating_set_open_ok">您选择打开旋转模式，操作成功！</string>
+	<string name="rotating_set_close_ok">您选择关闭旋转模式，操作成功！</string>
+	<string name="rotating_set_msg">您还没有选择设置模式，请选择!</string>
+
+
+	<!--add by fly  2010-11-09 语言设置界面-->
+	<string name="language_top_title">系统设置 >> 语言设置</string>
+	<string name="language_form_title">语言设置</string>
+	<string name="language_s_chinese">简体中文</string>
+	<string name="language_t_chinese">繁体中文</string>
+	<string name="language_english">英语</string>
+	<string name="language_ok">设置</string>
+	<string name="language_return">返回</string>
+	<string name="language_set_s_chinese_ok">您选择语言为简体中文，操作成功！</string>
+	<string name="language_set_t_chinese_ok">您选择语言为繁体中文，操作成功！</string>
+	<string name="language_set_english_ok">您选择语言为英语，操作成功！</string>
+	<string name="language_set_msg">您还没有选择语言，请选择!</string>
+
+
+	<!--add by fly  2010-11-09  按键音量设置界面-->
+	<string name="sound_top_title">系统设置 >> 按键音设置</string>
+	<string name="sound_form_title">按键音设置</string>
+	<string name="sound_open">打开按键音</string>
+	<string name="sound_close">关闭按键音</string>
+	<string name="sound_ok">设置</string>
+	<string name="sound_return">返回</string>
+	<string name="sound_set_open_ok">您选择打开按键音，操作成功！</string>
+	<string name="sound_set_close_ok">您选择关闭按键音，操作成功！</string>
+	<string name="sound_set_msg">您还没有选择设置，请选择!</string>
+
+	<!--add by fly  2010-11-09 皮肤设置界面-->
+	<string name="skin_top_title">系统设置 >> 皮肤设置</string>
+	<string name="skin_form_title">皮肤设置</string>
+	<string name="skin_1">浓墨重彩</string>
+	<string name="skin_2">清新简约</string>
+	<string name="skin_3">天然绿色</string>
+	<string name="skin_ok">设置</string>
+	<string name="skin_return">返回</string>
+	<string name="skin_set_skin1_ok">您选择设置皮肤为浓墨重彩，操作成功！</string>
+	<string name="skin_set_skin2_ok">您选择设置皮肤为清新简约，操作成功！</string>
+	<string name="skin_set_skin3_ok">您选择设置皮肤为天然绿色，操作成功！</string>
+	<string name="skin_set_msg">您还没有选择皮肤，请选择!</string>
+
+	<!--add by denice  2010-11-10 我的便签-->
+	<string name="my_note_title">我的便签</string>
+	<string name="my_note_serch">搜索</string>
+	<string name="my_note_all">显示全部</string>
+	<string name="my_warning">警告</string>
+	<string name="my_sure">确定</string>
+	<string name="my_quit">退出</string>
+	<string name="my_notrename">名字相同，请重新输入</string>
+	<string name="my_nullname">名字为空，请输入名字</string>
+	<string name="my_holdon">请等待...</string>
+	<string name="my_notdeletenote">没有此便签，无法删除</string>
+	<string name="my_nullnote">没有相关便签，请输入</string>
+	<string name="my_rename_all">新名称仍相同，请重新输入</string>
+	<string name="my_addnote">新增NOTE</string>
+	<string name="my_deletenote">删除NOTE</string>
+	<string name="my_modifynote">修改NOTE</string>
+	<string name="my_renamenote">重命名NOTE</string>
+	<string name="my_seachnote">搜索NOTE</string>
+	<string name="my_work">正在处理中...</string>
+	<string name="note_name">便签：</string>
+	<string name="note_content">内容：</string>
+
+	<!--add by denice  2010-11-10 好友管理-->
+	<string name="my_friend_checked">已验证</string>
+	<string name="my_friend_checking">验证中</string>
+	<string name="my_friend_all">全部</string>
+	<string name="my_friend_none">无</string>
+	<string name="my_friend_hint">温馨提示</string>
+	<string name="my_friend_connecting">连接请求中，请稍候...</string>
+	<string name="my_friend_connecterror">连接出错，请重试...</string>
+	<string name="my_friend_connectfailed">网络暂不可用，请稍候再试...</string>
+	<string name="my_friend_numchecking">此号码在验证中</string>
+	<string name="my_friend_numdelete">此号码暂无法删除</string>
+	<string name="my_friend_numerror">此号码非移动号码,请输入移动号码</string>
+	<string name="my_friend_delete">确定要删除好友吗？</string>
+	<string name="my_friend_sure">确定</string>
+	<string name="my_friend_cancel">取消</string>
+	<string name="my_friend_welcomall">欢迎来到全部好友</string>
+	<string name="my_friend_welcomchecking">欢迎来到验证中</string>
+	<string name="my_friend_welcomchecked">欢迎来到已验证</string>
+	<string name="my_friend_telephone">请输入手机号码！</string>
+	<string name="my_friend_telephoneerror">手机号码输入不合法！</string>
+	<string name="my_friend_setall">全选</string>
+	<string name="my_friend_setcancel">取消全选</string>
+	<string name="my_friend_add">添加好友</string>
+	<string name="my_friend_addtele">请输入手机号</string>
+	<string name="my_friend_hint1">号码不合法请重新输入</string>
+	<string name="my_friend_hint2">号码不能为空请输入号码</string>
+
+	<!--add by fly  2010-11-10 设备信息界面-->
+	<string name="confighandsetinfo_top_title">系统设置 >> 设备信息</string>
+	<string name="confighandsetinfo_form_title">设备信息</string>
+	<string name="confighandsetinfo_product">产品型号:</string>
+	<string name="confighandsetinfo_equ">设备ID号:</string>
+	<string name="confighandsetinfo_imei">IMEI串号:</string>
+	<string name="confighandsetinfo_return">返回</string>
+
+
+	<!--add by fly  2010-11-10 预订提醒设置界面-->
+	<string name="subscriberemind_top_title">系统设置 >> 预订提醒设置</string>
+	<string name="subscriberemind_form_title">预订提醒设置</string>
+	<string name="subscriberemind_ontime">定时提醒</string>
+	<string name="subscriberemind_intime">即时提醒</string>
+	<string name="subscriberemind_after24hours">24小时提醒</string>
+	<string name="subscriberemind_ok">设置</string>
+	<string name="subscriberemind_return">返回</string>
+	<string name="subscriberemind_set_ontime_ok">您设置预订提醒设置为定时提醒，操作成功！</string>
+	<string name="subscriberemind_set_intime_ok">您设置预订提醒设置为即时提醒，操作成功！</string>
+	<string name="subscriberemind_set_after24Hours_ok">您设置预订提醒设置为24小时提醒，操作成功！
+	</string>
+	<string name="subscriberemind_set_msg">您还没有选择提醒方式</string>
+
+
+	<!--add by fly  2010-11-09  无线欢迎页设置界面-->
+	<string name="timeset_top_title">系统设置 >> 时间日期设置</string>
+	<string name="timeset_form_title">时间日期设置</string>
+	<string name="timeset_year_title">年:</string>
+	<string name="timeset_month_title">月:</string>
+
+	<string name="timeset_day_7">日</string>
+	<string name="timeset_day_1">一</string>
+	<string name="timeset_day_2">二</string>
+	<string name="timeset_day_3">三</string>
+	<string name="timeset_day_4">四</string>
+	<string name="timeset_day_5">五</string>
+	<string name="timeset_day_6">六</string>
+	<string name="timeset_time">时间</string>
+	<string name="timeset_time_format">时间格式</string>
+	<string name="timeset_time_format_12">12时间</string>
+	<string name="timeset_time_format_24">24时间格式</string>
+	<string name="timeset_ok">设置</string>
+	<string name="timeset_return">返回</string>
+
+	<string name="prechapter">上一章 </string>
+	<string name="nextchapter">下一章 </string>
+	<string name="extract">摘 </string>
+	<string name="background">背景音乐库 </string>
+	<string name="localbookhint">更多精彩内容，请进无线书城... </string>
+
+	<string name="timeset_time_ok">您设置的时间已生效</string>
+	<string name="timeset_time_msg">您还没有选择时间格式</string>
+
+
+	<!--add by fly  2010-11-16  开机设置界面-->
+	<string name="startup_top_title">系统设置 >> 开机画面设置</string>
+	<string name="startup_form_title">开机画面设置</string>
+	<string name="startup_mainpage">首页</string>
+	<string name="startup_lastread">最近一次阅读内容</string>
+	<string name="startup_ok">设置</string>
+	<string name="startup_return">返回</string>
+	<string name="startup_set_open_ok">您设置开机画面为首页，操作成功！</string>
+	<string name="startup_set_close_ok">您设置开机画面为最近一次阅读内容，操作成功！
+	</string>
+	<string name="startup_set_msg">您还没有选择设置状态</string>
+
+
+	<!--add by fly  2010-11-16  待机设置界面-->
+	<string name="standby_top_title">系统设置 >> 屏保设置</string>
+	<string name="standby_form_title">屏保设置</string>
+	<string name="standby_auto">自动屏保：</string>
+	<string name="standby_auto_close">关闭</string>
+	<string name="standby_auto_5">5分钟</string>
+	<string name="standby_auto_20">20分钟</string>
+	<string name="standby_imageChangeTime">图片切换时间：</string>
+	<string name="standby_imageChangeTime_3">3分钟</string>
+	<string name="standby_imageChangeTime_15">15分钟</string>
+	<string name="standby_imageChangeTime_30">30分钟</string>
+	<string name="standby_ok">设置</string>
+	<string name="standby_return">返回</string>
+	<string name="standby_set_ok">您本次屏保设置，操作成功！</string>
+	<string name="standby_set_msg">您还没有选择设置状态</string>
+
+
+	<!--add by fly  2010-11-09 恢复出厂设置界面-->
+	<string name="recoveryfactory_top_title">系统设置 >> 恢复出厂设置</string>
+	<string name="recoveryfactory_form_title">恢复出厂设置</string>
+	<string name="recoveryfactory_ok">设置</string>
+	<string name="recoveryfactory_return">返回</string>
+	<string name="recoveryfactory_set_ok">恢复出厂设置成功！</string>
+	<string name="recoveryfactory_set_makesure">您真的要恢复出厂设置吗？请确认</string>
+
+	<string name="goto_myannotation">正在进入我的批注...</string>
+	<string name="goto_setting">正在进入系统设置...</string>
+	<string name="goto_timeset">正在进入时间及日期设置...</string>
+	<string name="goto_startUp">正在进入开机设置...</string>
+	<string name="goto_standby">正在进入待机设置...</string>
+	<string name="goto_welcome">正在进入欢迎页设置...</string>
+	<string name="goto_net">正在进入欢迎页设置...</string>
+	<string name="goto_refresh">正在进入刷新设置...</string>
+	<string name="goto_configHandsetInfo">正在进入设备信息...</string>
+	<string name="goto_recoveryFactory">正在进入恢复出厂设置...</string>
+	<string name="goto_rotating">正在进入旋转模式设置...</string>
+	<string name="goto_language">正在进入语言设置...</string>
+	<string name="goto_sound">正在进入按键音设置...</string>
+	<string name="goto_skin">正在进入换肤设置...</string>
+	<string name="goto_subscribeRemind">正在进入预订提醒设置...</string>
+	<string name="goto_work">正在进入...</string>
+
+	<string name="bind_inputnum_showtitle">
+		尊敬的用户：G3阅读器需绑定中国移动手机号码后才能联网。成功绑定后，使用阅读器产生的费用将由此号码支付。</string>
+	<string name="bind_inputnum_inputnumber1">请输入绑定手机号码:</string>
+	<string name="bind_inputnum_inputnumber2">请输入手机号码</string>
+	<string name="bind_inputnum_readagreenmenttitle">绑定前请仔细阅读《用户服务协议》</string>
+	<string name="bind_inputnum_getauthcode">同意协议并获取验证码</string>
+	<string name="bind_inputnum_readagreenment">查看协议内容</string>
+
+	<string name="bind_inputAuthcode_title">验证码已发送到您的手机，请输入验证码</string>
+	<string name="bind_inputAuthcode_input1">请输入验证码:</string>
+	<string name="bind_inputAuthcode_input2">请输入验证码</string>
+	<string name="bind_inputAuthcode_bind">绑定</string>
+	<string name="bind_inputAuthcode_getagain">再次获取验证码</string>
+	<string name="bind_getAuthCode_title">出错啦</string>
+	<string name="bind_mish">验证码错误</string>
+	<string name="bind_getAuthCode_execption">获取短信验证码出现异常</string>
+	<string name="bind_getAuthCode_timeout">获取短信验证码出现网络超时</string>
+	<string name="bind_getAuthCode_error">获取短信验证码出错，错误原因：</string>
+	<string name="bind_execption">绑定异常，详见日志</string>
+	<string name="bind_timeout">网络超时</string>
+	<string name="bind_error">手机号码与终端绑定出错，错误原因：</string>
+	<string name="bind_beenbind">该内置卡和手机号码两者已经相互绑定，请重新请求验证</string>
+	<string name="bind_success">您的绑定请求已在系统受理中，约一分钟内，您的手机会收到绑定信息。目前，您可以阅读本地书籍。
+	</string>
+	<string name="bind_ing">正在绑定，请稍后...</string>
+	<string name="goto_showagreenment">正在进入协议显示界面...</string>
+
+	<string name="myannotation_delsure">您真的要删除所选中的批注吗？</string>
+	<string name="myannotation_noselect">您还没有选择要删除的批注！</string>
+	<string name="myannotation_delsureAll">您真的要删除所有批注吗？</string>
+	<string name="myannotation_delsureBook">您真的要删除本书所有批注吗？</string>
+	<!-- add by kizanl  2010.11.24 警告信息 -->
+	<string name="alert_dialog_delete_title">删除确认</string>
+	<string name="alert_dialog_delete_message">您确认删除此文件?</string>
+	<string name="alert_dialog_delete_yes">是</string>
+	<string name="alert_dialog_delete_no">否</string>
+	<string name="playingmusicdeletemsg">该音乐文件正在播放，您确认删除此文件?</string>
+
+
+	<!-- add by kizanl  2010.11.24  下载 -->
+	<string name="text_download">下载</string>
+
+
+	<!-- add by kizanl  2010.11.25  排行榜 -->
+	<string name="top_week">周榜</string>
+	<string name="top_month">月榜</string>
+	<string name="top_total">总榜</string>
+
+	<!-- add by kizanl  2010.11.25  邮件 -->
+	<string name="title_email_left">电子信箱（</string>
+	<string name="title_email_right">）</string>
+
+	<!-- add by kizanl  2010.11.25  无线书城总数 -->
+	<string name="title_books_total_left">无线书城书库共</string>
+	<string name="title_books_total_right">本</string>
+
+	<!-- add by kizanl  2010.11.26  最近阅读 -->
+	<string name="recent_read_books">最近阅读</string>
+	<string name="no_recent_read_books_tip">您暂时还没有阅读记录，无线书城中有海量图书，去逛逛吧!
+	</string>
+	<string name="more_recent_read_record">更多
+	</string>
+
+
+	<!-- add by Elvis 2010-11-22 TXT阅读界面-->
+	<string name="txtPageNumCount">页数：</string>
+	<string name="txtOpenComentFunction">开启批注</string>
+	<string name="txtCloseComentFunction">关闭批注</string>
+	<string name="txtopenbianqian">开启便签</string>
+	<string name="txtPositiveButton">确定</string>
+	<string name="txtCancelButton">取消</string>
+	<string name="txtCommmentContent">请输入批注内容！</string>
+	<string name="txtAutoPageTime">设置自动翻页时间！</string>
+	<string name="txtCloseAutoPage">关闭自动翻页</string>
+	<string name="txtCommmentSucess">批注添加成功</string>
+	<string name="txtBookmarsBeen">书签已经存在！</string>
+	<string name="txtLineSpace">请输入行间距！</string>
+	<string name="txtLineNull">行间距为空！</string>
+	<string name="txtCharSpace">请输入字间距！</string>
+	<string name="txtCharNull">字间距为空！</string>
+	<string name="txtAddBookmarkSucess">添加书签成功</string>
+	<string name="txtBookmarkBean">书签已存在，请不要重复添加</string>
+	<string name="txtAddCommmentSucess">添加批注成功</string>
+	<string name="txtDeleteCommmentSucess">删除批注成功</string>
+	<string name="txtFirstPage">首页</string>
+	<string name="txtEndPage">已经是最后一页</string>
+	<string name="txtPageNum">请输入页码:</string>
+	<string name="txtSerchComtent">请输入搜索内容:</string>
+	<string name="txtSerch">搜索</string>
+	<string name="txtNext">下一个</string>
+	<string name="txtNoRelashipComent">没有相关的内容！</string>
+	<string name="txtFrontNoRelashipComent">前面没有相关内容！</string>
+	<string name="txtAfterNoRelashipComent">后面没有相关内容！</string>
+	<string name="txtSerchContentNull">搜索内容为空!</string>
+	<string name="openTouch">开启触摸翻页</string>
+	<string name="closeTouch">关闭触屏翻页</string>
+
+	<string name="txtInputErrorNumber">输入数字不符合要求</string>
+	<string name="txtNoInputContent">没有输入内容，不添加批注</string>
+	<string name="txtCommentHaveBeen">不能在已有批注的地方添加新的批注！</string>
+	<string name="txtNotToSmall">不能再放小了.</string>
+	<string name="txtNotToBig">不能再放大了.</string>
+	<string name="txtNoBookExsit">该书不存在.</string>
+	<string name="txtHaveError">"出错了！！"</string>
+	<string name="txtLineTooMax">行间距不能大于50！</string>
+	<string name="txtAutoTimeTooSmall">时间太小，自动翻页设置失败！</string>
+	<string name="txtAutoTimeIsNull">没有设置自动翻页时间，自动翻页设置失败</string>
+	<string name="txtAutoTimeSucess">设置自动翻页成功 </string>
+	<string name="txtAutoTimeLowwer">页数不多了，设置自动翻页失败 </string>
+	<string name="txtAutoTime">请输入自动翻页时间(单位为S，>=5) </string>
+	<string name="txtserchtishi">最多输入30个字符，30个字符满后，不再添加 </string>
+	<string name="txtpleasewait">请稍等……</string>
+
+	<string name="txttoobigsize">文件太大，请处理后，再进行打开！</string>
+	<string name="txtAutoClose">自动翻页关闭 </string>
+
+	<!-- add by kizan  2010.11.30  19:00 首页。。 点击阅读 -->
+	<string name="click_to_read">查阅</string>
+
+	<string name="source_type_local">【本地】</string>
+	<string name="source_type_online">【在线】</string>
+	<string name="source_type_SD">【SD卡】</string>
+	<string name="source_type_download">【下载】</string>
+
+
+	<!-- act title -->
+	<string name="actTitle10000">首页</string>
+	<string name="actTitle11000">无线书城</string>
+	<string name="actTitle12000">我的书架</string>
+	<string name="actTitle13000">资源中心</string>
+	<string name="actTitle13500">本地书库</string>
+	<string name="actTitle13510">书籍列表</string>
+	<string name="actTitle13100">我的文档</string>
+	<string name="actTitle13200">我的音乐</string>
+	<string name="actTitle13300">我的图片</string>
+	<string name="actTitle13400">我的便笺</string>
+	<string name="actTitle13600">存储空间</string>
+
+	<string name="actTitle14000">个人空间</string>
+	<string name="actTitle15000">系统设置</string>
+	<string name="actTitle16000">所有应用</string>
+    <string name="actTitle11100">精品专栏</string>
+    <string name="actTitle11200">最新资讯</string>
+    <string name="actTitle11300">名家名作</string>
+    <string name="actTitle11400">编辑推荐</string>
+    <string name="actTitle11500">热门排行</string>
+    <string name="actTitle11600">分类栏目</string>
+    <string name="actTitle11800">包月书包</string>
+    <string name="actTitle11700">图书搜索</string>
+    <string name="actTitle14100">用户信息</string>
+    <string name="actTitle14200">好友管理</string>
+    <string name="actTitle14300">消费记录</string>
+    <string name="actTitle14400">包月退订</string>
+    <string name="actTitle14500">连载预订</string>
+    <string name="actTitle14600">消息中心</string>
+    <string name="actTitle11110">书籍摘要</string>
+    <string name="actTitle11120">书籍目录</string>
+    <string name="actTitle11130">作者介绍</string>
+    <string name="actTitle11140">MEB阅读</string>
+	<string name="actTitle17000">我的批注</string>
+	<string name="actTitle18000">版权声明</string>
+	<string name="actTitle12100">最近阅读</string>
+	<string name="actTitle12200">我的下载</string>
+	<string name="actTitle12300">我的书签</string>
+	<string name="actTitle12400">我的订购</string>
+	<string name="actTitle12500">我的收藏</string>
+	<string name="actTitle12600">我的包月</string>
+	<string name="actTitle15100">日期时间</string>
+	<string name="actTitle15200">开机设置</string>
+	<string name="actTitle15300">待机画面</string>
+    <string name="actTitle15400">待机画面</string>
+    <string name="actTitle15500">提醒预定设置</string>
+    <string name="actTitle15600">语言设置 </string>
+    <string name="actTitle15700">设备信息 </string>
+
+
+	<!-- 提示信息用到的字串 -->
+	<string name="entering">进入</string>
+
+	<!-- 我的书架 -->
+	<string name="mybookshell">我的书架</string>
+	<string name="bookRecentbook">最近阅读</string>
+	<string name="openPrompt">对不起，文件已删除！</string>
+	<string name="bookPrompt">温馨提示:</string>
+	<string name="bookMessege">正在从数据库获取数据请稍候</string>
+	<string name="bookNOne">没有相关阅读记录，请到无线书城阅读更多精彩内容。</string>
+	<string name="bookDeletePrompt">没有选中书籍</string>
+	<string name="bookDelete">删除</string>
+	<string name="bookConfirm">确定</string>
+	<string name="bookCancel">取消</string>
+	<string name="bookSearch">搜索</string>
+	<string name="bookSearchPrompt">请输入文件名的关键字！</string>
+	<string name="bookdownloads">我的下载</string>
+	<string name="bookdownloadsnone">没有相关下载记录</string>
+	<string name="bookdownloadsdoing">下载中...</string>
+	<string name="bookdownloadspause">下载暂停中</string>
+	<string name="bookdownloadsfish">下载完成</string>
+	<string name="bookdownloadsfail">下载失败</string>
+	<string name="bookdownloadsjindu">下载进度：</string>
+	<string name="bookdownloadssize">大小：</string>
+	<string name="bookdownloadsnopause">它不是暂停状态</string>
+	<string name="bookdownloadsnodoing">它不是正在下载状态</string>
+	<string name="bookbookmark">我的书签</string>
+	<string name="bookmarknone">没有相关书签记录</string>
+	<string name="booksubscrip">我的订购</string>
+	<string name="bookIntentPrompt">提示</string>
+	<string name="bookIntentMessege">网络连接错误，请稍候再试</string>
+	<string name="booksubscripnone">没有相关订购记录</string>
+	<string name="booksubscripLoad">数据载入中...</string>
+	<string name="booksubscripdown">下载</string>
+	<string name="booksubscripdownmessage">正在从网络获取数据请稍候</string>
+	<string name="bookfavorite">我的收藏</string>
+	<string name="bookfavoritenone">没有相关收藏记录</string>
+	<string name="bookmymonthly">我的包月</string>
+	<string name="bookmymonthlynone">没有相关包月记录</string>
+
+	<!-- 我的图片 -->
+	<string name="myimage">我的图片</string>
+	<string name="myimageSDnone">SD Card不存在！相关资料无法获取...</string>
+	<string name="myimageOpen">图片打开中...</string>
+	<string name="myimagerename">重命名</string>
+	<string name="myimagerenamenonenull">文件名不能为空</string>
+	<string name="myimagerenameerror">输入文件名不正确</string>
+	<string name="myimagerenameno">文件名不能相同</string>
+	<string name="myimagePrompt">提示框</string>
+	<string name="myimagenone">没有选中图片</string>
+	<string name="noneimage">没有相关图片记录</string>
+	<string name="nonesearch">没有搜索到相关资料</string>
+	<!--推荐好友 -->
+	<string name="friend">好友： </string>
+	<string name="recommendmsg">留言： </string>
+	<string name="friendlist">好友列表</string>
+	<string name="inputfriendhint">请输入好友手机号</string>
+	<string name="inputmsghint">请输入推荐信息</string>
+	<string name="recommendmsgempty">推荐信息为空，请输入推荐信息 ...</string>
+	<string name="recommend">推 荐 </string>
+	<string name="nickname_recommend">昵称 </string>
+	<string name="phonenum_recommend">好友手机号码 </string>
+	<string name="friendlist_recommend">好友列表</string>
+	<string name="sdcardremoved">SD Card已移除！</string>
+	<string name="sdcardin">SD Card已插入！</string>
+	<!-- post by kyle -->
+	<string name="kyleHint01">数据加载中，请稍候...</string>
+	<string name="kyleHint02">网络连接失败,是否重连?</string>
+	<string name="kyleHint02bak">网络连接失败,请重试</string>
+	<string name="kyleHint03">正在进入无线书城...</string>
+	<string name="kyleHint04">下载中</string>
+	<string name="kyleHint05">正在从网络获取数据请稍候</string>
+	<string name="kyleHint06">评论榜</string>
+	<string name="kyleHint07">点击榜</string>
+	<string name="kyleHint08">订购榜</string>
+	<string name="kyleHint09">推荐榜</string>
+	<string name="kyleHint10">搜索榜</string>
+	<string name="kyleHint11">鲜花榜</string>
+	<string name="kyleHint12">收藏榜</string>
+	<string name="kyleHint13">销量榜</string>
+	<string name="kyleHint14">本</string>
+	<string name="kyleHint15">作者：</string>
+	<string name="kyleHint16">empty</string>
+	<string name="kyleHint17">empty</string>
+	<string name="kyleHint18">empty</string>
+	<string name="kyleHint19">empty</string>
+	<string name="kyleHint20">empty</string>
+	<string name="kyleHint21">empty</string>
+	<string name="kyleHint22">empty</string>
+	<string name="kyleHint23">empty</string>
+	<string name="kyleHint24">empty</string>
+	<string name="kyleHint25">empty</string>
+	<string name="kyleHint26">empty</string>
+	<string name="kyleHint27">empty</string>
+	<string name="kyleHint28">empty</string>
+	<string name="kyleHint29">empty</string>
+	<string name="foundSystemUpdate">发现系统升级，请关闭G3电子书</string>
+
+	<!-- MEB阅读界面提示用到的字符串 -->
+	<string name="FirstChapter">已经是第一章</string>
+	<string name="EndChapter">已经是最后一章</string>
+	<string name="Comtents">批注内容</string>
+	<string name="SerchComtent">请输入查找内容！</string>
+	<string name="NoRelashipComent">本章没有你需要搜索的内容！</string>
+	<string name="LastOne">已经是最后一个！</string>
+	<string name="Flowers">送鲜花</string>
+	<string name="FlowersSucess">送鲜花成功！</string>
+	<string name="FlowersFailure">送鲜花失败！</string>
+	<string name="CloseComentFunction">关闭批注</string>
+	<string name="OpenComentFunction">开启批注</string>
+	<string name="BookmarsBeen">本页已有书签，请勿重复添加！</string>
+	<string name="AddBookmarkSucess">添加书签成功</string>
+	<string name="InputAutoFlipTime ">请输入自动翻页时间！</string>
+	<string name="StartAutoFlip ">开始自动翻页</string>
+	<string name="TimeNull">你输入的时间为空！</string>
+	<string name="AutoFlipSettingsSuccess ">自动翻页设置成功！</string>
+	<string name="TimeInputErrorNumber">你输入的时间不合法！</string>
+	<string name="ClosePage">关闭自动翻页</string>
+	<string name="CloseAutoPage">自动翻页已关闭！</string>
+	<string name="LineSpace">请输入行间距！</string>
+	<string name="OK">  确     定     </string>
+	<string name="Cancel">取消</string>
+	<string name="CommmentContent">请输入批注内容！</string>
+	<string name="CommmentContentNull">你输入的批注为空！</string>
+	<string name="InputSectionNumber">请输入章节号！</string>
+	<string name="InputNull">你输入的章节号为空！</string>
+	<string name="ChaptersLength">你输入的不在章节长度内，请重新输入!</string>
+	<string name="InputErrorNumber">你输入的章节号不合法！</string>
+	<string name="CommmentSucess">批注添加成功</string>
+	<string name="CommentHaveBeen">不能在已有批注的地方添加新的批注！</string>
+	<string name="Next">下一个</string>
+	<string name="Serach">搜 索</string>
+	<string name="chaptercharge">此章收费</string>
+	<string name="chapterfree">此章免费</string>
+	<string name="waitting">正在读取数据，请稍候！</string>
+	<string name="fontSizeDialogBoxTitle">Setting</string>
+	<string name="okButtonTitle">确定</string>
+	<string name="cancelButtonTitle">退出</string>
+	<string name="fontButtonTitle">字体</string>
+	<string name="fontSizeButtonTitle">字号</string>
+	<string name="deadException">系统错误</string>
+	<string name="FailException">请确保书籍和证书的完整性或者重新下载本书</string>
+	<string name="maxLength">长度限定在30个字符内！</string>
+	
+	
+	<!-- PDF strings, arthur-->
+
+    <string name="str_pdf_menu">菜 单</string>
+        <string name="str_pdf_show_toc">显示目录</string>
+        <string name="str_pdf_hide_toc">隐藏目录</string>
+        <string name="str_pdf_jump_page">页面跳转</string>
+            <string name="str_pdf_jump_hint_info">请输入要跳转到的页码：</string>
+        <string name="str_pdf_font_size">字体大小</string>
+            <string name="str_pdf_zoom_in">缩小一级</string>
+            <string name="str_pdf_orig_size">原始尺寸</string>
+            <string name="str_pdf_zoom_out_1">放大一级</string>
+            <string name="str_pdf_zoom_out_2">放大二级</string>
+            <string name="str_pdf_zoom_out_3">放大三级</string>
+        <string name="str_pdf_start_auto_play">启动自动翻页</string>
+        <string name="str_pdf_start_auto_play_hint">请输入自动翻页的间隔（秒）：</string>
+            <string name="str_pdf_start_auto_play_title">自动翻页间隔设置</string>
+        <string name="str_pdf_stop_auto_play">停止自动翻页</string>
+        <string name="str_pdf_add_mark">添加书签</string>
+        <string name="str_pdf_del_mark">删除书签</string>
+        <string name="str_pdf_add_note">添加批注</string>
+        <string name="str_pdf_note_list">批注列表</string>
+            <string name="str_pdf_ok">确定</string>
+            <string name="str_pdf_cancel">取消</string>
+            <string name="str_pdf_delete">删除</string>
+        <string name="str_pdf_paging_mode">翻页模式</string>            
+            <string name="str_pdf_pm_singlepage">单页显示</string>
+            <string name="str_pdf_pm_scrolling">卷轴显示</string>
+        <string name="str_pdf_scaling">缩放</string>
+        <string name="str_pdf_rect_selete">拉框选择</string>
+        <string name="str_pdf_auto_cut">自动切边</string>
+        <string name="str_pdf_cancel_cut">取消切边</string>
+        <string name="str_pdf_touch_func">触摸功能</string>
+            <string name="str_pdf_touch_moving">触摸移动</string>
+            <string name="str_pdf_touch_paging">触摸翻页</string>
+        <string name="str_pdf_back">返回</string>
+        <string name="str_pdf_search">搜索</string>
+        <string name="str_pdf_foreward">向前</string>
+        <string name="str_pdf_backward">向后</string>
+    <string name="str_pdf_reach_head">首页</string>
+    <string name="str_pdf_reach_end">最后一页</string>
+    <string name="str_pdf_waiting">请等待</string>
+    <string name="str_pdf_opening">正在打开文档...</string>
+    <string name="str_pdf_closing">正在关闭文档...</string>
+    <string name="str_pdf_openerror">打开文档失败</string>
+    <string name="str_pdf_open_error_hint">当前页面太大或者文件已经损坏</string>
+    <string name="str_pdf_open_error_title">抱歉!</string>
+    <string name="str_pdf_init_error_hint">初始化Adobe设备失败</string>
+    <string name="str_pdf_init_error_title">抱歉!</string>
+    <string name="str_pdf_processing_in_progress">系统处理繁忙.请稍等再试</string>
+    <string name="str_pdf_decode_bitmap_failed">PDF 页面太大,不能显示</string>
+    <string name="fontScaleDialogBoxTitle">文字缩放比例</string>
+    <string name="str_backToHome">返回首页</string>
+
+	<!-- add by Elvis to FileDownloadService  start-->
+	<string name="fileBeenDownTip">有书下载完成！</string>
+	<string name="fileLowMerroy">SD卡空间不足，下载失败</string>
+	<!-- add by Elvis to FileDownloadService  end -->
+
+	<!-- add by kizan for nav title text start-->
+	<string name="editorRecommended">编辑推荐</string>
+	<string name="categoryPart">分类栏目</string>
+	<string name="hotRanking">热门排行</string>
+	<string name="famousWork">名家作品</string>
+	<string name="highQualityPart">精品专栏</string>
+	<string name="newInfo">最新资讯</string>
+	
+	<string name="mainBooks">主要作品</string>
+	<!-- add by kizan for nav title text end -->
+
+	
+<string name="total_consume">总计:</string>
+
+<string name="bind_to_invoke">正在激活，请稍等...</string>
+<string name="net_sucess">网络连接成功</string>
+<string name="net_failuely">网络连接失败,请重试</string>
+<string name="bind_ok">绑定成功，请重新联网进入</string>
+<string name="bind_net_error">网络连接失败，请重试</string>
+<string name="bind_handsetAut_error">鉴权失败，请重试</string>
+<string name="bind_invoke_error">激活失败，请重试</string>
+<string name="unbind_filue">解绑失败,请重新操作</string>
+<string name="unbind_ok">解绑成功</string>
+<string name="nosimorusim">警告!</string>
+<string name="nosimorusimmessage">检测USIM或SIM卡失败!</string>
+<string name="beenblind">已绑定</string>
+<string name="unneedbeenblind">不是USIM卡，不需要绑定</string>
+
+
+<!-- add by Iris for ResCenter title text start -->
+<string name="mydoc_str">我的文档</string>
+<string name="mymusic_str">我的音乐</string>
+<string name="mypic_str">我的图片</string>
+<string name="mynote_str">我的便笺</string>
+<string name="localbook_str">本地书库</string>
+<string name="storage_str">存储空间</string>
+<!-- add by Iris for ResCenter title text end -->
+</resources>

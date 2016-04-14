@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white"
+	android:id="@+id/mainblock">
+
+	<LinearLayout android:layout_width="fill_parent"
+        android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp"
+        android:orientation="vertical" android:id="@+id/datalist" android:layout_height="0dp" android:layout_weight="1.0">
+            
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row0">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription0" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription0" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp0"></Button>
+            </LinearLayout>
+        </LinearLayout>
+            
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row1">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription1" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription1" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp1"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row2">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription2" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription2" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp2"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row3">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription3" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription3" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp3"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row4">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription4" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription4" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp4"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row5">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription5" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription5" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp5"></Button>
+            </LinearLayout>
+       </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row6">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription6" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription6" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp6"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="86dp" android:background="@drawable/bookcatalistbackground" android:addStatesFromChildren="true" android:id="@+id/row7">
+            <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="460dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+                <TextView android:text="" android:layout_height="wrap_content" android:lines="2" android:textAppearance="@style/normal.black.small" android:layout_width="fill_parent" android:id="@+id/textViewFascicleDescription7" android:gravity="center_vertical" android:layout_marginTop="10dp"></TextView>
+                <TextView android:text="" android:lines="1" android:textAppearance="@style/normal.black.common" android:layout_width="fill_parent" android:id="@+id/textViewFeeDescription7" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:gravity="bottom" android:paddingBottom="15dp" android:addStatesFromChildren="true">
+                <Button android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/button_ui1" android:id="@+id/buttonOp7"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout> 
+
+
+
+</LinearLayout>

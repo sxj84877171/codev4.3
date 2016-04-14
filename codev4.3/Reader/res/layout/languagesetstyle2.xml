@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/white"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_x="0px"
+	android:layout_y="0px"
+	android:id="@+id/mainblock"
+>
+
+	<TextView android:text="语言设置 " android:layout_width="fill_parent"
+	android:gravity="center"
+	android:textSize="25px"
+	android:layout_marginTop="15px"
+	android:textColor="@color/black"
+	android:layout_height="wrap_content"/>
+	
+	<ImageView android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="10px"
+			   android:src="@drawable/timeset_split"/>
+			   
+			   
+
+	<LinearLayout android:layout_width="wrap_content" android:orientation="horizontal" 
+	android:layout_height="wrap_content" android:background="@drawable/timeset_back"
+		android:gravity="center_vertical" android:layout_marginTop="15px">
+		
+		<LinearLayout android:layout_width="173px" android:orientation="horizontal" 
+					  android:gravity="center_horizontal"	android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/language_english"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/notcheck"
+		/>
+		<TextView android:text="英语 " android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				   android:layout_marginLeft="10dp"
+				  />
+		</LinearLayout>
+		
+		<LinearLayout android:layout_width="173px" android:orientation="horizontal" 
+					  android:gravity="center_horizontal"	android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/language_chanese_s"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/notcheck"
+		/>
+		<TextView android:text="简体中文 " android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				   android:layout_marginLeft="10dp"
+				  />
+		</LinearLayout>
+		<LinearLayout android:layout_width="173px" android:orientation="horizontal" 
+					  android:gravity="center_horizontal"	android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/language_chanese_t"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:background="@drawable/notcheck"
+		/>
+		<TextView android:text="繁体中文 " android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:gravity="center_vertical"
+				  android:textColor="@color/black"
+				  android:textSize="22px"
+				   android:layout_marginLeft="10dp"
+				  />
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:gravity="right"
+			  android:layout_height="wrap_content" android:layout_y="635dp">
+			  
+			  <Button
+				android:id="@+id/ok"
+				android:text="确定"
+				android:layout_marginRight="20px"
+				style="@style/button_ui1"
+			  />
+			  
+			  <Button
+				android:id="@+id/cancel"
+				android:text="取消"
+				android:layout_marginRight="31px"
+				style="@style/button_ui1"
+			  />
+			  
+			
+			  
+			  
+</LinearLayout>
+
+<RelativeLayout android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<LinearLayout android:layout_height="wrap_content"
+android:layout_width="wrap_content" android:id="@+id/LinearLayout01"
+android:layout_alignParentBottom="true">
+<include layout="@layout/footer"></include>
+</LinearLayout>
+</RelativeLayout>
+
+</AbsoluteLayout>
+
+

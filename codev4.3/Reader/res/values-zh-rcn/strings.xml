@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, prototype!</string>
+	<string name="app_name">G3阅读器</string>
+	<string name="fp_cat1">无线书城</string>
+	<string name="fp_cat2">我的书架</string>
+	<string name="fp_cat3">本地书库</string>
+	<string name="fp_cat4">我的批注</string>
+	<string name="fp_cat5">我的便笺</string>
+	<string name="fp_cat6">资源中心</string>
+	<string name="fp_cat7">个人空间</string>
+	<string name="fp_cat8">系统设置</string>
+	<string name="msglengthlong">留言信息不能长于40字符！</string>
+	<string name="fp_details1"> 66076本 </string>
+	<string name="fp_details2"></string>
+	<string name="fp_details3"> 300本 </string>
+	<string name="fp_details4"></string>
+	<string name="fp_details5"></string>
+	<string name="fp_details6"></string>
+	<string name="fp_details7"></string>
+	<string name="fp_details8"></string>
+
+	<string name="fp_menu1">打开背景音乐</string>
+	<string name="fp_menu1_1">关闭背景音乐</string>
+	<string name="fp_menu2">绑定</string>
+	<string name="fp_menu3">版权声明</string>
+	<string name="fp_menu4">隐私声明</string>
+	<string name="fp_menu5">用户服务协议</string>
+	<string name="fp_menu6">帮助</string>
+	<string name="fp_menu7">返回</string>
+	<string name="fp_menu8">版权声明</string>
+
+
+	<!--add by fly  2010-11-09  系统设置主界面-->
+	<string name="systemconfig_load_message">加载数据 ......</string>
+	<string name="systemconfig_pop_message">温馨提示</string>
+	<string name="systemconfig_title">系统设置</string>
+	<string name="systemconfig_dataandtime">日期及时间</string>
+	<string name="systemconfig_startup">开机画面</string>
+	<string name="systemconfig_standup">待机画面</string>
+	<string name="systemconfig_welcome">无线欢迎页</string>
+	<string name="systemconfig_netset">联网方式</string>
+	<string name="systemconfig_refresh">刷新模式</string>
+	<string name="systemconfig_recoveryFactory">恢复出厂设置</string>
+	<string name="systemconfig_rotating">旋转模式</string>
+	<string name="systemconfig_language">语言设置</string>
+	<string name="systemconfig_sound">按键音设置</string>
+	<string name="systemconfig_skin">皮肤设置</string>
+	<string name="systemconfig_subscribeRemind">预订提醒设置</string>
+	<string name="systemconfig_configHandsetInfo">设备信息</string>
+
+	<!--add by fly  2010-11-09  无线欢迎页设置界面-->
+	<string name="welcome_top_title">系统设置 >> 无线欢迎页设置</string>
+	<string name="welcome_form_title">无线欢迎页设置</string>
+	<string name="welcome_open">打开无线欢迎页</string>
+	<string name="welcome_close">关闭无线欢迎页</string>
+	<string name="welcome_ok">设置</string>
+	<string name="welcome_return">返回</string>
+	<string name="welcome_set_open_ok">您设置打开无线欢迎页，操作成功！</string>
+	<string name="welcome_set_close_ok">您设置关闭无线欢迎页，操作成功！</string>
+	<string name="welcome_set_msg">您还没有选择打开或关闭</string>
+
+	<!--add by fly  2010-11-09 联网设置界面-->
+	<string name="net_top_title">系统设置 >> 联网设置</string>
+	<string name="net_form_title">联网设置</string>
+	<string name="net_auto">自动切换</string>
+	<string name="net_td">TD</string>
+	<string name="net_edge">EDGE</string>
+	<string name="net_ok">设置</string>
+	<string name="net_return">返回</string>
+	<string name="net_set_auto_ok">您设置联网方式为自动切换，操作成功！</string>
+	<string name="net_set_td_ok">您设置联网方式为TD，操作成功！</string>
+	<string name="net_set_edge_ok">您设置联网方式为EDGE，操作成功！</string>
+	<string name="net_set_msg">您还没有选择联网方式</string>
+
+	<!--add by fly  2010-11-09 刷新模式设置界面-->
+	<string name="refresh_top_title">系统设置 >> 刷新模式设置</string>
+	<string name="refresh_form_title">刷新模式设置</string>
+	<string name="refresh_noflash">GC16_NOFLASH</string>
+	<string name="refresh_flash">GC16_FLASH</string>
+	<string name="refresh_ok">设置</string>
+	<string name="refresh_return">返回</string>
+	<string name="refresh_set_noflash_ok">您设置刷新模式为GC16_NOFLASH，操作成功！
+	</string>
+	<string name="refresh_set_flash_ok">您设置刷新模式为GC16_FLASH，操作成功！
+	</string>
+	<string name="refresh_set_msg">您还没有选择刷新模式</string>
+
+	<!--add by fly  2010-11-09 旋转模式设置界面-->
+	<string name="rotating_top_title">系统设置 >> 旋转模式设置</string>
+	<string name="rotating_form_title">旋转模式设置</string>
+	<string name="rotating_open">打开旋转模式</string>
+	<string name="rotating_close">关闭旋转模式</string>
+	<string name="rotating_ok">设置</string>
+	<string name="rotating_return">返回</string>
+	<string name="rotating_set_open_ok">您选择打开旋转模式，操作成功！</string>
+	<string name="rotating_set_close_ok">您选择关闭旋转模式，操作成功！</string>
+	<string name="rotating_set_msg">您还没有选择设置模式，请选择!</string>
+
+
+	<!--add by fly  2010-11-09 语言设置界面-->
+	<string name="language_top_title">系统设置 >> 语言设置</string>
+	<string name="language_form_title">语言设置</string>
+	<string name="language_s_chinese">简体中文</string>
+	<string name="language_t_chinese">繁体中文</string>
+	<string name="language_english">英语</string>
+	<string name="language_ok">设置</string>
+	<string name="language_return">返回</string>
+	<string name="language_set_s_chinese_ok">您选择语言为简体中文，操作成功！</string>
+	<string name="language_set_t_chinese_ok">您选择语言为繁体中文，操作成功！</string>
+	<string name="language_set_english_ok">您选择语言为英语，操作成功！</string>
+	<string name="language_set_msg">您还没有选择语言，请选择!</string>
+
+	<!--add by fly  2010-11-09  按键音量设置界面-->
+	<string name="sound_top_title">系统设置 >> 按键音设置</string>
+	<string name="sound_form_title">按键音设置</string>
+	<string name="sound_open">打开按键音</string>
+	<string name="sound_close">关闭按键音</string>
+	<string name="sound_ok">设置</string>
+	<string name="sound_return">返回</string>
+	<string name="sound_set_open_ok">您选择打开按键音，操作成功！</string>
+	<string name="sound_set_close_ok">您选择关闭按键音，操作成功！</string>
+	<string name="sound_set_msg">您还没有选择设置，请选择!</string>
+
+
+	<!--add by fly  2010-11-09 皮肤设置界面-->
+	<string name="skin_top_title">系统设置 >> 皮肤设置</string>
+	<string name="skin_form_title">皮肤设置</string>
+	<string name="skin_1">浓墨重彩</string>
+	<string name="skin_2">清新简约</string>
+	<string name="skin_3">天然绿色</string>
+	<string name="skin_ok">设置</string>
+	<string name="skin_return">返回</string>
+	<string name="skin_set_skin1_ok">您选择设置皮肤为浓墨重彩，操作成功！</string>
+	<string name="skin_set_skin2_ok">您选择设置皮肤为清新简约，操作成功！</string>
+	<string name="skin_set_skin3_ok">您选择设置皮肤为天然绿色，操作成功！</string>
+	<string name="skin_set_msg">您还没有选择皮肤，请选择!</string>
+
+
+	<!--add by fly  2010-11-10 设备信息界面-->
+	<string name="confighandsetinfo_top_title">系统设置 >> 设备信息</string>
+	<string name="confighandsetinfo_form_title">设备信息</string>
+	<string name="confighandsetinfo_product">产品型号:</string>
+	<string name="confighandsetinfo_equ">设备ID:</string>
+	<string name="confighandsetinfo_imei">IMEI:</string>
+	<string name="confighandsetinfo_return">返回</string>
+
+
+	<!--add by fly  2010-11-10 预订提醒设置界面-->
+	<string name="subscriberemind_top_title">系统设置 >> 预订提醒设置</string>
+	<string name="subscriberemind_form_title">预订提醒设置</string>
+	<string name="subscriberemind_ontime">定时提醒</string>
+	<string name="subscriberemind_intime">即时提醒</string>
+	<string name="subscriberemind_after24hours">24小时提醒</string>
+	<string name="subscriberemind_ok">设置</string>
+	<string name="subscriberemind_return">返回</string>
+	<string name="subscriberemind_set_ontime_ok">您设置预订提醒设置为定时提醒，操作成功！</string>
+	<string name="subscriberemind_set_intime_ok">您设置预订提醒设置为即时提醒，操作成功！</string>
+	<string name="subscriberemind_set_after24Hours_ok">您设置预订提醒设置为24小时提醒，操作成功！
+	</string>
+	<string name="subscriberemind_set_msg">您还没有选择提醒方式</string>
+
+	<!--add by fly  2010-11-09  无线欢迎页设置界面-->
+	<string name="timeset_top_title">System Config >> 时间日期设置</string>
+	<string name="timeset_form_title">时间日期设置</string>
+	<string name="timeset_year_title">Year:</string>
+	<string name="timeset_month_title">Month:</string>
+
+	<string name="timeset_day_7">日</string>
+	<string name="timeset_day_1">一</string>
+	<string name="timeset_day_2">二</string>
+	<string name="timeset_day_3">三</string>
+	<string name="timeset_day_4">四</string>
+	<string name="timeset_day_5">五</string>
+	<string name="timeset_day_6">六</string>
+	<string name="timeset_time">时间</string>
+	<string name="timeset_time_format">时间格式</string>
+	<string name="timeset_time_format_12">12时间</string>
+	<string name="timeset_time_format_24">24时间格式</string>
+	<string name="timeset_ok">设置</string>
+	<string name="timeset_return">返回</string>
+	<string name="timeset_time_ok">您设置的时间已生效</string>
+	<string name="timeset_time_msg">您还没有选择时间格式</string>
+
+	<!--add by fly  2010-11-16  开机设置界面-->
+	<string name="startup_top_title">系统设置 >> 开机画面设置</string>
+	<string name="startup_form_title">开机画面设置</string>
+	<string name="startup_mainpage">首页</string>
+	<string name="startup_lastread">最近一次阅读内容</string>
+	<string name="startup_ok">设置</string>
+	<string name="startup_return">返回</string>
+	<string name="startup_set_open_ok">您设置开机画面为首页，操作成功！</string>
+	<string name="startup_set_close_ok">您设置开机画面为最近一次阅读内容，操作成功！
+	</string>
+	<string name="startup_set_msg">您还没有选择设置状态</string>
+
+
+	<!--add by fly  2010-11-16  待机设置界面-->
+	<string name="standby_top_title">系统设置 >> 屏保设置</string>
+	<string name="standby_form_title">屏保设置</string>
+	<string name="standby_auto">自动屏保：</string>
+	<string name="standby_auto_close">关闭</string>
+	<string name="standby_auto_5">10分钟</string>
+	<string name="standby_auto_20">30分钟</string>
+	<string name="standby_imageChangeTime">图片切换时间：</string>
+	<string name="standby_imageChangeTime_3">3分钟</string>
+	<string name="standby_imageChangeTime_15">15分钟</string>
+	<string name="standby_imageChangeTime_30">30分钟</string>
+	<string name="standby_ok">设置</string>
+	<string name="standby_return">返回</string>
+	<string name="standby_set_ok">您本次屏保设置，操作成功！</string>
+	<string name="standby_set_msg">您还没有选择设置状态</string>
+
+
+	<!--add by fly  2010-11-09 恢复出厂设置界面-->
+	<string name="recoveryfactory_top_title">系统设置 >> 恢复出厂设置</string>
+	<string name="recoveryfactory_form_title">恢复出厂设置</string>
+	<string name="recoveryfactory_ok">设置</string>
+	<string name="recoveryfactory_return">返回</string>
+	<string name="recoveryfactory_set_ok">恢复出厂设置成功！</string>
+	<string name="recoveryfactory_set_makesure">您真的要恢复出厂设置吗？请确认</string>
+
+
+	<!-- add by kizanl  2010.11.24 警告信息 -->
+	<string name="alert_dialog_delete_title">删除确认</string>
+	<string name="alert_dialog_delete_message">您确认删除此文件?</string>
+	<string name="alert_dialog_delete_yes">确定</string>
+	<string name="alert_dialog_delete_no">取消</string>
+
+
+	<!-- add by Elvis 2010-11-22 TXT阅读界面-->
+	<string name="txtPageNumCount">页数：</string>
+	<string name="txtOpenComentFunction">开启批注</string>
+	<string name="txtCloseComentFunction">关闭批注</string>
+	<string name="txtPositiveButton">确定</string>
+	<string name="txtCancelButton">取消</string>
+	<string name="txtCommmentContent">请输入批注内容！</string>
+	<string name="txtAutoPageTime">设置自动翻页时间！</string>
+	<string name="txtCloseAutoPage">关闭自动翻页</string>
+	<string name="txtCommmentSucess">批注添加成功</string>
+	<string name="txtBookmarsBeen">书签已经存在！</string>
+	<string name="txtLineSpace">请输入行间距！</string>
+	<string name="txtLineNull">行间距为空！</string>
+	<string name="txtCharSpace">请输入字间距！</string>
+	<string name="txtCharNull">字间距为空！</string>
+	<string name="txtAddBookmarkSucess">添加书签成功</string>
+	<string name="txtBookmarkBean">书签已存在，请不要重复添加</string>
+	<string name="txtAddCommmentSucess">添加批注成功</string>
+	<string name="txtDeleteCommmentSucess">删除批注成功</string>
+	<string name="txtFirstPage">首页</string>
+	<string name="txtEndPage">已经是最后一页</string>
+	<string name="txtPageNum">请输入页码:</string>
+	<string name="txtSerchComtent">请输入搜索内容！</string>
+	<string name="txtSerch">搜索</string>
+	<string name="txtNext">下一个</string>
+	<string name="txtNoRelashipComent">没有相关搜索内容！</string>
+	<string name="txtFrontNoRelashipComent">前面没有相关内容！</string>
+	<string name="txtAfterNoRelashipComent">后面没有相关内容！</string>
+    <string name="txtInputErrorNumber">输入数字不符合要求</string>
+    <string name="txtNoInputContent">没有输入内容，不添加批注</string>
+    <string name="txtLineTooMax">行间距不能大于50！</string>
+	<string name="txtCommentHaveBeen">不能在已有批注的地方添加新的批注！</string>
+	<string name="txtNotToSmall">不能再放小了.</string>
+	<string name="txtNotToBig">不能再放大了.</string>
+	<string name="txtNoteInfo">开启便签</string>
+	
+	<!-- act title -->
+    <string name="actTitle10000">首 页</string>
+    <string name="actTitle11000">无线书城</string>
+    <string name="actTitle12000">我的书架</string>
+    <string name="actTitle13000">资源中心</string>
+        <string name="actTitle13500">本地书库</string>
+            <string name="actTitle13510">书库列表</string>
+    <string name="actTitle13600">我的批注</string>
+    
+    
+    
+    <string name="actTitle14000">个人空间</string>
+    <string name="actTitle15000">系统设置</string>
+    <string name="actTitle16000">所有应用</string>
+    <string name="actTitle11100">精品专栏</string>
+    <string name="actTitle11200">最新资讯</string>
+    <string name="actTitle11300">名家名作</string>
+    <string name="actTitle11400">编辑推荐</string>
+    <string name="actTitle11500">热门排行</string>
+    <string name="actTitle11600">分类栏目</string>
+    <string name="actTitle11700">图书搜索</string>
+    <string name="actTitle14100">用户信息</string>
+    <string name="actTitle14200">好友管理</string>
+    <string name="actTitle14300">消费记录</string>
+    <string name="actTitle14400">包月退订</string>
+    <string name="actTitle14500">连载预订</string>
+    <string name="actTitle14600">消息中心</string>
+    
+    <string name="actTitle11110">书籍摘要</string>
+    <string name="actTitle11120">书籍目录</string>
+    <string name="actTitle11130">作者介绍</string>
+    <string name="actTitle11140">MEB阅读</string>
+
+<string name="foundSystemUpdate">发现系统升级，请关闭G3电子书</string>
+
+    <!-- 提示信息用到的字串 -->
+    <string name="entering">正在进入</string>
+	<!-- MEB阅读界面提示用到的字符串 -->
+	<string name="desChap">请输入要跳转到的章节：</string>
+	<string name="FirstChapter">已经是第一章</string>
+	<string name="EndChapter">已经是最后一章</string>
+	<string name="SerchComtent">请输入搜索内容！</string>
+	<string name="NoRelashipComent">没有相关搜索内容！</string>
+	<string name="LastOne">没有相关搜索内容！</string>
+	<string name="Flowers">送鲜花</string>
+	<string name="FlowersSucess">送鲜花成功！</string>
+	<string name="FlowersFailure">送鲜花失败！</string>
+	<string name="CloseComentFunction">关闭批注</string>
+	<string name="OpenComentFunction">开启批注</string>
+	<string name="BookmarsBeen">书签已存在，请不要重复添加</string>
+	<string name="AddBookmarkSucess">添加书签成功</string>
+	<string name="InputAutoFlipTime ">请输入自动翻页时间！</string>
+	<string name="StartAutoFlip ">开始自动翻页</string>
+	<string name="TimeNull">你输入的时间为空！</string>
+	<string name="AutoFlipSettingsSuccess ">自动翻页设置成功！</string>
+	<string name="TimeInputErrorNumber">你输入的时间不合法！</string>
+	<string name="ClosePage">关闭自动翻页</string>
+	<string name="CloseAutoPage">自动翻页已关闭！</string>
+	<string name="LineSpace">请输入行间距！</string>
+	<string name="OK">  确     定     </string>
+	<string name="Cancel">取消</string>
+	<string name="Comtents">批注内容</string>
+	<string name="CommmentContent">请输入批注内容！</string>
+	<string name="CommmentContentNull">你输入的批注为空！</string>
+	<string name="InputSectionNumber">请输入章节号！</string>
+	<string name="InputNull">你输入的章节号为空！</string>
+	<string name="ChaptersLength">输入数字不符合要求</string>
+	<string name="InputErrorNumber">你输入的章节号不合法！</string>
+	<string name="CommmentSucess">添加批注成功</string>
+	<string name="CommentHaveBeen">不能在已有批注的地方添加新的批注！</string>
+	<string name="Next">下一个</string>
+	<string name="Serach">搜 索</string>
+	<string name="chaptercharge">此章收费</string>
+	<string name="chapterfree">此章免费</string>
+	<string name="waitting">正在读取数据，请稍候！</string>
+	<string name="deadException">系统错误</string>
+	<string name="FailException">请确保书籍和证书的完整性或者重新下载本书</string>
+	<string name="fontSizeDialogBoxTitle">设置</string>
+	<string name="okButtonTitle">确定</string>
+	<string name="cancelButtonTitle">取消</string>
+	<string name="fontButtonTitle">字体</string>
+	<string name="fontSizeButtonTitle">字号</string>
+    <string name="maxLength">长度限定在30个字符内！</string>
+    <string name="autoPageSet">设置</string>
+	<string name="autoPageClose">关闭</string>
+    <string name="str_pdf_menu">菜 单</string>
+        <string name="str_pdf_show_toc">显示目录</string>
+        <string name="str_pdf_hide_toc">隐藏目录</string>
+        <string name="str_pdf_jump_page">跳转</string>
+            <string name="str_pdf_jump_hint_info">请输入要跳转到的页码：</string>
+        <string name="str_pdf_font_size">设置</string>
+            <string name="str_pdf_zoom_in">缩小一级</string>
+            <string name="str_pdf_orig_size">原始尺寸</string>
+            <string name="str_pdf_zoom_out_1">放大一级</string>
+            <string name="str_pdf_zoom_out_2">放大二级</string>
+            <string name="str_pdf_zoom_out_3">放大三级</string>
+        <string name="str_pdf_start_auto_play">自动翻页</string>
+        <string name="str_pdf_start_auto_play_hint">请输入自动翻页的间隔（秒）：</string>
+            <string name="str_pdf_start_auto_play_title">自动翻页间隔设置</string>
+        <string name="str_pdf_stop_auto_play">停止自动翻页</string>
+        <string name="str_pdf_add_mark">添加书签</string>
+        <string name="str_pdf_del_mark">删除书签</string>
+        <string name="str_pdf_add_note">开启批注</string>
+        <string name="str_pdf_note_list">我的批注</string>
+            <string name="str_pdf_ok">确定</string>
+            <string name="str_pdf_cancel">取消</string>
+            <string name="str_pdf_delete">删除</string>
+        <string name="str_pdf_paging_mode">"         翻页模式     >>"</string>            
+            <string name="str_pdf_pm_singlepage">单页显示</string>
+            <string name="str_pdf_pm_scrolling">卷轴显示</string>
+        <string name="str_pdf_scaling">缩放</string>
+        <string name="str_pdf_rect_selete">拉框选择</string>
+        <string name="str_pdf_auto_cut">自动切边</string>
+        <string name="str_pdf_cancel_cut">取消切边</string>
+        <string name="str_pdf_touch_func">触摸功能</string>
+            <string name="str_pdf_touch_moving">触摸移动</string>
+            <string name="str_pdf_touch_paging">触摸翻页</string>
+        <string name="str_pdf_back">返回</string>
+        <string name="str_pdf_search">搜索</string>
+        <string name="str_pdf_foreward">向前</string>
+        <string name="str_pdf_backward">向后</string>
+    <string name="str_pdf_reach_head">首页</string>
+    <string name="str_pdf_reach_end">最后一页</string>
+    <string name="str_pdf_waiting">请等待</string>
+    <string name="str_pdf_opening">正在打开文档...</string>
+    <string name="str_pdf_closing">正在关闭文档...</string>
+    <string name="str_pdf_openerror">打开文档失败</string>
+    <string name="str_pdf_open_error_hint">当前页面太大或者文件已经损坏</string>
+    <string name="str_pdf_open_error_title">抱歉!</string>
+    <string name="str_pdf_init_error_hint">初始化Adobe设备失败</string>
+    <string name="str_pdf_init_error_title">抱歉!</string>
+    <string name="str_pdf_processing_in_progress">系统处理繁忙.请稍等再试</string>
+    <string name="str_pdf_decode_bitmap_failed">PDF 页面太大,不能显示</string>
+    <string name="fontScaleDialogBoxTitle">文字缩放比例</string>
+	<string name="str_backToHome">返回首页</string>
+	<string name="str_pdf_media_removal">SD卡被移除</string>
+	
+	<!-- add by Elvis to FileDownloadService  start-->
+	<string name="fileBeenDownTip">有书下载完成</string>
+	<!-- add by Elvis to FileDownloadService  end -->
+	
+
+</resources>

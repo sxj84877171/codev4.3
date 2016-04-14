@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+<!--     
+    <TextView android:text="指定便签:"
+    		  android:layout_marginLeft="20dip"
+       		  android:layout_marginRight="20dip"
+    		  android:layout_height="wrap_content"
+       		  android:layout_width="fill_parent"/>
+    <EditText android:longClickable="false"
+        android:id="@+id/noteName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scrollHorizontally="true"
+        android:capitalize="none"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:maxLength="30"/>
+ -->
+    
+    <TextView android:text="修改内容:(限200)"
+     		  android:layout_marginLeft="20dip"
+        	  android:layout_marginRight="20dip"
+    		  android:layout_height="wrap_content"
+       		  android:layout_width="fill_parent"
+        />   
+    <EditText android:longClickable="false"
+        android:id="@+id/noteText"
+        android:layout_height="150px"
+        android:layout_width="fill_parent"
+        android:capitalize="none"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:maxLength="200" android:scrollHorizontally="false" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+      
+</LinearLayout>

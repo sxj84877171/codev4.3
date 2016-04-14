@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/mainblock"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@drawable/white" android:layout_width="fill_parent">
+
+	<com.pvi.ap.reader.view.WSMainView android:id="@+id/mainview"
+		android:layout_width="fill_parent"
+		android:layout_height="630px"
+	/>
+	
+	<RelativeLayout android:id="@+id/searchlayout"
+			android:layout_above="@+id/menulayout" android:layout_marginTop="10px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="20dp" android:paddingTop="0dp"
+			android:paddingRight="20dp">
+			<EditText android:longClickable="false" android:background="@drawable/bg_search_input_ui1"
+				android:cursorVisible="true" android:paddingLeft="5dp"
+				android:layout_height="wrap_content" android:id="@+id/searchInput"
+				android:layout_width="wrap_content" android:lines="1"></EditText>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/Serach"
+				android:id="@+id/searchButton" android:layout_alignParentRight="true"
+				style="@style/search_button_ui1"></Button>
+		</RelativeLayout>
+
+
+	
+		<RelativeLayout android:layout_width="fill_parent" android:visibility="gone"
+			android:layout_height="wrap_content" android:id="@+id/menulayout"
+			android:layout_alignParentBottom="true">
+			<include layout="@layout/footer"></include>
+		</RelativeLayout>
+
+</LinearLayout>

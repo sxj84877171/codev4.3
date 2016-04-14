@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400px"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:orientation="vertical">
+    
+    <TextView 
+    		  android:textColor="@color/black"
+    		  android:id="@+id/bind_inputauthcodetitle"
+    		  android:layout_marginTop="0px"
+    		  android:layout_marginLeft="0px"
+    		  android:text="@string/bind_inputAuthcode_title"
+ 			  android:layout_height="wrap_content"
+       		  android:layout_width="fill_parent"
+        />
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+    
+    <TextView 
+    		  android:textColor="@color/black"
+    		  android:text="@string/bind_inputAuthcode_input1"
+    		  android:id="@+id/bind_inputAuthcode_input1"
+ 			  android:layout_height="wrap_content"
+       		  android:layout_width="wrap_content"
+        />
+    <EditText android:longClickable="false" android:id="@+id/bind_inputAuthcode"
+   			  android:background="@drawable/phoneinput2"
+    		  android:hint="@string/bind_inputAuthcode_input2"   		
+    		  android:layout_width="fill_parent"
+    	 	  android:layout_height="wrap_content"/>
+  
+    
+      
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:layout_marginTop="10px"
+	android:layout_marginBottom="20px"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+	<Button  android:id="@+id/bind_bind"
+			 android:text="@string/bind_inputAuthcode_bind"
+			 android:layout_width="wrap_content" 
+			 android:layout_height="wrap_content"
+			android:gravity="center"
+			 style="@style/button"
+			 android:layout_marginLeft="10px"
+			 android:layout_marginRight="20px"/>
+	<Button	 android:id="@+id/bind_getagain"
+			 android:text="@string/bind_inputAuthcode_getagain"
+			 android:layout_width="wrap_content" 
+			 android:layout_height="wrap_content"
+			 style="@style/button"
+			 android:layout_marginLeft="30px"/>
+	</LinearLayout>
+      
+</LinearLayout>

@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_pressed="true" android:drawable="@drawable/welcomsetbg" />
+
+	<item android:state_focused="true" android:drawable="@drawable/welcomsetbg" />
+	<item android:state_focused="false" android:drawable="@drawable/welcomset" />
+	<item android:drawable="@drawable/welcomset" />
+</selector> 
+
+
+

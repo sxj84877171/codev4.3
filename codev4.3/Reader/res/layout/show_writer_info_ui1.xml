@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical" 
+ android:background="@drawable/bg_popwin_ui1" 
+ android:layout_width="450dp" 
+ android:layout_gravity="center" android:padding="0dip" android:layout_height="wrap_content" android:minHeight="400dp">
+		
+<TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="作家简介" android:textAppearance="@style/bold.black.big" android:minWidth="100dp" android:layout_marginTop="10dp"></TextView>
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:lines="1" android:layout_marginLeft="60dp" 
+android:minWidth="200dp" android:maxWidth="300dp" android:textAppearance="@style/normal.black.common" android:layout_marginTop="20dp" android:id="@+id/authorName"></TextView><ScrollView android:id="@+id/ScrollView01" android:layout_gravity="center" android:paddingBottom="10dp" android:layout_height="440dp" android:layout_width="410dp"><TextView android:scrollbars="vertical" android:layout_gravity="center_horizontal" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:id="@+id/authorDetails" android:textAppearance="@style/normal.black.common" android:layout_width="400dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"></TextView></ScrollView>
+
+
+<Button android:id="@+id/b_return" android:text="返 回 " android:layout_marginTop="20dp" android:layout_gravity="center_horizontal" style="@style/button" android:layout_marginBottom="20dp"></Button>
+
+
+
+
+
+
+
+</LinearLayout>
+
